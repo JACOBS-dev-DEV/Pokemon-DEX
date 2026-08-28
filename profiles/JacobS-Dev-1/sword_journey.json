@@ -2,18 +2,20 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "motostoke_post_hop_battle_3",
+    "current_phase": "route_3_toward_turffield",
     "dynamax_band_received": true,
     "gym_challenge_registered": true,
     "gym_challenge_started": true,
-    "current_area": "Motostoke",
-    "next_step": "continue_gym_challenge_route",
+    "current_area": "Route 3",
+    "next_step": "reach_turffield_grass_gym",
     "train_boarded": true,
     "wild_area_reached": true,
     "motostoke_reached": true,
     "hotel_reached": true,
     "opening_ceremony_started": true,
-    "opening_ceremony_complete": true
+    "opening_ceremony_complete": true,
+    "route_3_reached": true,
+    "turffield_reached": false
   },
   "milestones": [
     {"id":"dynamax_band_received","complete":true,"notes":"User reported receiving/unlocking the Dynamax Band."},
@@ -23,7 +25,10 @@
     {"id":"gym_challenge_registration","complete":true,"notes":"User confirmed Gym Challenge registration with challenge number 243."},
     {"id":"visit_budew_drop_inn","complete":true,"notes":"Confirmed by progression to the Gym Challenge opening ceremony."},
     {"id":"gym_challenge_opening_ceremony","complete":true,"notes":"Completed by subsequent progression to the next rival battle."},
-    {"id":"hop_battle_3","complete":true,"notes":"User confirmed Hop was defeated for the third time."}
+    {"id":"hop_battle_3","complete":true,"notes":"User confirmed Hop was defeated for the third time."},
+    {"id":"league_card_updated","complete":true,"notes":"User confirmed their League Card was updated; visual/details will be captured later from an image."},
+    {"id":"route_3_first_arrival","complete":true,"notes":"Confirmed by the user's Gossifleur encounter while heading toward the Grass Gym."},
+    {"id":"reach_turffield","complete":false,"pending":true,"notes":"Next destination is Turffield and the Grass Gym; do not mark reached until the user confirms arrival."}
   ],
   "pending_pokemon_encounters": [
     {
@@ -33,6 +38,14 @@
       "location": "Wild Area",
       "status": "encounter_reported_catch_not_confirmed",
       "notes": "User referred to the skull-like Ghost-type Pokemon; tracked as Duskull pending catch confirmation."
+    },
+    {
+      "species_name": "Gossifleur",
+      "type_1": "Grass",
+      "caught": false,
+      "location": "Route 3",
+      "status": "encounter_reported_catch_not_confirmed",
+      "notes": "User identified Gossifleur while traveling toward Turffield; catch not yet confirmed."
     }
   ],
   "trainer_battles": [
