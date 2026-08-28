@@ -89,8 +89,12 @@
       "owned_count": 1,
       "battle_count": 1,
       "in_team": true,
+<<<<<<< HEAD
       "team_slot": 5,
       "level": 9
+=======
+      "team_slot": 1
+>>>>>>> d3d2713 (DEV6)
     },
     {
       "local_id": 8,
