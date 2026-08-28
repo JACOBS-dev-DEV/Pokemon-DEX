@@ -1,0 +1,23 @@
+{
+  "schema_version": "1",
+  "sources": [
+    {
+      "id": "google_sheets_personal",
+      "kind": "personal-data",
+      "description": "JacobS personal Pokemon spreadsheets and save tracking data",
+      "network_required_at_runtime": false
+    },
+    {
+      "id": "pokemon_art_project_archive",
+      "kind": "art-archive",
+      "description": "Pokemon_Art_Project.zip and processed local artwork",
+      "network_required_at_runtime": false
+    },
+    {
+      "id": "manual",
+      "kind": "manual-entry",
+      "description": "Locally entered or corrected Pokemon data",
+      "network_required_at_runtime": false
+    }
+  ]
+}
