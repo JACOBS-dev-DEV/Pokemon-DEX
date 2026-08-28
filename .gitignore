@@ -23,3 +23,7 @@ dist/
 # Local data/cache
 .cache/
 logs/
+
+# Runtime live-edit safety files
+profiles/_backups/
+*.json.tmp
