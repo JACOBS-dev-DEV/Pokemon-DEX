@@ -6,7 +6,7 @@
       "display_name": "Poké Dollars",
       "symbol": "₽",
       "balance": 29988,
-      "balance_status": "exact_from_DEV7_live_update"
+      "balance_status": "last_exact_observation_DEV7_stale_after_later_route3_activity"
     },
     "watts": {
       "display_name": "Watts",
@@ -60,7 +60,37 @@
       "reason": "Defeated Schoolgirl Hannah",
       "location": "Route 3",
       "source": "Verified Route 3 trainer reward plus user-confirmed victory",
-      "notes": "The reward is logged as confirmed, but it is not arithmetically added to the 29,988 balance because the newer DEV7 exact balance may already include this reward and other intervening activity."
+      "notes": "Reward logged independently because the exact 29,988 observation may overlap nearby activity."
+    },
+    {
+      "currency": "poke_dollars",
+      "kind": "trainer_reward",
+      "amount": 720,
+      "balance_before": null,
+      "balance_after": null,
+      "reason": "Defeated Schoolboy Marvin",
+      "location": "Route 3",
+      "source": "Verified Route 3 trainer reward plus user-provided defeat screenshot"
+    },
+    {
+      "currency": "poke_dollars",
+      "kind": "trainer_reward",
+      "amount": 1344,
+      "balance_before": null,
+      "balance_after": null,
+      "reason": "Defeated Postman Tad",
+      "location": "Route 3",
+      "source": "Verified Route 3 trainer reward plus user-provided defeat screenshot"
+    },
+    {
+      "currency": "poke_dollars",
+      "kind": "trainer_reward",
+      "amount": 840,
+      "balance_before": null,
+      "balance_after": null,
+      "reason": "Defeated Schoolboy Peter",
+      "location": "Route 3",
+      "source": "Verified Route 3 trainer reward plus user-provided post-battle dialogue screenshot"
     }
   ],
   "balance_observations": [
@@ -82,8 +112,8 @@
       "confidence": 1.0,
       "location": "Route 3 progression",
       "applied": true,
-      "current_status": "current_exact"
+      "current_status": "stale_after_later_activity"
     }
   ],
-  "source": "Local live progress; exact DEV7 balance preserved while confirmed trainer rewards are logged without double-counting uncertain timing."
+  "source": "Local live progress. ₽29,988 remains the last exact observed balance; later confirmed Route 3 rewards are logged without fabricating a new exact balance because spending and timing between observations are not fully captured."
 }
