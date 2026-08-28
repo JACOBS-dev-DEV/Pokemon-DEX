@@ -1,21 +1,72 @@
 {
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Shield",
-  "sync_status": "live_session_started_awaiting_state_capture",
-  "pokemon": [],
+  "sync_status": "partial_live_sync",
+  "pokemon": [
+    {
+      "local_id": 1,
+      "species_name": "Cinderace",
+      "type_1": "Fire",
+      "caught": true,
+      "owned_count": 1,
+      "in_team": true,
+      "team_slot": 1,
+      "level": 75,
+      "notes": "User referred to this current party member as the fire bunny."
+    },
+    {
+      "local_id": 2,
+      "species_name": "Arcanine",
+      "type_1": "Fire",
+      "caught": true,
+      "owned_count": 1,
+      "in_team": true,
+      "team_slot": 2,
+      "level": 67
+    },
+    {
+      "local_id": 3,
+      "species_name": "Zamazenta",
+      "type_1": "Fighting",
+      "caught": true,
+      "owned_count": 1,
+      "in_team": true,
+      "team_slot": 3,
+      "level": 71,
+      "notes": "Mapped from the user's description of the Shield mascot/legendary Pokemon."
+    },
+    {
+      "local_id": 4,
+      "species_name": "Drednaw",
+      "type_1": "Water",
+      "type_2": "Rock",
+      "caught": true,
+      "owned_count": 1,
+      "in_team": true,
+      "team_slot": 4,
+      "level": 72,
+      "notes": "Mapped from the user's spoken party description; can be corrected from the upcoming screenshots if needed."
+    }
+  ],
   "progress": {
     "current_area": null,
     "badges_obtained": null,
     "money_poke_dollars": null,
-    "team_captured": false,
+    "team_captured": "partial_4_of_6",
     "boxes_captured": false,
     "league_card_captured": false
+  },
+  "completion_policy": {
+    "include_expansion_content_in_shield_completion": true,
+    "expansion_content": ["The Isle of Armor", "The Crown Tundra"],
+    "sword_policy": "do_not_apply_this_combined_count_to_sword",
+    "notes": "Shield completion may count DLC Pokédex/content directly with the Shield run; Sword remains separate."
   },
   "session": {
     "active": true,
     "state_capture_pending": true,
-    "notes": "Shield has been launched. Await the user's current save details before filling progression, team, money, boxes, or League Card fields."
+    "notes": "Shield is active. Four current party members are synced from the user's live report; remaining team slots, progression, money, boxes, and League Card await updated screenshots/details."
   },
-  "notes": "Pokemon Shield is now the active live run. No save progress is assumed until the user shows or reports the current state.",
-  "source": "User confirmed Pokemon Shield is now being played"
+  "notes": "Pokemon Shield is the active live run. Current data is intentionally partial and should be refined from the user's upcoming screenshots.",
+  "source": "User live Pokemon Shield report"
 }
