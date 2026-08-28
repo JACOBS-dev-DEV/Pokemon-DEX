@@ -77,9 +77,18 @@
       "visited": true,
       "current": true,
       "complete": false,
-      "trainers_defeated": 0,
+      "trainers_defeated": 1,
       "trainers_total": null,
       "trainer_check_complete": false,
+      "trainer_battles": [
+        {
+          "trainer_name": null,
+          "trainer_class": null,
+          "result": "win",
+          "identity_status": "pending",
+          "notes": "User confirmed one trainer defeated on Route 3 while heading toward Turffield; identity and roster not yet provided."
+        }
+      ],
       "pokemon_caught": [],
       "special_encounters": [],
       "possible_catches": [
@@ -96,8 +105,8 @@
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Current route toward Turffield and the first Grass Gym. Gossifleur encountered; catch status pending."
+      "notes": "Current route toward Turffield and the first Grass Gym. One trainer defeated (identity pending). Gossifleur encountered; catch status pending. Route 3 Growlithe is Shield-only; Sword's corresponding visible encounter is Vulpix."
     }
   ],
-  "source": "User-reported live Pokemon Sword progress"
+  "source": "User-reported live Pokemon Sword progress plus verified Sword/Shield Route 3 version differences"
 }
