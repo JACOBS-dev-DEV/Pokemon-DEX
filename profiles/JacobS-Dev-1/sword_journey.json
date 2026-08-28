@@ -2,14 +2,18 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "motostoke_arrival_pre_gym_challenge",
+    "current_phase": "motostoke_opening_ceremony",
     "dynamax_band_received": true,
-    "gym_challenge_started": false,
-    "current_area": "Motostoke",
-    "next_step": "gym_challenge_registration",
+    "gym_challenge_registered": true,
+    "gym_challenge_started": true,
+    "current_area": "Motostoke Stadium",
+    "next_step": "complete_opening_ceremony",
     "train_boarded": true,
     "wild_area_reached": true,
-    "motostoke_reached": true
+    "motostoke_reached": true,
+    "hotel_reached": true,
+    "opening_ceremony_started": true,
+    "opening_ceremony_complete": false
   },
   "milestones": [
     {
@@ -30,12 +34,24 @@
     {
       "id": "motostoke_first_arrival",
       "complete": true,
-      "notes": "User reported reaching the castle-like city after the Wild Area; tracked as Motostoke."
+      "notes": "User reported reaching Motostoke after the Wild Area."
     },
     {
       "id": "gym_challenge_registration",
+      "complete": true,
+      "notes": "User confirmed Gym Challenge registration with challenge number 243."
+    },
+    {
+      "id": "visit_budew_drop_inn",
+      "complete": true,
+      "notes": "Confirmed by progression to the Gym Challenge opening ceremony."
+    },
+    {
+      "id": "gym_challenge_opening_ceremony",
       "complete": false,
-      "notes": "Next early Motostoke progression step; leave incomplete until user confirms registration."
+      "in_progress": true,
+      "location": "Motostoke Stadium",
+      "notes": "User reported currently being at the opening ceremony."
     }
   ],
   "pending_pokemon_encounters": [

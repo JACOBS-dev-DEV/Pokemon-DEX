@@ -1,0 +1,26 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "mechanics": {
+    "tm": {
+      "display_name": "Technical Machine",
+      "catalog_size": 100,
+      "reusable": true,
+      "consumed_on_use": false,
+      "number_range": "TM00-TM99"
+    },
+    "tr": {
+      "display_name": "Technical Record",
+      "catalog_size": 100,
+      "reusable": false,
+      "consumed_on_use": true,
+      "number_range": "TR00-TR99"
+    }
+  },
+  "inventory": {
+    "tms": [],
+    "trs": []
+  },
+  "use_history": [],
+  "source": "Pokemon Sword/Shield mechanics: TMs are reusable; TRs are single-use. Personal inventory remains empty until obtained items are confirmed."
+}
