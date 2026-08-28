@@ -2,12 +2,14 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "early_game_post_dynamax_band",
+    "current_phase": "motostoke_arrival_pre_gym_challenge",
     "dynamax_band_received": true,
     "gym_challenge_started": false,
-    "current_area": "Route 2",
-    "next_step": "board_train",
-    "train_boarded": false
+    "current_area": "Motostoke",
+    "next_step": "gym_challenge_registration",
+    "train_boarded": true,
+    "wild_area_reached": true,
+    "motostoke_reached": true
   },
   "milestones": [
     {
@@ -17,8 +19,23 @@
     },
     {
       "id": "board_train",
+      "complete": true,
+      "notes": "Confirmed by subsequent arrival in the Wild Area."
+    },
+    {
+      "id": "wild_area_first_arrival",
+      "complete": true,
+      "notes": "User reported reaching and traveling through the Wild Area."
+    },
+    {
+      "id": "motostoke_first_arrival",
+      "complete": true,
+      "notes": "User reported reaching the castle-like city after the Wild Area; tracked as Motostoke."
+    },
+    {
+      "id": "gym_challenge_registration",
       "complete": false,
-      "notes": "User reported being about to board the train; do not mark complete until boarding is confirmed."
+      "notes": "Next early Motostoke progression step; leave incomplete until user confirms registration."
     }
   ],
   "pending_pokemon_encounters": [
@@ -26,9 +43,9 @@
       "species_name": "Duskull",
       "type_1": "Ghost",
       "caught": false,
-      "location": null,
+      "location": "Wild Area",
       "status": "encounter_reported_catch_not_confirmed",
-      "notes": "User referred to the skull-like Ghost-type Pokemon; tracked as Duskull pending catch confirmation and exact location."
+      "notes": "User referred to the skull-like Ghost-type Pokemon; tracked as Duskull pending catch confirmation."
     }
   ],
   "trainer_battles": [
