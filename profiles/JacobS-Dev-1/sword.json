@@ -2,15 +2,114 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "pokemon": [
-    {"local_id":1,"dex_id":4,"species_name":"Scorbunny","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"battle_count":0},
-    {"local_id":2,"dex_id":24,"species_name":"Skwovet","type_1":"Normal","type_2":null,"caught":true,"owned_count":1,"battle_count":4},
-    {"local_id":3,"dex_id":21,"species_name":"Rookidee","type_1":"Flying","type_2":null,"caught":true,"owned_count":3,"battle_count":2,"caught_location":"Route 2","special_encounters":[{"kind":"brilliant_aura","location":"Route 2","caught":true,"notes":"User reported a shimmering/glowing overworld Rookidee. Logged as Brilliant Aura, not shiny."}]},
-    {"local_id":4,"dex_id":34,"species_name":"Wooloo","type_1":"Normal","type_2":null,"caught":false,"owned_count":0,"battle_count":1},
-    {"local_id":5,"dex_id":10,"species_name":"Blipbug","type_1":"Bug","type_2":null,"caught":true,"owned_count":2,"battle_count":1},
-    {"local_id":6,"dex_id":29,"species_name":"Nickin","type_1":"Dark","type_2":null,"caught":false,"owned_count":0,"battle_count":1,"notes":"Original sheet spelling preserved; likely Nickit."},
-    {"local_id":7,"dex_id":42,"species_name":"Chewtle","type_1":"Water","type_2":null,"caught":true,"owned_count":1,"battle_count":1},
-    {"local_id":8,"dex_id":31,"species_name":"Zigzagoon","form":"Galarian","type_1":"Dark","type_2":"Normal","caught":true,"owned_count":1,"battle_count":0,"caught_location":"Route 2","notes":"User-reported live catch; no nickname tracking."},
-    {"local_id":9,"dex_id":46,"species_name":"Yamper","type_1":"Electric","type_2":null,"caught":true,"owned_count":1,"battle_count":0,"caught_location":"Route 2","notes":"User-reported live catch; no nickname tracking."}
+    {
+      "local_id": 1,
+      "dex_id": 4,
+      "species_name": "Scorbunny",
+      "type_1": "Fire",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 0,
+      "in_team": true,
+      "team_slot": 1,
+      "level": 13
+    },
+    {
+      "local_id": 2,
+      "dex_id": 24,
+      "species_name": "Skwovet",
+      "type_1": "Normal",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 2
+    },
+    {
+      "local_id": 3,
+      "dex_id": 21,
+      "species_name": "Rookidee",
+      "type_1": "Flying",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 3,
+      "battle_count": 3,
+      "caught_location": "Route 2",
+      "special_encounters": [
+        {
+          "kind": "brilliant_aura",
+          "location": "Route 2",
+          "caught": true,
+          "notes": "User reported a shimmering/glowing overworld Rookidee. Logged as Brilliant Aura, not shiny."
+        }
+      ]
+    },
+    {
+      "local_id": 4,
+      "dex_id": 34,
+      "species_name": "Wooloo",
+      "type_1": "Normal",
+      "type_2": null,
+      "caught": false,
+      "owned_count": 0,
+      "battle_count": 1
+    },
+    {
+      "local_id": 5,
+      "dex_id": 10,
+      "species_name": "Blipbug",
+      "type_1": "Bug",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 2,
+      "battle_count": 3
+    },
+    {
+      "local_id": 6,
+      "dex_id": 29,
+      "species_name": "Nickin",
+      "type_1": "Dark",
+      "type_2": null,
+      "caught": false,
+      "owned_count": 0,
+      "battle_count": 1,
+      "notes": "Original sheet spelling preserved; likely Nickit."
+    },
+    {
+      "local_id": 7,
+      "dex_id": 42,
+      "species_name": "Chewtle",
+      "type_1": "Water",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 1
+    },
+    {
+      "local_id": 8,
+      "dex_id": 31,
+      "species_name": "Zigzagoon",
+      "form": "Galarian",
+      "type_1": "Dark",
+      "type_2": "Normal",
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 1,
+      "caught_location": "Route 2",
+      "notes": "User-reported live catch; no nickname tracking."
+    },
+    {
+      "local_id": 9,
+      "dex_id": 46,
+      "species_name": "Yamper",
+      "type_1": "Electric",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 1,
+      "caught_location": "Route 2",
+      "notes": "User-reported live catch; no nickname tracking."
+    }
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress; DEV5 edits synchronized with user correction of Scorbunny Lv.16 to Lv.13"
 }
