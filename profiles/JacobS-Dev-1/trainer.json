@@ -4,9 +4,13 @@
   "trainer": {
     "name": "JacobS-dev-1",
     "trainer_id": "307650",
+    "reference_number": "24300",
+    "gym_challenge_number": null,
+    "gym_challenge_number_status": "pending_exact_three_digit_value",
     "name_policy": "default_for_user_created_save_profiles",
     "trainer_id_policy": "per_save_or_account",
-    "notes": "Trainer name confirmed from the user-provided Pokemon summary screen. Use JacobS-dev-1 as the default trainer name for this user's Pokemon save profiles unless explicitly changed. Trainer ID values are save/account-specific and may differ on other accounts."
+    "reference_number_policy": "preserve_full_user_reference_number_separately_from_in_game_uniform_number",
+    "notes": "Trainer name confirmed from the user-provided Pokemon summary screen. Use JacobS-dev-1 as the default trainer name for this user's Pokemon save profiles unless explicitly changed. Trainer ID values are save/account-specific and may differ on other accounts. Full reference number 24300 is preserved separately because the in-game Gym Challenge/uniform number cannot store the entire value; do not guess which three digits were entered."
   },
-  "source": "User-provided Pokemon Sword summary screenshot"
+  "source": "User-provided Pokemon Sword summary screenshot plus user-reported trainer/reference number"
 }
