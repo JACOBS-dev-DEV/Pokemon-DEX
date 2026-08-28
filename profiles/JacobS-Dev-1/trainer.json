@@ -1,0 +1,12 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "trainer": {
+    "name": "JacobS-dev-1",
+    "trainer_id": "307650",
+    "name_policy": "default_for_user_created_save_profiles",
+    "trainer_id_policy": "per_save_or_account",
+    "notes": "Trainer name confirmed from the user-provided Pokemon summary screen. Use JacobS-dev-1 as the default trainer name for this user's Pokemon save profiles unless explicitly changed. Trainer ID values are save/account-specific and may differ on other accounts."
+  },
+  "source": "User-provided Pokemon Sword summary screenshot"
+}
