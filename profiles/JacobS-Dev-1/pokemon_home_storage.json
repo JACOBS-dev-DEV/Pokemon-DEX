@@ -2,15 +2,40 @@
   "profile_id": "JacobS-Dev-1",
   "service": "Pokemon HOME",
   "accessible": true,
-  "captured": false,
+  "captured": true,
+  "membership": {
+    "premium": true,
+    "source": "User report"
+  },
+  "storage_snapshot": {
+    "pokemon_currently_stored": 184,
+    "empty_boxes_reported": 193,
+    "individual_contents_captured": false,
+    "notes": "User reported 184 Pokemon currently in HOME and 193 empty boxes. Individual box contents are not yet captured."
+  },
+  "pokedex_snapshot": {
+    "registered": 308,
+    "source": "User report from Pokemon HOME"
+  },
+  "records_snapshot": {
+    "pokemon_deposited": 235,
+    "pokemon_withdrawn": 95,
+    "pokemon_traded_via_mobile_device": 189,
+    "tasks_completed": 6,
+    "days_visited_pokemon_home": 91,
+    "total_points_earned": 21473,
+    "source": "User-provided Pokemon HOME Records screenshot"
+  },
   "pokemon": [],
   "linked_game_sources": [
     "Pokemon Shield"
   ],
   "summary": {
-    "pokemon_recorded": 0,
-    "duplicates_recorded": 0,
-    "source_games_recorded": 1
+    "pokemon_recorded_individually": 0,
+    "pokemon_stored_reported": 184,
+    "duplicates_recorded_individually": 0,
+    "source_games_recorded": 1,
+    "pokedex_registered": 308
   },
   "tracking_policy": {
     "keep_separate_from_game_pc_boxes": true,
@@ -19,10 +44,15 @@
     "do_not_infer_contents_from_pokedex": true
   },
   "pending": {
-    "home_screenshots_or_manual_list": true,
+    "individual_home_box_contents": true,
     "box_or_group_names": true,
-    "individual_pokemon_details": true
+    "individual_pokemon_details": true,
+    "champion_area_or_box_organization_details": true
   },
-  "notes": "User has access to Pokemon HOME and reported transferring some Pokemon, including duplicates, out of Pokemon Shield. Contents remain intentionally empty until shown or reported.",
-  "source": "User-reported Pokemon HOME access and Shield transfer history"
+  "activity_context": {
+    "recently_reopened_after_long_inactivity": true,
+    "notes": "User said Pokemon HOME had not been used in a very long time before opening it again for this capture. Records are cumulative account statistics, while individual Pokemon/box organization may reflect older transfers and duplicates."
+  },
+  "notes": "User has Pokemon HOME Premium access and reported that some Pokemon, including duplicates from Shield, were transferred into HOME. HOME ownership is tracked separately from Shield PC boxes so transfers do not look like lost Pokemon.",
+  "source": "User-reported Pokemon HOME access/storage/Pokedex totals plus Records screenshot"
 }
