@@ -3,13 +3,79 @@
   "game": "Pokemon Sword",
   "scope": "current_team_only",
   "team_items": [
-    {"slot":1,"species_name":"Raboot","held_item":null,"history":[]},
-    {"slot":2,"species_name":"Rookidee","held_item":null,"history":[]},
-    {"slot":3,"species_name":"Dottler","held_item":null,"history":[]},
-    {"slot":4,"species_name":null,"held_item":null,"history":[]},
-    {"slot":5,"species_name":"Chewtle","held_item":null,"history":[]},
-    {"slot":6,"species_name":"Rookidee","held_item":null,"history":[]}
+    {
+      "slot": 1,
+      "species_name": "Raboot",
+      "held_item": null,
+      "history": []
+    },
+    {
+      "slot": 2,
+      "species_name": "Gible",
+      "held_item": null,
+      "history": [
+        {
+          "action": "party_member_changed",
+          "from_species": "Rookidee",
+          "to_species": "Gible",
+          "held_item_before": null,
+          "held_item_after": null,
+          "source": "User-provided live Sword party screenshot"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "species_name": "Ponyta",
+      "held_item": null,
+      "history": [
+        {
+          "action": "party_member_changed",
+          "from_species": "Dottler",
+          "to_species": "Ponyta",
+          "held_item_before": null,
+          "held_item_after": null,
+          "source": "User-provided live Sword party screenshot"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "species_name": "Vulpix",
+      "held_item": null,
+      "history": [
+        {
+          "action": "party_member_changed",
+          "from_species": null,
+          "to_species": "Vulpix",
+          "held_item_before": null,
+          "held_item_after": null,
+          "source": "User-provided live Sword party screenshot"
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "species_name": "Chewtle",
+      "held_item": null,
+      "history": []
+    },
+    {
+      "slot": 6,
+      "species_name": "Yamper",
+      "held_item": null,
+      "history": [
+        {
+          "action": "party_member_changed",
+          "from_species": "Rookidee",
+          "to_species": "Yamper",
+          "held_item_before": null,
+          "held_item_after": null,
+          "source": "User-provided live Sword party screenshot"
+        }
+      ]
+    }
   ],
-  "notes": "Held items are tracked only for the active six-member party. Slot 4 is currently empty after the DEV7 team edit. Unknown items remain null until confirmed.",
-  "source": "Current Sword party after DEV7 synchronization and Raboot evolution"
+  "notes": "Held items are tracked only for the active six-member party. The latest confirmed party is Raboot, Gible, Ponyta, Vulpix, Chewtle, and Yamper. No held items are confirmed from the current screenshots, so values remain null rather than guessed.",
+  "source": "Current Sword party from user-provided live EXP screenshots"
 }
