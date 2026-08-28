@@ -21,6 +21,16 @@
       "notes": "User reported being about to board the train; do not mark complete until boarding is confirmed."
     }
   ],
+  "pending_pokemon_encounters": [
+    {
+      "species_name": "Duskull",
+      "type_1": "Ghost",
+      "caught": false,
+      "location": null,
+      "status": "encounter_reported_catch_not_confirmed",
+      "notes": "User referred to the skull-like Ghost-type Pokemon; tracked as Duskull pending catch confirmation and exact location."
+    }
+  ],
   "trainer_battles": [
     {
       "opponent": "Hop",
@@ -39,14 +49,22 @@
       "notes": "Second early-game win against Hop, before receiving the Dynamax Band."
     },
     {
-      "opponent": "Unrecorded Trainer",
+      "opponent": "Lass Lauren",
+      "trainer_class": "Lass",
       "result": "win",
       "sequence": 3,
       "phase": "early_game",
       "before_dynamax_band": true,
       "location": "Route 2",
-      "identity_pending": true,
-      "notes": "Trainer encountered on Route 2. Identity will be filled in when the user can provide the character image/name."
+      "identity_pending": false,
+      "opponent_team": [
+        {
+          "species_name": "Chewtle",
+          "level": 6
+        }
+      ],
+      "reward_poke_dollars": 504,
+      "notes": "Trainer identity confirmed from the user-provided Route 2 screenshot and verified against the Route 2 trainer roster."
     }
   ],
   "summary": {
@@ -54,7 +72,7 @@
     "trainer_wins": 3,
     "trainer_losses": 0,
     "hop_wins": 2,
-    "unrecorded_trainer_wins": 1
+    "identified_route_2_trainer_wins": 1
   },
-  "source": "User-reported live Pokemon Sword progress"
+  "source": "User-reported live Pokemon Sword progress plus verified Route 2 trainer roster"
 }
