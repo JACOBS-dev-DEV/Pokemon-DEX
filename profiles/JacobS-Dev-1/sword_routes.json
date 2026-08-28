@@ -22,8 +22,11 @@
       ],
       "possible_catches": [],
       "pokemon_check_complete": false,
+      "pokemon_centers": [],
+      "pokemon_center_check_complete": false,
+      "items_found": [],
       "items_check_complete": false,
-      "notes": "Current early-game route. One trainer victory is logged here; trainer identity pending. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee have been caught here."
+      "notes": "Current early-game route. One trainer victory is logged here; trainer identity pending. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee have been caught here. Pokemon Center and item fields are available but remain empty until confirmed by live progress."
     }
   ],
   "source": "User-reported live Pokemon Sword progress"
