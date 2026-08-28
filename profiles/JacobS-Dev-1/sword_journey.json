@@ -15,7 +15,8 @@
     "opening_ceremony_started": true,
     "opening_ceremony_complete": true,
     "route_3_reached": true,
-    "turffield_reached": false
+    "turffield_reached": false,
+    "starter_current_species": "Raboot"
   },
   "milestones": [
     {"id":"dynamax_band_received","complete":true,"notes":"User reported receiving/unlocking the Dynamax Band."},
@@ -28,6 +29,7 @@
     {"id":"hop_battle_3","complete":true,"notes":"User confirmed Hop was defeated for the third time."},
     {"id":"league_card_updated","complete":true,"notes":"User confirmed their League Card was updated; visual/details will be captured later from an image."},
     {"id":"route_3_first_arrival","complete":true,"notes":"Confirmed by the user's Gossifleur encounter while heading toward the Grass Gym."},
+    {"id":"starter_evolved_to_raboot","complete":true,"notes":"User-provided live evolution screenshot confirms the starter Scorbunny evolved into Raboot during Route 3 progression."},
     {"id":"reach_turffield","complete":false,"pending":true,"notes":"Next destination is Turffield and the Grass Gym; do not mark reached until the user confirms arrival."}
   ],
   "pending_pokemon_encounters": [
@@ -102,5 +104,5 @@
     "identified_route_2_trainer_wins": 1,
     "pending_route_3_trainer_battles": 1
   },
-  "source": "User-reported live Pokemon Sword progress plus verified Route 2 and Route 3 trainer rosters"
+  "source": "User-reported live Pokemon Sword progress plus verified Route 2 and Route 3 trainer rosters and user-provided evolution screenshots"
 }
