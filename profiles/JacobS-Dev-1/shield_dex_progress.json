@@ -1,0 +1,41 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "dexes": [
+    {
+      "dex_id": "galar",
+      "name": "Galar Pokedex",
+      "content_scope": "base_game",
+      "caught": 61,
+      "seen": 231
+    },
+    {
+      "dex_id": "isle_of_armor",
+      "name": "Isle of Armor Pokedex",
+      "content_scope": "dlc",
+      "caught": 22,
+      "seen": 83
+    },
+    {
+      "dex_id": "crown_tundra",
+      "name": "Crown Tundra Pokedex",
+      "content_scope": "dlc",
+      "caught": 23,
+      "seen": 95
+    }
+  ],
+  "combined_reported_counters": {
+    "caught_sum": 106,
+    "seen_sum": 409,
+    "counting_policy": "base_plus_both_dlc_counters",
+    "unique_species": null,
+    "notes": "These totals are arithmetic sums of the three in-game Pokedex counters. They are not labeled as unique species because regional/DLC Pokedexes can overlap."
+  },
+  "shield_completion_policy": {
+    "count_base_game": true,
+    "count_isle_of_armor": true,
+    "count_crown_tundra": true,
+    "apply_same_combined_policy_to_sword": false
+  },
+  "source": "User-reported live Pokemon Shield Pokedex counters"
+}
