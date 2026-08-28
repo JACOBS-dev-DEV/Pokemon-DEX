@@ -72,21 +72,26 @@
     },
     {
       "slot": 3,
-      "species_name": "Blipbug",
+      "species_name": "Dottler",
       "sex": "female",
       "level": 10,
-      "current_level_source": "user live correction",
+      "current_level_source": "user confirmed evolution",
       "current_hp": null,
       "max_hp": null,
       "status": "unknown_current",
+      "type_1": "Bug",
+      "type_2": "Psychic",
+      "evolved_from": "Blipbug",
+      "evolution_level": 10,
       "last_confirmed_detail_snapshot": {
+        "species_name": "Blipbug",
         "level": 8,
         "current_hp": 24,
         "max_hp": 24,
         "status": "healthy",
         "source": "User-provided current party screenshot"
       },
-      "source": "Current level reported live by user"
+      "source": "User confirmed the active Blipbug evolved into Dottler at Lv.10"
     },
     {
       "slot": 4,
@@ -143,6 +148,6 @@
       "source": "Current level reported live by user"
     }
   ],
-  "notes": "Live levels: Scorbunny 14, first Rookidee 12, Blipbug 10, Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled.",
+  "notes": "Live levels: Scorbunny 14, first Rookidee 12, Dottler 10 (evolved from Blipbug), Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled or evolved.",
   "source": "User-provided Pokemon Sword party/summary screenshots plus live corrections"
 }
