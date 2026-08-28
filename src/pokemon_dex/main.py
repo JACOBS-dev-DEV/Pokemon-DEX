@@ -14,6 +14,7 @@ if __package__ in {None, ""}:
 
 from pokemon_dex import build_indexes, validate_database
 from pokemon_dex.database import get_status
+from pokemon_dex.gui import run_gui
 
 
 def _print_status() -> None:
@@ -33,7 +34,7 @@ def _print_status() -> None:
 
 
 def main() -> int:
-    """Start Pokemon-DEX and verify all local database connections."""
+    """Start Pokemon-DEX, verify local data, then launch the Pygame GUI."""
     print("Pokemon-DEX starting in offline mode...")
     build_indexes.main()
     validation_code = validate_database.main()
@@ -43,8 +44,8 @@ def main() -> int:
         print("\nPokemon-DEX started with validation errors.")
         return validation_code
 
-    print("\nPokemon-DEX is connected and ready.")
-    return 0
+    print("\nPokemon-DEX is connected and ready. Launching GUI...")
+    return run_gui()
 
 
 if __name__ == "__main__":
