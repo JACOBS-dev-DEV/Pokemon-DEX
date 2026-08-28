@@ -2,12 +2,12 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "motostoke_post_opening_ceremony_rival_battle_pending",
+    "current_phase": "motostoke_post_hop_battle_3",
     "dynamax_band_received": true,
     "gym_challenge_registered": true,
     "gym_challenge_started": true,
     "current_area": "Motostoke",
-    "next_step": "battle_hop_third_time",
+    "next_step": "continue_gym_challenge_route",
     "train_boarded": true,
     "wild_area_reached": true,
     "motostoke_reached": true,
@@ -23,7 +23,7 @@
     {"id":"gym_challenge_registration","complete":true,"notes":"User confirmed Gym Challenge registration with challenge number 243."},
     {"id":"visit_budew_drop_inn","complete":true,"notes":"Confirmed by progression to the Gym Challenge opening ceremony."},
     {"id":"gym_challenge_opening_ceremony","complete":true,"notes":"Completed by subsequent progression to the next rival battle."},
-    {"id":"hop_battle_3","complete":false,"in_progress":false,"pending":true,"notes":"User reported being about to battle Hop for the third time. Result remains pending until the battle is actually finished."}
+    {"id":"hop_battle_3","complete":true,"notes":"User confirmed Hop was defeated for the third time."}
   ],
   "pending_pokemon_encounters": [
     {
@@ -50,24 +50,24 @@
       "opponent_team": [{"species_name":"Chewtle","level":6}],
       "reward_poke_dollars": 504,
       "notes": "Trainer identity confirmed from the user-provided Route 2 screenshot and verified against the Route 2 trainer roster."
-    }
-  ],
-  "pending_trainer_battles": [
+    },
     {
       "opponent": "Hop",
-      "relationship": "rival",
-      "hop_battle_number": 3,
-      "result": "pending",
+      "result": "win",
+      "sequence": 4,
       "phase": "post_opening_ceremony",
-      "notes": "User expects this to be their third win against Hop, but no result is recorded until confirmed."
+      "location": "Motostoke progression",
+      "hop_battle_number": 3,
+      "notes": "Third confirmed win against Hop."
     }
   ],
+  "pending_trainer_battles": [],
   "summary": {
-    "trainer_battles_logged": 3,
-    "trainer_wins": 3,
+    "trainer_battles_logged": 4,
+    "trainer_wins": 4,
     "trainer_losses": 0,
-    "hop_wins": 2,
-    "pending_hop_battles": 1,
+    "hop_wins": 3,
+    "pending_hop_battles": 0,
     "identified_route_2_trainer_wins": 1
   },
   "source": "User-reported live Pokemon Sword progress plus verified Route 2 trainer roster"
