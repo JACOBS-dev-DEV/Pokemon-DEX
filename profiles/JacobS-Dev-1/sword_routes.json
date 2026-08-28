@@ -77,7 +77,7 @@
       "visited": true,
       "current": true,
       "complete": false,
-      "trainers_defeated": 1,
+      "trainers_defeated": 2,
       "trainers_total": 6,
       "trainer_check_complete": false,
       "trainer_battles": [
@@ -91,12 +91,13 @@
         {
           "trainer_name": "Schoolgirl Hannah",
           "trainer_class": "Schoolgirl",
-          "result": null,
-          "status": "battle_started_result_pending",
+          "result": "win",
+          "status": "completed",
           "opponent_team": [{"species_name":"Pancham","level":13}],
-          "reward_poke_dollars_if_won": 936,
+          "reward_poke_dollars": 936,
           "identity_status": "confirmed_from_user_screenshot",
-          "notes": "Battle introduction confirmed. Do not increase trainers_defeated until the result is confirmed."
+          "result_source": "User explicit confirmation",
+          "notes": "Battle introduction was shown in the user's screenshot and the user later explicitly confirmed Hannah was defeated."
         }
       ],
       "pokemon_caught": [],
@@ -123,7 +124,7 @@
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Current route toward Turffield and the first Grass Gym. One trainer is already confirmed defeated (identity pending), and a battle with Schoolgirl Hannah is currently in progress. Gossifleur encountered; catch status pending. Vulpix is caught/registered with 2 battled, but its exact catch location is not independently shown."
+      "notes": "Current route toward Turffield and the first Grass Gym. Two trainers are confirmed defeated, including Schoolgirl Hannah; one defeated trainer's identity is still pending. Gossifleur encountered; catch status pending. Vulpix is caught/registered with 2 battled, but its exact catch location is not independently shown."
     }
   ],
   "source": "User-reported live Pokemon Sword progress, user-provided screenshots, and verified Sword Route 3 trainer/version data"
