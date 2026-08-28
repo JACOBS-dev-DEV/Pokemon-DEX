@@ -54,18 +54,24 @@
     "money_poke_dollars": null,
     "team_captured": "partial_4_of_6",
     "boxes_captured": false,
-    "league_card_captured": false
+    "league_card_captured": false,
+    "pokedex_progress_captured": true,
+    "pokedex_progress_file": "shield_dex_progress.json",
+    "galar_pokedex": {"caught": 61, "seen": 231},
+    "isle_of_armor_pokedex": {"caught": 22, "seen": 83},
+    "crown_tundra_pokedex": {"caught": 23, "seen": 95},
+    "combined_reported_dex_counter_sum": {"caught": 106, "seen": 409, "unique_species": null}
   },
   "completion_policy": {
     "include_expansion_content_in_shield_completion": true,
     "expansion_content": ["The Isle of Armor", "The Crown Tundra"],
     "sword_policy": "do_not_apply_this_combined_count_to_sword",
-    "notes": "Shield completion may count DLC Pokédex/content directly with the Shield run; Sword remains separate."
+    "notes": "Shield completion counts the base and both DLC Pokedex counters. The combined 106 caught / 409 seen value is a sum of reported counters, not a unique-species count."
   },
   "session": {
     "active": true,
     "state_capture_pending": true,
-    "notes": "Shield is active. Four current party members are synced from the user's live report; remaining team slots, progression, money, boxes, and League Card await updated screenshots/details."
+    "notes": "Shield is active. Four current party members and the three Pokedex counters are synced; remaining team slots, current area, badges, money, boxes, and League Card await updated screenshots/details."
   },
   "notes": "Pokemon Shield is the active live run. Current data is intentionally partial and should be refined from the user's upcoming screenshots.",
   "source": "User live Pokemon Shield report"
