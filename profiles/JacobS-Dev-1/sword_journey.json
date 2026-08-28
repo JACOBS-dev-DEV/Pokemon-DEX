@@ -2,10 +2,18 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "early_game_pre_dynamax_band",
-    "dynamax_band_received": false,
-    "gym_challenge_started": false
+    "current_phase": "early_game_post_dynamax_band",
+    "dynamax_band_received": true,
+    "gym_challenge_started": false,
+    "current_area": "Route 2"
   },
+  "milestones": [
+    {
+      "id": "dynamax_band_received",
+      "complete": true,
+      "notes": "User reported receiving/unlocking the Dynamax Band."
+    }
+  ],
   "trainer_battles": [
     {
       "opponent": "Hop",
@@ -29,7 +37,9 @@
       "sequence": 3,
       "phase": "early_game",
       "before_dynamax_band": true,
-      "notes": "Additional trainer victory reported by the user; opponent name was not recorded."
+      "location": "Route 2",
+      "identity_pending": true,
+      "notes": "Trainer encountered on Route 2. Identity will be filled in when the user can provide the character image/name."
     }
   ],
   "summary": {
