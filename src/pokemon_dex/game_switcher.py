@@ -82,6 +82,29 @@ def _summary_sword(data: dict) -> dict:
     }
 
 
+def _summary_shield(data: dict) -> dict:
+    rows = list(data.get("pokemon", []))
+    progress = dict(data.get("progress", {}))
+    galar = dict(progress.get("galar_pokedex") or {})
+    armor = dict(progress.get("isle_of_armor_pokedex") or {})
+    tundra = dict(progress.get("crown_tundra_pokedex") or {})
+    combined = dict(progress.get("combined_reported_dex_counter_sum") or {})
+    return {
+        "recorded_species": len(rows),
+        "caught_species_records": sum(1 for row in rows if row.get("caught")),
+        "team_records": sum(1 for row in rows if row.get("in_team")),
+        "sync_status": data.get("sync_status", "synced"),
+        "galar_caught": galar.get("caught"),
+        "galar_seen": galar.get("seen"),
+        "armor_caught": armor.get("caught"),
+        "armor_seen": armor.get("seen"),
+        "tundra_caught": tundra.get("caught"),
+        "tundra_seen": tundra.get("seen"),
+        "combined_caught_sum": combined.get("caught"),
+        "combined_seen_sum": combined.get("seen"),
+    }
+
+
 def _summary_legends_arceus(data: dict) -> dict:
     rows = list(data.get("pokemon", []))
     progress = dict(data.get("progress", {}))
@@ -102,6 +125,8 @@ def game_summary(game: str) -> dict:
     data = _read_json(path)
     if game == "Pokemon Sword":
         summary = _summary_sword(data)
+    elif game == "Pokemon Shield":
+        summary = _summary_shield(data)
     elif game == "Pokemon Legends: Arceus":
         summary = _summary_legends_arceus(data)
     else:
