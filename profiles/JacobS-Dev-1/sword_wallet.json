@@ -5,7 +5,7 @@
     "poke_dollars": {
       "display_name": "Poké Dollars",
       "symbol": "₽",
-      "balance": null
+      "balance": 23324
     },
     "watts": {
       "display_name": "Watts",
@@ -28,8 +28,28 @@
       "reason": "Defeated Lass Lauren",
       "location": "Route 2",
       "source": "Verified Route 2 trainer roster plus user-reported victory"
+    },
+    {
+      "currency": "poke_dollars",
+      "kind": "observed_balance",
+      "amount": null,
+      "balance_before": null,
+      "balance_after": 23324,
+      "reason": "Exact balance reported by user",
+      "location": "Motostoke / early Gym Challenge progression",
+      "source": "User-reported exact balance"
     }
   ],
-  "balance_observations": [],
-  "source": "Local live progress; balances remain unknown until explicitly reported or extracted from a provided screen/image."
+  "balance_observations": [
+    {
+      "currency": "poke_dollars",
+      "observed_balance": 23324,
+      "source": "user_report",
+      "source_ref": null,
+      "confidence": 1.0,
+      "location": "Motostoke / early Gym Challenge progression",
+      "applied": true
+    }
+  ],
+  "source": "Local live progress; exact balances are recorded only when explicitly reported or extracted from a provided screen/image."
 }
