@@ -1,0 +1,28 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "service": "Pokemon HOME",
+  "accessible": true,
+  "captured": false,
+  "pokemon": [],
+  "linked_game_sources": [
+    "Pokemon Shield"
+  ],
+  "summary": {
+    "pokemon_recorded": 0,
+    "duplicates_recorded": 0,
+    "source_games_recorded": 1
+  },
+  "tracking_policy": {
+    "keep_separate_from_game_pc_boxes": true,
+    "preserve_source_game_when_known": true,
+    "preserve_duplicate_copies_as_individual_records": true,
+    "do_not_infer_contents_from_pokedex": true
+  },
+  "pending": {
+    "home_screenshots_or_manual_list": true,
+    "box_or_group_names": true,
+    "individual_pokemon_details": true
+  },
+  "notes": "User has access to Pokemon HOME and reported transferring some Pokemon, including duplicates, out of Pokemon Shield. Contents remain intentionally empty until shown or reported.",
+  "source": "User-reported Pokemon HOME access and Shield transfer history"
+}
