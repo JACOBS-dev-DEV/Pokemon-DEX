@@ -11,14 +11,19 @@ RES = ROOT / "res"
 
 
 def iter_json_files() -> list[Path]:
-    return sorted((RES / "data").rglob("*.json")) + sorted((RES / "profiles").rglob("*.json"))
+    files: list[Path] = []
+    for folder in (RES / "data", RES / "profiles", ROOT / "profiles"):
+        if folder.exists():
+            files.extend(sorted(folder.rglob("*.json")))
+    return files
 
 
 def main() -> int:
     errors: list[str] = []
     seen_national_ids: dict[str, Path] = {}
+    files = iter_json_files()
 
-    for path in iter_json_files():
+    for path in files:
         try:
             with path.open("r", encoding="utf-8") as handle:
                 data = json.load(handle)
@@ -26,7 +31,8 @@ def main() -> int:
             errors.append(f"Invalid JSON: {path.relative_to(ROOT)} :: {exc}")
             continue
 
-        if isinstance(data, dict) and data.get("national_dex"):
+        # Only canonical single-Pokemon profiles participate in duplicate Dex/form checks.
+        if path.is_relative_to(RES / "profiles") and isinstance(data, dict) and data.get("national_dex"):
             dex_id = str(data["national_dex"]).zfill(4)
             form = str(data.get("form", "base"))
             key = f"{dex_id}:{form}"
@@ -44,7 +50,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print(f"Pokemon-DEX validation passed ({len(iter_json_files())} JSON files checked).")
+    print(f"Pokemon-DEX validation passed ({len(files)} JSON files checked).")
     return 0
 
 
