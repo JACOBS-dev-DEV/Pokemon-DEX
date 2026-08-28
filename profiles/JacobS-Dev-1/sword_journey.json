@@ -2,14 +2,16 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "motostoke_arrival_pre_gym_challenge",
+    "current_phase": "motostoke_registered_pre_hotel",
     "dynamax_band_received": true,
+    "gym_challenge_registered": true,
     "gym_challenge_started": false,
     "current_area": "Motostoke",
-    "next_step": "gym_challenge_registration",
+    "next_step": "visit_budew_drop_inn",
     "train_boarded": true,
     "wild_area_reached": true,
-    "motostoke_reached": true
+    "motostoke_reached": true,
+    "hotel_reached": false
   },
   "milestones": [
     {
@@ -30,12 +32,17 @@
     {
       "id": "motostoke_first_arrival",
       "complete": true,
-      "notes": "User reported reaching the castle-like city after the Wild Area; tracked as Motostoke."
+      "notes": "User reported reaching Motostoke after the Wild Area."
     },
     {
       "id": "gym_challenge_registration",
+      "complete": true,
+      "notes": "User confirmed Gym Challenge registration with challenge number 243."
+    },
+    {
+      "id": "visit_budew_drop_inn",
       "complete": false,
-      "notes": "Next early Motostoke progression step; leave incomplete until user confirms registration."
+      "notes": "User reported being about to go to the hotel; leave incomplete until arrival is confirmed."
     }
   ],
   "pending_pokemon_encounters": [
