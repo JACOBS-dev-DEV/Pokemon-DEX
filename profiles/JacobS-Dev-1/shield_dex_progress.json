@@ -26,20 +26,18 @@
         98,
         107,
         111, 112,
-        116, 119,
+        116, 117, 118, 119,
         136,
         144, 145,
         159,
         161, 162,
-        164, 165, 166,
-        168,
+        164, 165, 166, 167, 168,
         178,
         196,
         198,
         215,
         222,
-        227,
-        230,
+        227, 228, 229, 230,
         234,
         246,
         265,
@@ -49,20 +47,37 @@
         385,
         399, 400
       ],
-      "caught_ids_transcribed_count": 56,
+      "caught_ids_transcribed_count": 61,
       "reported_id_list_claimed_complete": true,
       "all_reported_ids_are_caught": true,
-      "caught_counter_minus_transcribed_ids": 5,
-      "counter_discrepancy_status": "unresolved_transcription_or_range_parsing_difference",
-      "do_not_invent_additional_caught_ids": true,
+      "caught_counter_matches_transcribed_ids": true,
+      "counter_discrepancy_status": "resolved_by_range_clarification",
       "species_names_status": "not_yet_supplied",
+      "range_interpretation": {
+        "expanded_ranges": [
+          "4-6",
+          "10-12",
+          "29-31",
+          "34-35",
+          "42-43",
+          "45-46",
+          "70-71",
+          "111-112",
+          "116-119",
+          "144-145",
+          "161-162",
+          "164-168",
+          "227-230",
+          "399-400"
+        ],
+        "individual_ids_that_sounded_dash_separated": [215, 222, 246, 265]
+      },
       "id_interpretation_notes": [
-        "The user confirmed these numbers were read directly from their Pokemon Shield Galar Pokedex and represent all caught IDs they named.",
-        "The user considers the spoken ID list almost accurate; any difference from the game's 61-caught counter should be treated as a transcription/range-parsing issue, not as five invented missing Pokemon.",
-        "Explicit spoken ranges using 'to' were expanded, such as 4 to 6, 10 to 12, 29 to 31, 34 to 35, 42 to 43, 45 to 46, 70 to 71, 144 to 145, 161 to 162, 164 to 166, and 399 to 400.",
-        "Spoken dash-like pauses without the word 'to' were treated as separate IDs, such as 215, 222, 227, 230, 246, and 265.",
+        "The user confirmed the numbers were read directly from the Pokemon Shield Galar Pokedex and represent all currently caught IDs.",
+        "The user clarified that most multi-number phrases were minimum-to-maximum ranges, while some numbers were individual entries.",
+        "Expanding 116-119, 164-168, and 227-230 resolves the earlier transcription shortfall and makes the ID count exactly match the in-game 61 caught counter.",
         "The user corrected a spoken 96 to 98; only 98 is stored.",
-        "The spoken value between 119 and 144 is currently transcribed as 136 because the sequence was otherwise ascending; preserve this as a transcription detail until independently confirmed."
+        "The spoken value between 119 and 144 remains transcribed as 136 because that best matches the ascending sequence and the final 61-count reconstruction."
       ]
     },
     {
@@ -93,5 +108,5 @@
     "count_crown_tundra": true,
     "apply_same_combined_policy_to_sword": false
   },
-  "source": "User-reported live Pokemon Shield Pokedex counters and caught Galar Dex numbers read directly from the in-game Pokedex"
+  "source": "User-reported live Pokemon Shield Pokedex counters and caught Galar Dex numbers read directly from the in-game Pokedex, with later range clarification"
 }
