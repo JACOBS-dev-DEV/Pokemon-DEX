@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from pokemon_dex.display import PRESETS, apply_display_mode, fit_text, font_size_for_height
+from pokemon_dex.display import apply_display_mode, fit_text, font_size_for_height
 
 
 def _text(screen, font, value, x, y, color=(225, 228, 235), max_width: int | None = None) -> None:
@@ -32,6 +32,10 @@ def _run_child(kind: str) -> int:
         from pokemon_dex.wallet_gui import run_wallet_gui
 
         return run_wallet_gui()
+    if kind == "custom":
+        from pokemon_dex.custom_battle_gui import run_custom_battle_gui
+
+        return run_custom_battle_gui()
     return 0
 
 
@@ -55,34 +59,35 @@ def run_app() -> int:
 
         while running:
             width, height = screen.get_size()
-            title = pygame.font.Font(None, font_size_for_height(height, 52, minimum=38, maximum=66))
-            heading = pygame.font.Font(None, font_size_for_height(height, 29, minimum=22, maximum=38))
-            body = pygame.font.Font(None, font_size_for_height(height, 23, minimum=18, maximum=30))
-            small = pygame.font.Font(None, font_size_for_height(height, 18, minimum=15, maximum=24))
+            title = pygame.font.Font(None, font_size_for_height(height, 52, minimum=36, maximum=66))
+            heading = pygame.font.Font(None, font_size_for_height(height, 28, minimum=21, maximum=36))
+            body = pygame.font.Font(None, font_size_for_height(height, 22, minimum=18, maximum=29))
+            small = pygame.font.Font(None, font_size_for_height(height, 18, minimum=14, maximum=23))
 
-            gap = max(12, min(24, width // 48))
-            horizontal_margin = max(22, min(48, width // 24))
-            usable = width - horizontal_margin * 2 - gap * 2
-            card_w = max(185, usable // 3)
-            total = card_w * 3 + gap * 2
-            x0 = max(14, (width - total) // 2)
-            y = max(170, int(height * 0.30))
-            card_h = max(135, min(180, int(height * 0.24)))
-            dex_rect = pygame.Rect(x0, y, card_w, card_h)
-            badge_rect = pygame.Rect(x0 + card_w + gap, y, card_w, card_h)
-            wallet_rect = pygame.Rect(x0 + 2 * (card_w + gap), y, card_w, card_h)
+            margin = max(18, min(44, width // 28))
+            gap = max(12, min(22, width // 54))
+            grid_top = max(150, int(height * 0.22))
+            grid_bottom = min(height - 170, grid_top + max(280, int(height * 0.46)))
+            grid_height = max(260, grid_bottom - grid_top)
+            card_w = max(230, (width - margin * 2 - gap) // 2)
+            card_h = max(120, (grid_height - gap) // 2)
 
-            display_y = min(height - 150, y + card_h + 46)
-            display_gap = 10
+            dex_rect = pygame.Rect(margin, grid_top, card_w, card_h)
+            badge_rect = pygame.Rect(margin + card_w + gap, grid_top, card_w, card_h)
+            wallet_rect = pygame.Rect(margin, grid_top + card_h + gap, card_w, card_h)
+            custom_rect = pygame.Rect(margin + card_w + gap, grid_top + card_h + gap, card_w, card_h)
+
+            display_y = min(height - 108, grid_top + grid_height + 28)
+            display_gap = 8
             display_labels = ("Compact", "Standard", "Large", "Fullscreen")
-            display_w = max(120, min(170, (width - 80 - display_gap * 3) // 4))
+            display_w = max(105, min(165, (width - 70 - display_gap * 3) // 4))
             display_total = display_w * 4 + display_gap * 3
-            display_x = max(20, (width - display_total) // 2)
+            display_x = max(16, (width - display_total) // 2)
             display_rects = {
-                label: pygame.Rect(display_x + index * (display_w + display_gap), display_y, display_w, 42)
+                label: pygame.Rect(display_x + index * (display_w + display_gap), display_y, display_w, 40)
                 for index, label in enumerate(display_labels)
             }
-            exit_rect = pygame.Rect((width - 150) // 2, height - 68, 150, 40)
+            exit_rect = pygame.Rect(width - 128, 24, 108, 38)
 
             def change_display(label: str) -> None:
                 nonlocal screen, preset, fullscreen
@@ -104,6 +109,9 @@ def run_app() -> int:
                     running = False
                 elif wallet_rect.collidepoint(pos):
                     next_view = "wallet"
+                    running = False
+                elif custom_rect.collidepoint(pos):
+                    next_view = "custom"
                     running = False
                 elif exit_rect.collidepoint(pos):
                     next_view = "exit"
@@ -133,32 +141,28 @@ def run_app() -> int:
                     handle_press((int(event.x * width), int(event.y * height)))
 
             screen.fill((18, 21, 27))
-            safe_width = max(120, width - 72)
-            _text(screen, title, "Pokemon-DEX", 34, 28, (248, 248, 252), safe_width)
-            _text(screen, heading, "Offline Pokédex companion", 36, 80, max_width=safe_width)
-            _text(screen, small, "Touch/mouse-first home | choose what you want to manage", 38, 116, (175, 182, 197), safe_width)
+            safe_width = max(120, width - 180)
+            _text(screen, title, "Pokemon-DEX", margin, 24, (248, 248, 252), safe_width)
+            _text(screen, heading, "Offline Pokédex companion", margin + 2, 76, max_width=safe_width)
+            _text(screen, small, "Touch/mouse-first home • live save tracking • custom battle sandbox", margin + 2, 112, (175, 182, 197), safe_width)
+            _button(screen, pygame, small, "Exit", exit_rect)
 
-            _button(screen, pygame, heading, "Pokédex / Progress", dex_rect)
-            inner_w = max(90, dex_rect.width - 38)
-            _text(screen, small, "My Dex • Routes • Journey", dex_rect.x + 18, dex_rect.y + card_h - 52, (180, 186, 200), inner_w)
-            _text(screen, small, "Battles • live edits", dex_rect.x + 18, dex_rect.y + card_h - 28, (180, 186, 200), inner_w)
+            cards = (
+                (dex_rect, "Pokédex / Progress", "My Dex • Routes • Journey", "live edits • normal battles"),
+                (badge_rect, "Gym Badges", "8 Sword badges", "tap to check off safely"),
+                (wallet_rect, "Game Wallet", "Poké Dollars • Watts • BP", "ledger • exact balances"),
+                (custom_rect, "Custom Battles", "1v1 • 2v2 • 1v2 • 1v3", "simultaneous uneven fights"),
+            )
+            for rect, label, line1, line2 in cards:
+                _button(screen, pygame, heading, label, rect)
+                inner_w = max(90, rect.width - 36)
+                _text(screen, small, line1, rect.x + 18, rect.bottom - 50, (180, 186, 200), inner_w)
+                _text(screen, small, line2, rect.x + 18, rect.bottom - 27, (180, 186, 200), inner_w)
 
-            _button(screen, pygame, heading, "Gym Badges", badge_rect)
-            inner_w = max(90, badge_rect.width - 36)
-            _text(screen, small, "8 Sword badges • tap to check off", badge_rect.x + 18, badge_rect.y + card_h - 52, (180, 186, 200), inner_w)
-            _text(screen, small, "backed up before save", badge_rect.x + 18, badge_rect.y + card_h - 28, (180, 186, 200), inner_w)
-
-            _button(screen, pygame, heading, "Game Wallet", wallet_rect)
-            inner_w = max(90, wallet_rect.width - 36)
-            _text(screen, small, "Poké Dollars • Watts • BP", wallet_rect.x + 18, wallet_rect.y + card_h - 52, (180, 186, 200), inner_w)
-            _text(screen, small, "ledger • exact balances", wallet_rect.x + 18, wallet_rect.y + card_h - 28, (180, 186, 200), inner_w)
-
-            _text(screen, small, "Display size", display_x, display_y - 25, (175, 182, 197), max(120, display_total))
+            _text(screen, small, "Display size", display_x, display_y - 22, (175, 182, 197), max(120, display_total))
             for label, rect in display_rects.items():
                 active = (label.lower() == preset and not fullscreen) or (label == "Fullscreen" and fullscreen)
                 _button(screen, pygame, small, label, rect, active=active)
-
-            _button(screen, pygame, body, "Exit", exit_rect)
 
             pygame.display.flip()
             clock.tick(60)
