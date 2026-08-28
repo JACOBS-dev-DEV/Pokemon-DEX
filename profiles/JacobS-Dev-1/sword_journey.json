@@ -30,6 +30,7 @@
     {"id":"league_card_updated","complete":true,"notes":"User confirmed their League Card was updated; visual/details will be captured later from an image."},
     {"id":"route_3_first_arrival","complete":true,"notes":"Confirmed by the user's Gossifleur encounter while heading toward the Grass Gym."},
     {"id":"starter_evolved_to_raboot","complete":true,"notes":"User-provided live evolution screenshot confirms the starter Scorbunny evolved into Raboot during Route 3 progression."},
+    {"id":"schoolgirl_hannah_defeated","complete":true,"notes":"User explicitly confirmed Schoolgirl Hannah was defeated on Route 3."},
     {"id":"reach_turffield","complete":false,"pending":true,"notes":"Next destination is Turffield and the Grass Gym; do not mark reached until the user confirms arrival."}
   ],
   "pending_pokemon_encounters": [
@@ -74,35 +75,33 @@
       "location": "Motostoke progression",
       "hop_battle_number": 3,
       "notes": "Third confirmed win against Hop."
-    }
-  ],
-  "pending_trainer_battles": [
+    },
     {
       "opponent": "Schoolgirl Hannah",
       "trainer_class": "Schoolgirl",
+      "result": "win",
+      "sequence": 5,
+      "phase": "route_3_toward_turffield",
       "location": "Route 3",
-      "status": "battle_started_result_pending",
-      "result": null,
-      "opponent_team": [
-        {
-          "species_name": "Pancham",
-          "level": 13
-        }
-      ],
-      "reward_poke_dollars_if_won": 936,
+      "identity_pending": false,
+      "opponent_team": [{"species_name":"Pancham","level":13}],
+      "reward_poke_dollars": 936,
       "identity_source": "User-provided battle-introduction screenshot",
       "roster_source": "Verified Route 3 trainer roster",
-      "notes": "Screenshot confirms the battle has started. Do not count a win or trainer defeat until the result is confirmed."
+      "result_source": "User explicit confirmation",
+      "notes": "User explicitly confirmed Schoolgirl Hannah was defeated after the battle-introduction screenshot."
     }
   ],
+  "pending_trainer_battles": [],
   "summary": {
-    "trainer_battles_logged": 4,
-    "trainer_wins": 4,
+    "trainer_battles_logged": 5,
+    "trainer_wins": 5,
     "trainer_losses": 0,
     "hop_wins": 3,
     "pending_hop_battles": 0,
     "identified_route_2_trainer_wins": 1,
-    "pending_route_3_trainer_battles": 1
+    "route_3_trainer_wins": 2,
+    "pending_route_3_trainer_battles": 0
   },
   "source": "User-reported live Pokemon Sword progress plus verified Route 2 and Route 3 trainer rosters and user-provided evolution screenshots"
 }
