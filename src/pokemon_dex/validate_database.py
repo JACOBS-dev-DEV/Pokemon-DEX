@@ -8,13 +8,22 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 RES = ROOT / "res"
+RUNTIME_DIR_NAMES = {"_backups", "_backup", "_tmp", "_temp"}
+
+
+def _is_runtime_artifact(path: Path) -> bool:
+    """Return True for local runtime files that should not block startup."""
+    return any(part in RUNTIME_DIR_NAMES for part in path.parts)
 
 
 def iter_json_files() -> list[Path]:
     files: list[Path] = []
     for folder in (RES / "data", RES / "profiles", ROOT / "profiles"):
-        if folder.exists():
-            files.extend(sorted(folder.rglob("*.json")))
+        if not folder.exists():
+            continue
+        for path in sorted(folder.rglob("*.json")):
+            if not _is_runtime_artifact(path):
+                files.append(path)
     return files
 
 

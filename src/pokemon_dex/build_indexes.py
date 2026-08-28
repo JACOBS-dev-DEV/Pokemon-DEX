@@ -12,6 +12,12 @@ CANONICAL_PROFILES = RES / "profiles"
 PERSONAL_PROFILES = ROOT / "profiles"
 ART = RES / "art"
 INDEX_DIR = RES / "data" / "indexes"
+RUNTIME_DIR_NAMES = {"_backups", "_backup", "_tmp", "_temp"}
+
+
+def _is_runtime_artifact(path: Path) -> bool:
+    """Return True for local runtime files that must never enter indexes."""
+    return any(part in RUNTIME_DIR_NAMES for part in path.parts)
 
 
 def _load_json(path: Path) -> dict:
@@ -38,6 +44,8 @@ def build_profile_index() -> dict:
         if not folder.exists():
             continue
         for path in sorted(folder.rglob("*.json")):
+            if _is_runtime_artifact(path):
+                continue
             try:
                 records.append(_profile_record(path, scope))
             except (OSError, json.JSONDecodeError):
