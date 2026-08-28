@@ -9,11 +9,14 @@
       "type_1": "Fire",
       "type_2": null,
       "caught": true,
-      "owned_count": 1,
+      "owned_count": 0,
       "battle_count": 0,
-      "in_team": true,
-      "team_slot": 1,
-      "level": 14
+      "in_team": false,
+      "level": 16,
+      "evolved": true,
+      "evolved_into": "Raboot",
+      "evolution_level": 16,
+      "notes": "Original starter. User-provided live evolution screenshot confirms Scorbunny evolved into Raboot; retained as historical caught species rather than overwritten."
     },
     {
       "local_id": 2,
@@ -158,7 +161,24 @@
       "pokedex_registered": true,
       "caught_location": null,
       "notes": "User-provided Sword Pokédex screenshot shows Vulpix as Galar No. 068 with the caught/registered marker and Number Battled 2. Exact catch location is not shown, so it is intentionally left unset."
+    },
+    {
+      "local_id": 13,
+      "dex_id": 5,
+      "species_name": "Raboot",
+      "type_1": "Fire",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 0,
+      "in_team": true,
+      "team_slot": 1,
+      "level": 16,
+      "evolved": true,
+      "evolved_from": "Scorbunny",
+      "obtained_method": "evolution",
+      "notes": "User-provided live evolution screenshot confirms the starter Scorbunny evolved into Raboot. Level recorded as 16, Scorbunny's standard evolution threshold."
     }
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress, current team/evolution/encounter updates, and user-provided Pokédex screenshots"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress, current team/evolution/encounter updates, and user-provided Pokédex/evolution screenshots"
 }
