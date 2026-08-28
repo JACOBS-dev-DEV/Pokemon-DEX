@@ -24,6 +24,10 @@ def _run_child(kind: str) -> int:
         from pokemon_dex.live_gui import run_gui
 
         return run_gui()
+    if kind == "team":
+        from pokemon_dex.team_gui import run_team_gui
+
+        return run_team_gui()
     if kind == "badges":
         from pokemon_dex.badge_gui import run_badge_gui
 
@@ -60,34 +64,47 @@ def run_app() -> int:
         while running:
             width, height = screen.get_size()
             title = pygame.font.Font(None, font_size_for_height(height, 52, minimum=36, maximum=66))
-            heading = pygame.font.Font(None, font_size_for_height(height, 28, minimum=21, maximum=36))
+            heading = pygame.font.Font(None, font_size_for_height(height, 26, minimum=20, maximum=34))
             body = pygame.font.Font(None, font_size_for_height(height, 22, minimum=18, maximum=29))
-            small = pygame.font.Font(None, font_size_for_height(height, 18, minimum=14, maximum=23))
+            small = pygame.font.Font(None, font_size_for_height(height, 17, minimum=14, maximum=23))
 
-            margin = max(18, min(44, width // 28))
-            gap = max(12, min(22, width // 54))
-            grid_top = max(150, int(height * 0.22))
-            grid_bottom = min(height - 170, grid_top + max(280, int(height * 0.46)))
-            grid_height = max(260, grid_bottom - grid_top)
-            card_w = max(230, (width - margin * 2 - gap) // 2)
-            card_h = max(120, (grid_height - gap) // 2)
+            margin = max(16, min(38, width // 30))
+            gap = max(10, min(18, width // 58))
+            grid_top = max(136, int(height * 0.21))
+            display_space = 120
+            grid_bottom = max(grid_top + 250, height - display_space - 20)
+            grid_height = max(250, grid_bottom - grid_top)
+            card_w = max(190, (width - margin * 2 - gap * 2) // 3)
+            card_h = max(110, (grid_height - gap) // 2)
 
-            dex_rect = pygame.Rect(margin, grid_top, card_w, card_h)
-            badge_rect = pygame.Rect(margin + card_w + gap, grid_top, card_w, card_h)
-            wallet_rect = pygame.Rect(margin, grid_top + card_h + gap, card_w, card_h)
-            custom_rect = pygame.Rect(margin + card_w + gap, grid_top + card_h + gap, card_w, card_h)
+            positions = {
+                "dex": (0, 0),
+                "team": (1, 0),
+                "badges": (2, 0),
+                "wallet": (0, 1),
+                "custom": (1, 1),
+            }
+            cards = {
+                key: pygame.Rect(
+                    margin + col * (card_w + gap),
+                    grid_top + row * (card_h + gap),
+                    card_w,
+                    card_h,
+                )
+                for key, (col, row) in positions.items()
+            }
 
-            display_y = min(height - 108, grid_top + grid_height + 28)
+            display_y = min(height - 62, grid_top + card_h * 2 + gap + 24)
             display_gap = 8
             display_labels = ("Compact", "Standard", "Large", "Fullscreen")
-            display_w = max(105, min(165, (width - 70 - display_gap * 3) // 4))
+            display_w = max(98, min(150, (width - 64 - display_gap * 3) // 4))
             display_total = display_w * 4 + display_gap * 3
-            display_x = max(16, (width - display_total) // 2)
+            display_x = max(14, (width - display_total) // 2)
             display_rects = {
-                label: pygame.Rect(display_x + index * (display_w + display_gap), display_y, display_w, 40)
+                label: pygame.Rect(display_x + index * (display_w + display_gap), display_y, display_w, 38)
                 for index, label in enumerate(display_labels)
             }
-            exit_rect = pygame.Rect(width - 128, 24, 108, 38)
+            exit_rect = pygame.Rect(width - 116 - margin, 22, 116, 38)
 
             def change_display(label: str) -> None:
                 nonlocal screen, preset, fullscreen
@@ -101,26 +118,19 @@ def run_app() -> int:
 
             def handle_press(pos):
                 nonlocal running, next_view
-                if dex_rect.collidepoint(pos):
-                    next_view = "dex"
-                    running = False
-                elif badge_rect.collidepoint(pos):
-                    next_view = "badges"
-                    running = False
-                elif wallet_rect.collidepoint(pos):
-                    next_view = "wallet"
-                    running = False
-                elif custom_rect.collidepoint(pos):
-                    next_view = "custom"
-                    running = False
-                elif exit_rect.collidepoint(pos):
+                for kind, rect in cards.items():
+                    if rect.collidepoint(pos):
+                        next_view = kind
+                        running = False
+                        return
+                if exit_rect.collidepoint(pos):
                     next_view = "exit"
                     running = False
-                else:
-                    for label, rect in display_rects.items():
-                        if rect.collidepoint(pos):
-                            change_display(label)
-                            break
+                    return
+                for label, rect in display_rects.items():
+                    if rect.collidepoint(pos):
+                        change_display(label)
+                        return
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -142,24 +152,26 @@ def run_app() -> int:
 
             screen.fill((18, 21, 27))
             safe_width = max(120, width - 180)
-            _text(screen, title, "Pokemon-DEX", margin, 24, (248, 248, 252), safe_width)
-            _text(screen, heading, "Offline Pokédex companion", margin + 2, 76, max_width=safe_width)
-            _text(screen, small, "Touch/mouse-first home • live save tracking • custom battle sandbox", margin + 2, 112, (175, 182, 197), safe_width)
+            _text(screen, title, "Pokemon-DEX", margin, 22, (248, 248, 252), safe_width)
+            _text(screen, heading, "Offline Pokédex companion", margin + 2, 72, max_width=safe_width)
+            _text(screen, small, "Touch/mouse-first • live save tracking • team tools • custom battles", margin + 2, 106, (175, 182, 197), safe_width)
             _button(screen, pygame, small, "Exit", exit_rect)
 
-            cards = (
-                (dex_rect, "Pokédex / Progress", "My Dex • Routes • Journey", "live edits • normal battles"),
-                (badge_rect, "Gym Badges", "8 Sword badges", "tap to check off safely"),
-                (wallet_rect, "Game Wallet", "Poké Dollars • Watts • BP", "ledger • exact balances"),
-                (custom_rect, "Custom Battles", "1v1 • 2v2 • 1v2 • 1v3", "simultaneous uneven fights"),
-            )
-            for rect, label, line1, line2 in cards:
+            card_content = {
+                "dex": ("Pokédex / Progress", "My Dex • Routes • Journey", "live edits • normal battles"),
+                "team": ("Team Manager", "current six • HP • moves", "held items • party details"),
+                "badges": ("Gym Badges", "8 Sword badges", "tap to check off safely"),
+                "wallet": ("Game Wallet", "Poké Dollars • Watts • BP", "ledger • exact balances"),
+                "custom": ("Custom Battles", "1v1 • 2v2 • 1v2 • 1v3", "simultaneous uneven fights"),
+            }
+            for kind, rect in cards.items():
+                label, line1, line2 = card_content[kind]
                 _button(screen, pygame, heading, label, rect)
-                inner_w = max(90, rect.width - 36)
-                _text(screen, small, line1, rect.x + 18, rect.bottom - 50, (180, 186, 200), inner_w)
-                _text(screen, small, line2, rect.x + 18, rect.bottom - 27, (180, 186, 200), inner_w)
+                inner_w = max(80, rect.width - 30)
+                _text(screen, small, line1, rect.x + 15, rect.bottom - 48, (180, 186, 200), inner_w)
+                _text(screen, small, line2, rect.x + 15, rect.bottom - 25, (180, 186, 200), inner_w)
 
-            _text(screen, small, "Display size", display_x, display_y - 22, (175, 182, 197), max(120, display_total))
+            _text(screen, small, "Display size", display_x, display_y - 21, (175, 182, 197), max(120, display_total))
             for label, rect in display_rects.items():
                 active = (label.lower() == preset and not fullscreen) or (label == "Fullscreen" and fullscreen)
                 _button(screen, pygame, small, label, rect, active=active)
