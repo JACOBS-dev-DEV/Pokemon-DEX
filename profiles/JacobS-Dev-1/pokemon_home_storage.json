@@ -29,13 +29,14 @@
   "pokemon": [],
   "linked_game_sources": [
     "Pokemon Shield",
-    "Pokemon Sword"
+    "Pokemon Sword",
+    "Pokemon Legends: Arceus"
   ],
   "summary": {
     "pokemon_recorded_individually": 0,
     "pokemon_stored_reported": 184,
     "duplicates_recorded_individually": 0,
-    "source_games_recorded": 2,
+    "source_games_recorded": 3,
     "pokedex_registered": 308
   },
   "tracking_policy": {
@@ -46,14 +47,49 @@
     "record_game_transfers_as_events": true,
     "duplicate_trade_policy": "Duplicates may be traded away; user also tends to trade duplicate Pokemon with Chinese names."
   },
+  "transfer_selection_preferences": {
+    "target_game": "Pokemon Sword",
+    "prefer_regular_species_names": true,
+    "avoid_foreign_language_names_when_an_alternative_is_available": true,
+    "preferred_battle_role": "attacker",
+    "prefer_early_run_obedience_safe_levels": true,
+    "wanted_team_roles": [
+      "dragon-type attacker"
+    ],
+    "notes": "For the early Sword run, prefer transfer candidates that fit the current obedience level and have regular/default species names when possible."
+  },
   "transfer_log": [],
   "pending_transfer_checks": [
     {
       "species_name": "Growlithe",
+      "form": "regular",
       "from": "Pokemon HOME",
       "to": "Pokemon Sword",
-      "status": "checking_availability_not_yet_transferred",
-      "notes": "User is checking whether a Growlithe is already stored in Pokemon HOME and may transfer it into Pokemon Sword. Do not mark the transfer complete until confirmed."
+      "status": "not_found_in_home",
+      "notes": "User checked HOME and does not currently have a regular Growlithe available to transfer into Sword."
+    },
+    {
+      "species_name": "Growlithe",
+      "form": "Hisuian",
+      "source_game": "Pokemon Legends: Arceus",
+      "status": "owned_or_available_from_arceus_but_not_selected_for_sword",
+      "notes": "User reported having the other-generation/Hisuian Growlithe associated with Pokemon Legends: Arceus. Keep it separate from the regular Growlithe target for Sword."
+    },
+    {
+      "species_name": "Ponyta",
+      "from": "Pokemon HOME",
+      "to": "Pokemon Sword",
+      "status": "possible_candidate_not_yet_transferred",
+      "notes": "User is considering a Ponyta from HOME, but prefers an individual with a regular/default species name rather than a Chinese-language name when possible."
+    },
+    {
+      "species_name": null,
+      "type_1": "Rock",
+      "type_2": "Dragon",
+      "from": "Pokemon HOME",
+      "to": "Pokemon Sword",
+      "status": "possible_candidate_exact_species_pending",
+      "notes": "User is considering transferring a Rock/Dragon Pokemon as a Dragon-type attacker. Exact species and level are not yet confirmed."
     }
   ],
   "pending": {
@@ -67,6 +103,6 @@
     "recently_reopened_after_long_inactivity": true,
     "notes": "User said Pokemon HOME had not been used in a very long time before opening it again for this capture. Records are cumulative account statistics, while individual Pokemon/box organization may reflect older transfers and duplicates."
   },
-  "notes": "User has Pokemon HOME Premium access and reported that some Pokemon, including duplicates from Shield, were transferred into HOME. HOME ownership is tracked separately from Shield PC boxes so transfers do not look like lost Pokemon. A possible Growlithe HOME-to-Sword transfer is currently pending confirmation.",
-  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, Records screenshot, and transfer workflow"
+  "notes": "User has Pokemon HOME Premium access and reported that some Pokemon, including duplicates from Shield, were transferred into HOME. HOME ownership is tracked separately from Shield PC boxes so transfers do not look like lost Pokemon. Current Sword transfer candidates include Ponyta and an as-yet-unidentified Rock/Dragon Pokemon; regular Growlithe was checked and not found.",
+  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, Records screenshot, transfer workflow, and current Sword transfer planning"
 }
