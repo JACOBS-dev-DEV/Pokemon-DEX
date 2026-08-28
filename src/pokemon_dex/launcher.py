@@ -156,7 +156,6 @@ def run_app() -> int:
                     handle_press((int(event.x * width), int(event.y * height)))
 
             current_game = active_game()
-            sword_active = current_game == "Pokemon Sword"
             screen.fill((18, 21, 27))
             safe_width = max(120, width - 180)
             _text(screen, title, "Pokemon-DEX", margin, 22, (248, 248, 252), safe_width)
@@ -167,9 +166,9 @@ def run_app() -> int:
 
             card_content = {
                 "dex": ("Pokédex / Progress", "My Dex • Routes • Journey", "live edits • normal battles"),
-                "team": ("Team Manager", "Sword party snapshot" if not sword_active else "current six • HP • moves", "Shield team awaiting live sync" if not sword_active else "held items • party details"),
-                "badges": ("Gym Badges", "Sword badge tracker", "Shield badges awaiting live sync"),
-                "wallet": ("Game Wallet", "Sword ledger", "Shield wallet awaiting live sync"),
+                "team": ("Team Manager", "tap to add • remove • reorder", "Dex team flags • held items"),
+                "badges": ("Gym Badges", "Sword / Shield progress", "tap badges to update"),
+                "wallet": ("Game Wallet", "Poké Dollars • Watts • BP", "touch keypad • transaction history"),
                 "custom": ("Custom Battles", "1v1 • 2v2 • 1v2 • 1v3", "simultaneous uneven fights"),
                 "games": ("Game Switcher", "Sword • Shield • BD • Arceus", "switch personal save focus"),
             }
