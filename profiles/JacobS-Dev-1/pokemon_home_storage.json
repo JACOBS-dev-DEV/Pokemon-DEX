@@ -11,8 +11,8 @@
     "pokemon_currently_stored": 184,
     "empty_boxes_reported": 193,
     "individual_contents_captured": "partial",
-    "count_freshness": "184 is the last explicit account-level total; do not recompute it from later individual Box 1 additions without a fresh HOME total",
-    "notes": "User reported 184 Pokemon currently in HOME and 193 empty boxes. Individual contents are now partially captured from Box 1."
+    "count_freshness": "184 is the last explicit account-level total and predates or may overlap later Box 1 transfers; do not recalculate without a fresh HOME total",
+    "notes": "User reported 184 Pokemon currently in HOME and 193 empty boxes. Gible and Ponyta were later confirmed transferred from HOME into Pokemon Sword, but the account total is left at the last explicit observation rather than guessed."
   },
   "pokedex_snapshot": {
     "registered": 308,
@@ -40,31 +40,33 @@
       "home_local_id": 1,
       "species_name": "Gible",
       "form": "regular",
-      "level": 1,
+      "level_at_home_snapshot": 1,
       "type_1": "Dragon",
       "type_2": "Ground",
-      "location": "Box 1",
+      "previous_home_location": "Box 1",
+      "current_location": "Pokemon Sword",
       "recently_added": true,
       "target_game": "Pokemon Sword",
-      "transfer_status": "candidate_not_yet_transferred",
+      "transfer_status": "transferred_to_pokemon_sword",
       "visible_marker": "orange circular/disc-like icon visible in HOME screenshot",
       "marker_interpretation": "not_inferred",
-      "source": "User-provided Pokemon HOME Box 1 screenshot and live level confirmation"
+      "source": "User-provided Pokemon HOME Box 1 screenshot plus later Sword party/EXP screenshots confirming the transfer"
     },
     {
       "home_local_id": 2,
       "species_name": "Ponyta",
       "form": "regular",
-      "level": 1,
+      "level_at_home_snapshot": 1,
       "type_1": "Fire",
       "type_2": null,
-      "location": "Box 1",
+      "previous_home_location": "Box 1",
+      "current_location": "Pokemon Sword",
       "recently_added": true,
       "target_game": "Pokemon Sword",
-      "transfer_status": "candidate_not_yet_transferred",
+      "transfer_status": "transferred_to_pokemon_sword",
       "visible_marker": "HOME screenshot shows origin/status icons near this entry",
       "marker_interpretation": "not_inferred",
-      "source": "User-provided Pokemon HOME Box 1 screenshot and live level confirmation"
+      "source": "User-provided Pokemon HOME Box 1 screenshot plus later Sword party/EXP screenshots confirming the transfer"
     }
   ],
   "linked_game_sources": [
@@ -79,7 +81,8 @@
     "source_games_recorded": 3,
     "pokedex_registered": 308,
     "galar_registered_approx": 25,
-    "sword_transfer_candidates_confirmed": 2
+    "sword_transfer_candidates_confirmed": 0,
+    "sword_transfers_confirmed": 2
   },
   "tracking_policy": {
     "keep_separate_from_game_pc_boxes": true,
@@ -100,7 +103,26 @@
     ],
     "notes": "For the early Sword run, prefer transfer candidates that fit the current obedience level and have regular/default species names when possible."
   },
-  "transfer_log": [],
+  "transfer_log": [
+    {
+      "species_name": "Gible",
+      "form": "regular",
+      "from": "Pokemon HOME Box 1",
+      "to": "Pokemon Sword",
+      "level_at_transfer": 1,
+      "status": "confirmed",
+      "confirmation_source": "User-provided Sword party/EXP screenshot showing Gible in the active team"
+    },
+    {
+      "species_name": "Ponyta",
+      "form": "regular",
+      "from": "Pokemon HOME Box 1",
+      "to": "Pokemon Sword",
+      "level_at_transfer": 1,
+      "status": "confirmed",
+      "confirmation_source": "User-provided Sword party/EXP screenshot showing Ponyta in the active team"
+    }
+  ],
   "pending_transfer_checks": [
     {
       "species_name": "Growlithe",
@@ -123,8 +145,8 @@
       "level": 1,
       "from": "Pokemon HOME Box 1",
       "to": "Pokemon Sword",
-      "status": "confirmed_candidate_not_yet_transferred",
-      "notes": "User added a Lv.1 Ponyta to HOME Box 1 and may transfer it into Sword. Exact transfer remains pending."
+      "status": "confirmed_transferred",
+      "notes": "Later Sword screenshots confirm Ponyta entered the active party and leveled beyond its Lv. 1 HOME snapshot."
     },
     {
       "species_name": "Gible",
@@ -134,8 +156,8 @@
       "type_2": "Ground",
       "from": "Pokemon HOME Box 1",
       "to": "Pokemon Sword",
-      "status": "confirmed_candidate_not_yet_transferred",
-      "notes": "This replaces the earlier uncertain Rock/Dragon placeholder. The screenshot identifies the candidate as Gible, which is Dragon/Ground, and the user confirmed it is Lv.1."
+      "status": "confirmed_transferred",
+      "notes": "Later Sword screenshots confirm Gible entered the active party and leveled beyond its Lv. 1 HOME snapshot."
     }
   ],
   "pending": {
@@ -150,6 +172,6 @@
     "recently_reopened_after_long_inactivity": true,
     "notes": "User said Pokemon HOME had not been used in a very long time before opening it again for this capture. Records are cumulative account statistics, while individual Pokemon/box organization may reflect older transfers and duplicates."
   },
-  "notes": "Pokemon HOME now has two individually confirmed Box 1 records for the current Sword planning session: Gible Lv.1 and Ponyta Lv.1. Neither is marked transferred to Sword yet. The last explicit HOME account total remains 184 until a fresh total is reported. HOME Galar regional registrations are currently tracked as approximately 25, separate from exact in-game Sword/Shield Pokedex counters.",
-  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, regional Galar registration estimate, Records screenshot, transfer workflow, and current Box 1 screenshot"
+  "notes": "Gible and regular Ponyta are now confirmed HOME-to-Sword transfers. The last explicit HOME account total remains 184 until a fresh total is reported; it is not automatically decremented because its timing relative to the transfers is not certain.",
+  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, Records screenshot, Box 1 screenshot, and later Pokemon Sword party screenshots confirming transfers"
 }

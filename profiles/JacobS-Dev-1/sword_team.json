@@ -11,25 +11,49 @@
       "species_name": "Raboot",
       "sex": "male",
       "level": 18,
-      "current_level_source": "User-provided live EXP/level-up screenshot",
       "type_1": "Fire",
       "type_2": null,
+      "nature": "Calm",
+      "ability": "Blaze",
+      "stats": {"hp": 56, "attack": 36, "defense": 32, "special_attack": 29, "special_defense": 31, "speed": 39},
+      "moves": [
+        {"name": "Tackle", "type": "Normal", "pp_current": 35, "pp_max": 35},
+        {"name": "Double Kick", "type": "Fighting", "pp_current": 29, "pp_max": 30},
+        {"name": "Ember", "type": "Fire", "pp_current": 25, "pp_max": 25},
+        {"name": "Quick Attack", "type": "Normal", "pp_current": 30, "pp_max": 30}
+      ],
+      "met": {"date": "2026-08-27", "location": "Postwick", "level": 5, "method": "starter"},
+      "characteristic": "Likes to thrash about!",
       "evolved_from": "Scorbunny",
       "evolution_confirmed": true,
-      "source": "User-provided Sword live screenshots"
+      "source": "User-provided Sword summary screenshots"
     },
     {
       "slot": 2,
       "species_name": "Gible",
       "sex": "female",
       "level": 8,
-      "current_level_source": "User-provided live EXP/level-up screenshot",
       "type_1": "Dragon",
       "type_2": "Ground",
+      "nature": "Timid",
+      "ability": "Sand Veil",
+      "stats": {"hp": 29, "attack": 16, "defense": 14, "special_attack": 12, "special_defense": 13, "speed": 14},
+      "moves": [
+        {"name": "Tackle", "type": "Normal", "pp_current": 35, "pp_max": 35},
+        {"name": "Sand Tomb", "type": "Ground", "pp_current": 15, "pp_max": 15},
+        {"name": "Sand Attack", "type": "Ground", "pp_current": 15, "pp_max": 15}
+      ],
+      "origin": {
+        "egg_received_date": "2025-04-01",
+        "egg_received_from": "Faraway Place",
+        "hatched_date": "2025-04-01",
+        "hatched_location": "faraway place",
+        "home_transfer_confirmed": true,
+        "sword_entry_level": 1
+      },
+      "characteristic": "Takes plenty of siestas!",
       "obtained_method": "pokemon_home_transfer",
-      "home_transfer_confirmed": true,
-      "home_starting_level": 1,
-      "source": "Pokemon HOME Box 1 screenshot plus Sword party/EXP screenshots"
+      "source": "Pokemon HOME Box 1 screenshot plus user-provided Sword summary screenshots"
     },
     {
       "slot": 3,
@@ -37,49 +61,90 @@
       "form": "regular",
       "sex": "male",
       "level": 9,
-      "current_level_source": "User-provided live EXP/level-up screenshot",
       "type_1": "Fire",
       "type_2": null,
+      "nature": "Careful",
+      "ability": "Flash Fire",
+      "stats": {"hp": 28, "attack": 20, "defense": 15, "special_attack": 15, "special_defense": 18, "speed": 23},
+      "moves": [
+        {"name": "Growl", "type": "Normal", "pp_current": 40, "pp_max": 40},
+        {"name": "Tackle", "type": "Normal", "pp_current": 35, "pp_max": 35},
+        {"name": "Tail Whip", "type": "Normal", "pp_current": 30, "pp_max": 30}
+      ],
+      "origin": {
+        "origin_game": "Pokemon GO",
+        "transfer_path": ["Pokemon GO", "Pokemon HOME", "Pokemon Sword"],
+        "home_transfer_confirmed": true,
+        "sword_entry_level": 1
+      },
+      "characteristic": "Alert to sounds!",
       "obtained_method": "pokemon_home_transfer",
-      "home_transfer_confirmed": true,
-      "home_starting_level": 1,
-      "source": "Pokemon HOME Box 1 screenshot plus Sword party/EXP screenshots"
+      "source": "Pokemon HOME Box 1 screenshot plus user-provided Sword summary screenshots"
     },
     {
       "slot": 4,
       "species_name": "Vulpix",
       "sex": "male",
-      "level": 10,
-      "current_level_source": "User-provided live EXP screenshot",
+      "level": 11,
       "type_1": "Fire",
       "type_2": null,
-      "source": "User-provided Sword live screenshots"
+      "nature": "Quirky",
+      "ability": "Flash Fire",
+      "stats": {"hp": 29, "attack": 15, "defense": 16, "special_attack": 19, "special_defense": 21, "speed": 20},
+      "moves": [
+        {"name": "Ember", "type": "Fire", "pp_current": 25, "pp_max": 25},
+        {"name": "Tail Whip", "type": "Normal", "pp_current": 30, "pp_max": 30},
+        {"name": "Disable", "type": "Normal", "pp_current": 20, "pp_max": 20},
+        {"name": "Quick Attack", "type": "Normal", "pp_current": 30, "pp_max": 30}
+      ],
+      "met": {"date": "2026-08-28", "location": "Route 3", "level": 10},
+      "characteristic": "Often lost in thought!",
+      "source": "User-provided Sword summary screenshots"
     },
     {
       "slot": 5,
       "species_name": "Chewtle",
       "sex": "female",
       "level": 13,
-      "current_level_source": "User-provided live EXP screenshot",
       "type_1": "Water",
       "type_2": null,
-      "source": "User-provided Sword live screenshots"
+      "nature": "Hasty",
+      "ability": "Strong Jaw",
+      "stats": {"hp": 40, "attack": 24, "defense": 16, "special_attack": 15, "special_defense": 15, "speed": 19},
+      "moves": [
+        {"name": "Tackle", "type": "Normal", "pp_current": 35, "pp_max": 35},
+        {"name": "Water Gun", "type": "Water", "pp_current": 25, "pp_max": 25},
+        {"name": "Bite", "type": "Dark", "pp_current": 25, "pp_max": 25}
+      ],
+      "met": {"date": "2026-08-28", "location": "Route 2", "level": 5},
+      "characteristic": "Takes plenty of siestas!",
+      "source": "User-provided Sword summary screenshots"
     },
     {
       "slot": 6,
       "species_name": "Yamper",
       "sex": "male",
-      "level": 9,
-      "current_level_source": "User-provided live EXP/level-up screenshot",
+      "level": 10,
       "type_1": "Electric",
       "type_2": null,
-      "source": "User-provided Sword live screenshots"
+      "nature": "Hardy",
+      "ability": "Ball Fetch",
+      "stats": {"hp": 33, "attack": 14, "defense": 18, "special_attack": 13, "special_defense": 17, "speed": 11},
+      "moves": [
+        {"name": "Tail Whip", "type": "Normal", "pp_current": 30, "pp_max": 30},
+        {"name": "Tackle", "type": "Normal", "pp_current": 35, "pp_max": 35},
+        {"name": "Nuzzle", "type": "Electric", "pp_current": 20, "pp_max": 20},
+        {"name": "Bite", "type": "Dark", "pp_current": 25, "pp_max": 25}
+      ],
+      "met": {"date": "2026-08-28", "location": "Route 2", "level": 8},
+      "characteristic": "Capable of taking hits!",
+      "source": "User-provided Sword summary screenshots"
     }
   ],
   "previous_party_before_home_transfers": {
     "members": ["Raboot", "Rookidee", "Dottler", null, "Chewtle", "Rookidee"],
     "notes": "Preserved as a compact historical snapshot after the live team was replaced by the user's HOME-transfer lineup. Full older details remain in Git history and personal Pokemon records."
   },
-  "notes": "Latest confirmed six-member Sword party from the user's live EXP screens: Raboot Lv.18, Gible Lv.8, Ponyta Lv.9, Vulpix Lv.10, Chewtle Lv.13, Yamper Lv.9. Gible and regular Ponyta are confirmed transfers from Pokemon HOME and entered Sword at Lv.1 before being leveled during live play.",
-  "source": "User-provided Pokemon Sword live party/EXP screenshots plus Pokemon HOME Box 1 records"
+  "notes": "Detailed current party snapshot from the user's Part 1 and Part 2 Sword summary screenshots. Current levels: Raboot 18, Gible 8, Ponyta 9, Vulpix 11, Chewtle 13, Yamper 10.",
+  "source": "User-provided Pokemon Sword live summary screenshots plus Pokemon HOME records"
 }

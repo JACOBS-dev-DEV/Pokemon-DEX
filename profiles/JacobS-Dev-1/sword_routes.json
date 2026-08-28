@@ -21,7 +21,7 @@
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Earlier route. Two trainers are now marked defeated from the user's DEV7 live update; Lass Lauren is the identified trainer. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee were caught here."
+      "notes": "Earlier route. Two trainers are marked defeated; Lass Lauren is the identified trainer. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee were caught here."
     },
     {
       "area_id": "wild-area-first-visit",
@@ -64,9 +64,9 @@
       "area_id": "route-3",
       "name": "Route 3",
       "visited": true,
-      "current": true,
+      "current": false,
       "complete": false,
-      "trainers_defeated": 4,
+      "trainers_defeated": 5,
       "trainers_total": 6,
       "trainer_check_complete": false,
       "trainer_battles": [
@@ -85,8 +85,7 @@
           "opponent_team": [{"species_name":"Pancham","level":13}],
           "reward_poke_dollars": 936,
           "identity_status": "confirmed_from_user_screenshot",
-          "result_source": "User explicit confirmation",
-          "notes": "Battle introduction was shown in the user's screenshot and the user later explicitly confirmed Hannah was defeated."
+          "result_source": "User explicit confirmation"
         },
         {
           "trainer_name": "Schoolboy Marvin",
@@ -96,8 +95,7 @@
           "opponent_team": [{"species_name":"Budew","level":12},{"species_name":"Gossifleur","level":12}],
           "reward_poke_dollars": 720,
           "identity_status": "confirmed_from_user_screenshot",
-          "result_source": "User-provided post-battle screenshot",
-          "notes": "Battle introduction and defeat dialogue were both shown in the user's Route 3 screenshots. Roster/reward verified against Route 3 references."
+          "result_source": "User-provided post-battle screenshot"
         },
         {
           "trainer_name": "Postman Tad",
@@ -107,33 +105,61 @@
           "opponent_team": [{"species_name":"Delibird","level":14}],
           "reward_poke_dollars": 1344,
           "identity_status": "confirmed_from_user_screenshot",
-          "result_source": "User-provided post-battle screenshot",
-          "notes": "Battle introduction and defeat dialogue were both shown in the user's Route 3 screenshots. Roster/reward verified against Route 3 references."
+          "result_source": "User-provided post-battle screenshot"
         },
         {
           "trainer_name": "Schoolboy Peter",
           "trainer_class": "Schoolboy",
-          "result": null,
-          "status": "battle_started_result_pending",
+          "result": "win",
+          "status": "completed",
           "opponent_team": [{"species_name":"Sizzlipede","level":13},{"species_name":"Dottler","level":14}],
-          "reward_poke_dollars_if_win": 840,
+          "reward_poke_dollars": 840,
           "identity_status": "confirmed_from_user_screenshot",
-          "notes": "Battle introduction shown in the user's screenshot. Result remains pending until a victory/defeat is shown or reported."
+          "result_source": "User-provided post-battle dialogue screenshot",
+          "notes": "Peter's defeat dialogue was shown after the earlier battle-introduction screenshot."
         }
       ],
       "pokemon_caught": ["Rolycoly"],
       "special_encounters": [],
       "possible_catches": [
         {"species_name":"Gossifleur","type_1":"Grass","status":"encountered","caught":false,"notes":"User identified a Gossifleur while traveling toward Turffield; catch not yet confirmed."},
-        {"species_name":"Vulpix","type_1":"Fire","status":"caught_registered_location_unconfirmed","caught":true,"number_battled":2,"notes":"User-provided Sword Pokédex screenshot confirms Galar No. 068 Vulpix is caught/registered and has Number Battled 2. Exact catch location is not shown, so it is not added to Route 3's pokemon_caught list."}
+        {"species_name":"Vulpix","type_1":"Fire","status":"caught_registered_location_unconfirmed","caught":true,"number_battled":2,"notes":"Galar No. 068 Vulpix is caught/registered with Number Battled 2; exact catch location is not shown."}
       ],
       "pokemon_check_complete": false,
       "pokemon_centers": [],
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Current route toward Turffield and the first Grass Gym. Four trainers are confirmed defeated: one earlier unidentified trainer, Schoolgirl Hannah, Schoolboy Marvin, and Postman Tad. Schoolboy Peter's battle has started but its result is pending. Rolycoly was caught/registered here at Lv. 12 with Number Battled 2."
+      "notes": "Route 3 has been traversed into Galar Mine. Five of six trainers are confirmed defeated: one earlier unidentified trainer, Schoolgirl Hannah, Schoolboy Marvin, Postman Tad, and Schoolboy Peter. One Route 3 trainer remains unconfirmed. Rolycoly was caught/registered here at Lv. 12 with Number Battled 2."
+    },
+    {
+      "area_id": "galar-mine",
+      "name": "Galar Mine",
+      "visited": true,
+      "current": true,
+      "complete": false,
+      "trainers_defeated": 0,
+      "trainers_total": null,
+      "trainer_check_complete": false,
+      "pokemon_caught": [],
+      "special_encounters": [],
+      "possible_catches": [
+        {
+          "species_name": "Diglett",
+          "type_1": "Ground",
+          "status": "encountered_in_battle",
+          "caught": false,
+          "level": 11,
+          "notes": "User-provided live screenshot shows a Lv. 11 Diglett battle in Galar Mine. Catch/result remains pending."
+        }
+      ],
+      "pokemon_check_complete": false,
+      "pokemon_centers": [],
+      "pokemon_center_check_complete": false,
+      "items_found": [],
+      "items_check_complete": false,
+      "notes": "Current area. First arrival is confirmed by the live Lv. 11 Diglett battle screenshot after Route 3 progression."
     }
   ],
-  "source": "User-reported live Pokemon Sword progress, DEV7 live edits, user-provided screenshots, and verified Sword Route 3 trainer/version data"
+  "source": "User-reported live Pokemon Sword progress, user-provided screenshots, and verified Route 3 trainer data"
 }
