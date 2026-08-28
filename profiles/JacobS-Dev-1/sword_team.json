@@ -10,32 +10,17 @@
       "slot": 1,
       "species_name": "Scorbunny",
       "sex": "male",
-      "level": 12,
-      "current_hp": 37,
-      "max_hp": 37,
-      "status": "healthy",
+      "level": 13,
+      "current_level_source": "user correction after DEV5",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
       "type_1": "Fire",
       "type_2": null,
       "original_trainer": "JacobS-dev-1",
       "trainer_id": "307650",
-      "current_exp": 1249,
-      "exp_to_next_level": 12,
-      "stats": {
-        "hp": 37,
-        "attack": 22,
-        "defense": 18,
-        "sp_attack": 17,
-        "sp_defense": 17,
-        "speed": 21
-      },
       "ability": "Blaze",
       "ability_description": "Powers up Fire-type moves when the Pokemon's HP is low.",
-      "moves": [
-        {"name": "Tackle", "type": "Normal", "pp": 35, "max_pp": 35},
-        {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
-        {"name": "Ember", "type": "Fire", "pp": 25, "max_pp": 25},
-        {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
-      ],
       "nature": "Calm",
       "met_date": "2026-08-27",
       "met_location": "Postwick",
@@ -43,7 +28,29 @@
       "characteristic": "Likes to thrash about!",
       "ribbons": [],
       "ribbons_confirmed_none": true,
-      "source": "User-provided Pokemon Sword summary screenshots"
+      "last_confirmed_detail_snapshot": {
+        "level": 12,
+        "current_hp": 37,
+        "max_hp": 37,
+        "current_exp": 1249,
+        "exp_to_next_level": 12,
+        "stats": {
+          "hp": 37,
+          "attack": 22,
+          "defense": 18,
+          "sp_attack": 17,
+          "sp_defense": 17,
+          "speed": 21
+        },
+        "moves": [
+          {"name": "Tackle", "type": "Normal", "pp": 35, "max_pp": 35},
+          {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
+          {"name": "Ember", "type": "Fire", "pp": 25, "max_pp": 25},
+          {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
+        ],
+        "source": "User-provided Pokemon Sword summary screenshots"
+      },
+      "source": "Current level corrected by user; detailed numeric snapshot preserved from earlier screenshots"
     },
     {
       "slot": 2,
@@ -96,6 +103,6 @@
       "source": "User-provided current party screenshot"
     }
   ],
-  "notes": "This is a live snapshot, not a fixed/locked party. Individual Rookidee identities are not assumed beyond their visible party slots.",
-  "source": "User-provided Pokemon Sword party and summary screenshots"
+  "notes": "This is a live snapshot, not a fixed/locked party. Scorbunny's current level is 13; its older Lv.12 detailed stats/HP/moves are retained only as a historical confirmed snapshot until newer details are captured.",
+  "source": "User-provided Pokemon Sword party/summary screenshots plus live corrections"
 }
