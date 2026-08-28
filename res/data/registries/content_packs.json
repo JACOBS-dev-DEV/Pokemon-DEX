@@ -1,0 +1,50 @@
+{
+  "schema_version": "1",
+  "content_packs": [
+    {
+      "id": "sword_base",
+      "game_id": "sword",
+      "name": "Pokemon Sword",
+      "kind": "base_game"
+    },
+    {
+      "id": "shield_base",
+      "game_id": "shield",
+      "name": "Pokemon Shield",
+      "kind": "base_game"
+    },
+    {
+      "id": "sword_isle_of_armor",
+      "game_id": "sword",
+      "name": "The Isle of Armor",
+      "kind": "dlc",
+      "expansion_pass_part": 1,
+      "region_area": "Isle of Armor"
+    },
+    {
+      "id": "sword_crown_tundra",
+      "game_id": "sword",
+      "name": "The Crown Tundra",
+      "kind": "dlc",
+      "expansion_pass_part": 2,
+      "region_area": "Crown Tundra"
+    },
+    {
+      "id": "shield_isle_of_armor",
+      "game_id": "shield",
+      "name": "The Isle of Armor",
+      "kind": "dlc",
+      "expansion_pass_part": 1,
+      "region_area": "Isle of Armor"
+    },
+    {
+      "id": "shield_crown_tundra",
+      "game_id": "shield",
+      "name": "The Crown Tundra",
+      "kind": "dlc",
+      "expansion_pass_part": 2,
+      "region_area": "Crown Tundra"
+    }
+  ],
+  "personal_storage_policy": "Registry support does not create a personal save/profile file. Personal storage is only created when the user explicitly starts tracking that game/content."
+}
