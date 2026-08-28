@@ -60,6 +60,28 @@
       "roster": [],
       "roster_status": "not_captured_from_current_record",
       "notes": "User confirmed a third win against Hop."
+    },
+    {
+      "opponent_id": "route-3-schoolgirl-hannah",
+      "name": "Schoolgirl Hannah",
+      "trainer_class": "Schoolgirl",
+      "group_id": null,
+      "relationship": "route_trainer",
+      "location": "Route 3",
+      "result": "win",
+      "battle_sequence": 5,
+      "reward_poke_dollars": 936,
+      "roster": [
+        {
+          "species_name": "Pancham",
+          "level": 13,
+          "moves": ["Tackle", "Circle Throw"]
+        }
+      ],
+      "roster_status": "verified_route_roster",
+      "identity_source": "User-provided battle-introduction screenshot",
+      "result_source": "User explicit confirmation",
+      "notes": "The user explicitly confirmed Schoolgirl Hannah was defeated after the battle introduction was captured."
     }
   ],
   "pending_opponents": [
@@ -70,27 +92,6 @@
       "status": "known_group_battle_not_yet_confirmed",
       "roster": [],
       "notes": "Placeholder for the upcoming opponent encounter structure only; no battle result or Pokémon roster is assumed yet."
-    },
-    {
-      "opponent_id": "route-3-schoolgirl-hannah",
-      "name": "Schoolgirl Hannah",
-      "trainer_class": "Schoolgirl",
-      "group_id": null,
-      "relationship": "route_trainer",
-      "location": "Route 3",
-      "status": "battle_started_result_pending",
-      "result": null,
-      "reward_poke_dollars_if_won": 936,
-      "roster": [
-        {
-          "species_name": "Pancham",
-          "level": 13,
-          "moves": ["Tackle", "Circle Throw"]
-        }
-      ],
-      "roster_status": "verified_route_roster",
-      "identity_source": "User-provided battle-introduction screenshot",
-      "notes": "The battle introduction is confirmed, but no win/loss is recorded until the result is shown or reported."
     }
   ],
   "source": "User-reported live Sword progress plus confirmed/verified Route 2 and Route 3 trainer data"
