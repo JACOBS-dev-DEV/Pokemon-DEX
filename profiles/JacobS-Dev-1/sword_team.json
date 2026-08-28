@@ -10,131 +10,76 @@
       "slot": 1,
       "species_name": "Raboot",
       "sex": "male",
-      "level": 16,
-      "current_level_source": "user-provided live evolution screenshot; Lv.16 inferred from Scorbunny's normal evolution level, not directly shown in the screenshot",
-      "current_hp": null,
-      "max_hp": null,
-      "status": "unknown_current",
+      "level": 18,
+      "current_level_source": "User-provided live EXP/level-up screenshot",
       "type_1": "Fire",
       "type_2": null,
-      "original_trainer": "JacobS-dev-1",
-      "trainer_id": "307650",
-      "ability": "Blaze",
-      "ability_description": "Powers up Fire-type moves when the Pokemon's HP is low.",
-      "nature": "Calm",
-      "met_date": "2026-08-27",
-      "met_location": "Postwick",
-      "met_level": 5,
-      "characteristic": "Likes to thrash about!",
-      "ribbons": [],
-      "ribbons_confirmed_none": true,
       "evolved_from": "Scorbunny",
-      "evolution_level": 16,
-      "evolution_level_inferred": true,
       "evolution_confirmed": true,
-      "last_confirmed_detail_snapshot": {
-        "species_name": "Scorbunny",
-        "level": 12,
-        "current_hp": 37,
-        "max_hp": 37,
-        "current_exp": 1249,
-        "exp_to_next_level": 12,
-        "stats": {
-          "hp": 37,
-          "attack": 22,
-          "defense": 18,
-          "sp_attack": 17,
-          "sp_defense": 17,
-          "speed": 21
-        },
-        "moves": [
-          {"name": "Tackle", "type": "Normal", "pp": 35, "max_pp": 35},
-          {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
-          {"name": "Ember", "type": "Fire", "pp": 25, "max_pp": 25},
-          {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
-        ],
-        "source": "User-provided Pokemon Sword summary screenshots before evolution"
-      },
-      "source": "User-provided Pokemon Sword live evolution screenshot confirms Scorbunny evolved into Raboot"
+      "source": "User-provided Sword live screenshots"
     },
     {
       "slot": 2,
-      "species_name": "Rookidee",
+      "species_name": "Gible",
       "sex": "female",
-      "level": 12,
-      "current_level_source": "user live correction",
-      "current_hp": null,
-      "max_hp": null,
-      "status": "unknown_current",
-      "last_confirmed_detail_snapshot": {
-        "level": 10,
-        "current_hp": 30,
-        "max_hp": 30,
-        "status": "healthy",
-        "source": "User-provided current party screenshot"
-      },
-      "source": "Current level reported live by user"
+      "level": 8,
+      "current_level_source": "User-provided live EXP/level-up screenshot",
+      "type_1": "Dragon",
+      "type_2": "Ground",
+      "obtained_method": "pokemon_home_transfer",
+      "home_transfer_confirmed": true,
+      "home_starting_level": 1,
+      "source": "Pokemon HOME Box 1 screenshot plus Sword party/EXP screenshots"
     },
     {
       "slot": 3,
-      "species_name": "Dottler",
-      "sex": "female",
+      "species_name": "Ponyta",
+      "form": "regular",
+      "sex": "male",
+      "level": 9,
+      "current_level_source": "User-provided live EXP/level-up screenshot",
+      "type_1": "Fire",
+      "type_2": null,
+      "obtained_method": "pokemon_home_transfer",
+      "home_transfer_confirmed": true,
+      "home_starting_level": 1,
+      "source": "Pokemon HOME Box 1 screenshot plus Sword party/EXP screenshots"
+    },
+    {
+      "slot": 4,
+      "species_name": "Vulpix",
+      "sex": "male",
       "level": 10,
-      "current_level_source": "user confirmed evolution",
-      "current_hp": null,
-      "max_hp": null,
-      "status": "unknown_current",
-      "type_1": "Bug",
-      "type_2": "Psychic",
-      "evolved_from": "Blipbug",
-      "evolution_level": 10,
-      "last_confirmed_detail_snapshot": {
-        "species_name": "Blipbug",
-        "level": 8,
-        "current_hp": 24,
-        "max_hp": 24,
-        "status": "healthy",
-        "source": "User-provided current party screenshot"
-      },
-      "source": "User confirmed the active Blipbug evolved into Dottler at Lv.10"
+      "current_level_source": "User-provided live EXP screenshot",
+      "type_1": "Fire",
+      "type_2": null,
+      "source": "User-provided Sword live screenshots"
     },
     {
       "slot": 5,
       "species_name": "Chewtle",
       "sex": "female",
-      "level": 12,
-      "current_level_source": "DEV7 live edit",
-      "current_hp": null,
-      "max_hp": null,
-      "status": "unknown_current",
-      "last_confirmed_detail_snapshot": {
-        "level": 8,
-        "current_hp": 28,
-        "max_hp": 28,
-        "status": "healthy",
-        "source": "User-provided current party screenshot"
-      },
-      "source": "DEV7 user live update raised Chewtle to Lv.12; earlier HP snapshot retained as history"
+      "level": 13,
+      "current_level_source": "User-provided live EXP screenshot",
+      "type_1": "Water",
+      "type_2": null,
+      "source": "User-provided Sword live screenshots"
     },
     {
       "slot": 6,
-      "species_name": "Rookidee",
-      "sex": "female",
-      "level": 11,
-      "current_level_source": "user live correction",
-      "current_hp": null,
-      "max_hp": null,
-      "status": "unknown_current",
-      "last_confirmed_detail_snapshot": {
-        "level": 9,
-        "current_hp": 27,
-        "max_hp": 27,
-        "status": "healthy",
-        "source": "User-provided current party screenshot"
-      },
-      "source": "Current level reported live by user"
+      "species_name": "Yamper",
+      "sex": "male",
+      "level": 9,
+      "current_level_source": "User-provided live EXP/level-up screenshot",
+      "type_1": "Electric",
+      "type_2": null,
+      "source": "User-provided Sword live screenshots"
     }
   ],
-  "notes": "Live party after DEV7 synchronization: Raboot 16, first Rookidee 12, Dottler 10, slot 4 currently empty after Skwovet was marked out of the team, Chewtle 12, second Rookidee 11. Older screenshot HP/stat values remain historical snapshots.",
-  "source": "User-provided Pokemon Sword party/summary/evolution screenshots plus DEV7 live edits"
+  "previous_party_before_home_transfers": {
+    "members": ["Raboot", "Rookidee", "Dottler", null, "Chewtle", "Rookidee"],
+    "notes": "Preserved as a compact historical snapshot after the live team was replaced by the user's HOME-transfer lineup. Full older details remain in Git history and personal Pokemon records."
+  },
+  "notes": "Latest confirmed six-member Sword party from the user's live EXP screens: Raboot Lv.18, Gible Lv.8, Ponyta Lv.9, Vulpix Lv.10, Chewtle Lv.13, Yamper Lv.9. Gible and regular Ponyta are confirmed transfers from Pokemon HOME and entered Sword at Lv.1 before being leveled during live play.",
+  "source": "User-provided Pokemon Sword live party/EXP screenshots plus Pokemon HOME Box 1 records"
 }
