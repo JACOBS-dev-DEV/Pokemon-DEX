@@ -25,7 +25,7 @@
     "gym_challenge_number": "243",
     "pokedex_progress_captured": true,
     "pokedex_progress_file": "shield_dex_progress.json",
-    "galar_pokedex": {"caught":61,"seen":231},
+    "galar_pokedex": {"caught":61,"seen":231,"caught_ids_transcribed":61},
     "isle_of_armor_pokedex": {"caught":22,"seen":83},
     "crown_tundra_pokedex": {"caught":23,"seen":95},
     "combined_reported_dex_counter_sum": {"caught":106,"seen":409,"unique_species":null}
@@ -43,11 +43,11 @@
     "photos_received": ["part_1", "part_2", "part_3.0", "part_3.1"],
     "pending_future_data": [
       "PC/box contents",
-      "remaining main Galar Pokedex caught IDs/species not yet supplied",
+      "optional species-name mapping for the 61 reported Galar Dex IDs",
       "future live Shield changes"
     ],
-    "notes": "All Shield screenshots currently available from the user have been synchronized. Box contents and remaining main-Galar Dex identities are intentionally left pending until supplied later."
+    "notes": "All Shield screenshots currently available from the user have been synchronized. The user clarified the spoken Galar numbers include ranges and individual IDs; the reconstructed list now contains exactly 61 caught IDs, matching the in-game caught counter. Box contents remain pending until future screenshots are available."
   },
-  "notes": "Pokemon Shield remains the active live run. Current available photo data is fully synchronized without inventing missing box or Pokedex entries.",
-  "source": "User live Shield reports plus Parts 1, 2, 3.0, and 3.1 screenshot batches"
+  "notes": "Pokemon Shield remains the active live run. Current available photo data and the complete 61-ID Galar caught list are synchronized without inventing box contents or species names.",
+  "source": "User live Shield reports plus Parts 1, 2, 3.0, and 3.1 screenshot batches and later Dex-range clarification"
 }
