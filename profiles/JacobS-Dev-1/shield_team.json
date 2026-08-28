@@ -1,0 +1,55 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "snapshot_kind": "current_live_party_partial",
+  "team_locked": false,
+  "team": [
+    {
+      "slot": 1,
+      "species_name": "Cinderace",
+      "level": 75,
+      "status": "current_reported",
+      "source": "User live Shield party report"
+    },
+    {
+      "slot": 2,
+      "species_name": "Arcanine",
+      "level": 67,
+      "status": "current_reported",
+      "source": "User live Shield party report"
+    },
+    {
+      "slot": 3,
+      "species_name": "Zamazenta",
+      "level": 71,
+      "status": "current_reported",
+      "source": "User live Shield party report"
+    },
+    {
+      "slot": 4,
+      "species_name": "Drednaw",
+      "level": 72,
+      "status": "current_reported_mapping_pending_photo_confirmation",
+      "source": "User live Shield party report"
+    },
+    {
+      "slot": 5,
+      "species_name": null,
+      "level": null,
+      "status": "awaiting_updated_photo"
+    },
+    {
+      "slot": 6,
+      "species_name": null,
+      "level": null,
+      "status": "awaiting_updated_photo"
+    }
+  ],
+  "summary": {
+    "confirmed_or_reported_slots": 4,
+    "total_slots": 6,
+    "awaiting_photo_slots": 2
+  },
+  "notes": "Partial live Shield party snapshot. Upcoming images should be used to confirm species, levels, HP, moves, held items, and the two remaining slots.",
+  "source": "User live Pokemon Shield report"
+}
