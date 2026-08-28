@@ -26,9 +26,8 @@
       "type_2": null,
       "caught": true,
       "owned_count": 1,
-      "battle_count": 2,
-      "in_team": true,
-      "team_slot": 4,
+      "battle_count": 3,
+      "in_team": false,
       "level": 10
     },
     {
@@ -39,7 +38,7 @@
       "type_2": null,
       "caught": true,
       "owned_count": 3,
-      "battle_count": 3,
+      "battle_count": 4,
       "caught_location": "Route 2",
       "special_encounters": [
         {
@@ -69,7 +68,8 @@
       "caught": true,
       "owned_count": 1,
       "battle_count": 3,
-      "evolution_note": "One previously owned Blipbug evolved into Dottler."
+      "evolution_note": "One previously owned Blipbug evolved into Dottler.",
+      "evolved": true
     },
     {
       "local_id": 6,
@@ -93,7 +93,7 @@
       "battle_count": 1,
       "in_team": true,
       "team_slot": 5,
-      "level": 9
+      "level": 12
     },
     {
       "local_id": 8,
@@ -104,7 +104,7 @@
       "type_2": "Normal",
       "caught": true,
       "owned_count": 1,
-      "battle_count": 1,
+      "battle_count": 3,
       "caught_location": "Route 2",
       "notes": "User-reported live catch; no nickname tracking."
     },
@@ -180,5 +180,5 @@
       "notes": "User-provided live evolution screenshot confirms the starter Scorbunny evolved into Raboot. Level recorded as 16, Scorbunny's standard evolution threshold."
     }
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress, current team/evolution/encounter updates, and user-provided Pokédex/evolution screenshots"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user live edits from DEV7 and user-provided Pokédex/evolution screenshots"
 }

@@ -5,8 +5,8 @@
     "poke_dollars": {
       "display_name": "Poké Dollars",
       "symbol": "₽",
-      "balance": 23324,
-      "balance_status": "last_known_exact_not_recomputed_after_untracked_route_3_activity"
+      "balance": 29988,
+      "balance_status": "exact_from_DEV7_live_update"
     },
     "watts": {
       "display_name": "Watts",
@@ -41,6 +41,17 @@
       "source": "User-reported exact balance"
     },
     {
+      "timestamp": "2026-08-28T20:45:08+00:00",
+      "currency": "poke_dollars",
+      "kind": "balance_correction",
+      "amount": 6664,
+      "balance_before": 23324,
+      "balance_after": 29988,
+      "reason": "touch keypad exact balance",
+      "location": null,
+      "source": "DEV7 user live update"
+    },
+    {
       "currency": "poke_dollars",
       "kind": "trainer_reward",
       "amount": 936,
@@ -49,7 +60,7 @@
       "reason": "Defeated Schoolgirl Hannah",
       "location": "Route 3",
       "source": "Verified Route 3 trainer reward plus user-confirmed victory",
-      "notes": "Reward is confirmed, but the exact current wallet balance is not recomputed because at least one other Route 3 trainer reward and any intervening spending were not captured exactly."
+      "notes": "The reward is logged as confirmed, but it is not arithmetically added to the 29,988 balance because the newer DEV7 exact balance may already include this reward and other intervening activity."
     }
   ],
   "balance_observations": [
@@ -61,8 +72,18 @@
       "confidence": 1.0,
       "location": "Motostoke / early Gym Challenge progression",
       "applied": true,
-      "current_status": "historical_last_known_exact"
+      "current_status": "historical"
+    },
+    {
+      "currency": "poke_dollars",
+      "observed_balance": 29988,
+      "source": "DEV7_live_update",
+      "source_ref": "touch keypad exact balance",
+      "confidence": 1.0,
+      "location": "Route 3 progression",
+      "applied": true,
+      "current_status": "current_exact"
     }
   ],
-  "source": "Local live progress; exact balances are recorded only when explicitly reported or extracted from a provided screen/image. Confirmed rewards may be logged without inventing an exact current total when intervening transactions are unknown."
+  "source": "Local live progress; exact DEV7 balance preserved while confirmed trainer rewards are logged without double-counting uncertain timing."
 }

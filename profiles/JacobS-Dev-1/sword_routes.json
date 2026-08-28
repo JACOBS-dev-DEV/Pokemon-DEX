@@ -8,10 +8,14 @@
       "visited": true,
       "current": false,
       "complete": false,
-      "trainers_defeated": 1,
+      "trainers_defeated": 2,
       "trainers_total": null,
       "trainer_check_complete": false,
-      "pokemon_caught": ["Rookidee", "Zigzagoon", "Yamper"],
+      "pokemon_caught": [
+        "Rookidee",
+        "Zigzagoon",
+        "Yamper"
+      ],
       "special_encounters": [
         {
           "species_name": "Rookidee",
@@ -26,7 +30,7 @@
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Earlier route. Lass Lauren was defeated here. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee were caught here."
+      "notes": "Earlier route. Two trainers are now marked defeated from the user's DEV7 live update; Lass Lauren is the identified trainer. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee were caught here."
     },
     {
       "area_id": "wild-area-first-visit",
@@ -93,7 +97,12 @@
           "trainer_class": "Schoolgirl",
           "result": "win",
           "status": "completed",
-          "opponent_team": [{"species_name":"Pancham","level":13}],
+          "opponent_team": [
+            {
+              "species_name": "Pancham",
+              "level": 13
+            }
+          ],
           "reward_poke_dollars": 936,
           "identity_status": "confirmed_from_user_screenshot",
           "result_source": "User explicit confirmation",
@@ -127,5 +136,5 @@
       "notes": "Current route toward Turffield and the first Grass Gym. Two trainers are confirmed defeated, including Schoolgirl Hannah; one defeated trainer's identity is still pending. Gossifleur encountered; catch status pending. Vulpix is caught/registered with 2 battled, but its exact catch location is not independently shown."
     }
   ],
-  "source": "User-reported live Pokemon Sword progress, user-provided screenshots, and verified Sword Route 3 trainer/version data"
+  "source": "User-reported live Pokemon Sword progress, DEV7 live edits, user-provided screenshots, and verified Sword Route 3 trainer/version data"
 }
