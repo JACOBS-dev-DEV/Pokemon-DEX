@@ -5,7 +5,7 @@
     "poke_dollars": {
       "display_name": "Poké Dollars",
       "symbol": "₽",
-      "balance": 23324
+      "balance": 29988
     },
     "watts": {
       "display_name": "Watts",
@@ -38,6 +38,16 @@
       "reason": "Exact balance reported by user",
       "location": "Motostoke / early Gym Challenge progression",
       "source": "User-reported exact balance"
+    },
+    {
+      "timestamp": "2026-08-28T20:45:08+00:00",
+      "currency": "poke_dollars",
+      "kind": "balance_correction",
+      "amount": 6664,
+      "balance_before": 23324,
+      "balance_after": 29988,
+      "reason": "touch keypad exact balance",
+      "location": null
     }
   ],
   "balance_observations": [

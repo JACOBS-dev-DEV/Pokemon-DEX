@@ -13,7 +13,8 @@
       "battle_count": 0,
       "in_team": true,
       "team_slot": 1,
-      "level": 14
+      "level": 16,
+      "evolved": true
     },
     {
       "local_id": 2,
@@ -23,8 +24,8 @@
       "type_2": null,
       "caught": true,
       "owned_count": 1,
-      "battle_count": 2,
-      "in_team": true,
+      "battle_count": 3,
+      "in_team": false,
       "team_slot": 4,
       "level": 10
     },
@@ -36,7 +37,7 @@
       "type_2": null,
       "caught": true,
       "owned_count": 3,
-      "battle_count": 3,
+      "battle_count": 4,
       "caught_location": "Route 2",
       "special_encounters": [
         {
@@ -66,7 +67,8 @@
       "caught": true,
       "owned_count": 1,
       "battle_count": 3,
-      "evolution_note": "One previously owned Blipbug evolved into Dottler."
+      "evolution_note": "One previously owned Blipbug evolved into Dottler.",
+      "evolved": true
     },
     {
       "local_id": 6,
@@ -90,7 +92,7 @@
       "battle_count": 1,
       "in_team": true,
       "team_slot": 5,
-      "level": 9
+      "level": 12
     },
     {
       "local_id": 8,
@@ -101,7 +103,7 @@
       "type_2": "Normal",
       "caught": true,
       "owned_count": 1,
-      "battle_count": 1,
+      "battle_count": 3,
       "caught_location": "Route 2",
       "notes": "User-reported live catch; no nickname tracking."
     },
