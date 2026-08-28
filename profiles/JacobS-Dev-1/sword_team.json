@@ -1,0 +1,101 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "trainer_name": "JacobS-dev-1",
+  "trainer_id": "307650",
+  "team_locked": false,
+  "snapshot_kind": "current_live_party",
+  "team": [
+    {
+      "slot": 1,
+      "species_name": "Scorbunny",
+      "sex": "male",
+      "level": 12,
+      "current_hp": 37,
+      "max_hp": 37,
+      "status": "healthy",
+      "type_1": "Fire",
+      "type_2": null,
+      "original_trainer": "JacobS-dev-1",
+      "trainer_id": "307650",
+      "current_exp": 1249,
+      "exp_to_next_level": 12,
+      "stats": {
+        "hp": 37,
+        "attack": 22,
+        "defense": 18,
+        "sp_attack": 17,
+        "sp_defense": 17,
+        "speed": 21
+      },
+      "ability": "Blaze",
+      "ability_description": "Powers up Fire-type moves when the Pokemon's HP is low.",
+      "moves": [
+        {"name": "Tackle", "type": "Normal", "pp": 35, "max_pp": 35},
+        {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
+        {"name": "Ember", "type": "Fire", "pp": 25, "max_pp": 25},
+        {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
+      ],
+      "nature": "Calm",
+      "met_date": "2026-08-27",
+      "met_location": "Postwick",
+      "met_level": 5,
+      "characteristic": "Likes to thrash about!",
+      "ribbons": [],
+      "ribbons_confirmed_none": true,
+      "source": "User-provided Pokemon Sword summary screenshots"
+    },
+    {
+      "slot": 2,
+      "species_name": "Rookidee",
+      "sex": "female",
+      "level": 10,
+      "current_hp": 30,
+      "max_hp": 30,
+      "status": "healthy",
+      "source": "User-provided current party screenshot"
+    },
+    {
+      "slot": 3,
+      "species_name": "Blipbug",
+      "sex": "female",
+      "level": 8,
+      "current_hp": 24,
+      "max_hp": 24,
+      "status": "healthy",
+      "source": "User-provided current party screenshot"
+    },
+    {
+      "slot": 4,
+      "species_name": "Skwovet",
+      "sex": "male",
+      "level": 9,
+      "current_hp": 32,
+      "max_hp": 32,
+      "status": "healthy",
+      "source": "User-provided current party screenshot"
+    },
+    {
+      "slot": 5,
+      "species_name": "Chewtle",
+      "sex": "female",
+      "level": 8,
+      "current_hp": 28,
+      "max_hp": 28,
+      "status": "healthy",
+      "source": "User-provided current party screenshot"
+    },
+    {
+      "slot": 6,
+      "species_name": "Rookidee",
+      "sex": "female",
+      "level": 9,
+      "current_hp": 27,
+      "max_hp": 27,
+      "status": "healthy",
+      "source": "User-provided current party screenshot"
+    }
+  ],
+  "notes": "This is a live snapshot, not a fixed/locked party. Individual Rookidee identities are not assumed beyond their visible party slots.",
+  "source": "User-provided Pokemon Sword party and summary screenshots"
+}
