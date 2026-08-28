@@ -8,10 +8,10 @@
   "team": [
     {
       "slot": 1,
-      "species_name": "Scorbunny",
+      "species_name": "Raboot",
       "sex": "male",
-      "level": 14,
-      "current_level_source": "user live correction",
+      "level": 16,
+      "current_level_source": "user-provided live evolution screenshot; level recorded at Scorbunny's standard evolution threshold",
       "current_hp": null,
       "max_hp": null,
       "status": "unknown_current",
@@ -28,7 +28,11 @@
       "characteristic": "Likes to thrash about!",
       "ribbons": [],
       "ribbons_confirmed_none": true,
+      "evolved_from": "Scorbunny",
+      "evolution_level": 16,
+      "evolution_confirmed": true,
       "last_confirmed_detail_snapshot": {
+        "species_name": "Scorbunny",
         "level": 12,
         "current_hp": 37,
         "max_hp": 37,
@@ -48,9 +52,9 @@
           {"name": "Ember", "type": "Fire", "pp": 25, "max_pp": 25},
           {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
         ],
-        "source": "User-provided Pokemon Sword summary screenshots"
+        "source": "User-provided Pokemon Sword summary screenshots before evolution"
       },
-      "source": "Current level reported live by user; detailed numeric snapshot preserved from earlier screenshots"
+      "source": "User-provided Pokemon Sword live evolution screenshot confirms Scorbunny evolved into Raboot"
     },
     {
       "slot": 2,
@@ -148,6 +152,6 @@
       "source": "Current level reported live by user"
     }
   ],
-  "notes": "Live levels: Scorbunny 14, first Rookidee 12, Dottler 10 (evolved from Blipbug), Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled or evolved.",
-  "source": "User-provided Pokemon Sword party/summary screenshots plus live corrections"
+  "notes": "Live party: Raboot 16 (evolved from starter Scorbunny), first Rookidee 12, Dottler 10, Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled or evolved.",
+  "source": "User-provided Pokemon Sword party/summary/evolution screenshots plus live corrections"
 }
