@@ -11,7 +11,7 @@
       "species_name": "Raboot",
       "sex": "male",
       "level": 16,
-      "current_level_source": "user-provided live evolution screenshot; level recorded at Scorbunny's standard evolution threshold",
+      "current_level_source": "user-provided live evolution screenshot; Lv.16 inferred from Scorbunny's normal evolution level, not directly shown in the screenshot",
       "current_hp": null,
       "max_hp": null,
       "status": "unknown_current",
@@ -30,6 +30,7 @@
       "ribbons_confirmed_none": true,
       "evolved_from": "Scorbunny",
       "evolution_level": 16,
+      "evolution_level_inferred": true,
       "evolution_confirmed": true,
       "last_confirmed_detail_snapshot": {
         "species_name": "Scorbunny",
@@ -152,6 +153,6 @@
       "source": "Current level reported live by user"
     }
   ],
-  "notes": "Live party: Raboot 16 (evolved from starter Scorbunny), first Rookidee 12, Dottler 10, Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled or evolved.",
+  "notes": "Live party: Raboot (evolved from starter Scorbunny; Lv.16 inferred from the normal evolution threshold), first Rookidee 12, Dottler 10, Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled or evolved.",
   "source": "User-provided Pokemon Sword party/summary/evolution screenshots plus live corrections"
 }
