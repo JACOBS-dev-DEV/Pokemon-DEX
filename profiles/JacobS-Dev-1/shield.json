@@ -1,66 +1,32 @@
 {
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Shield",
-  "sync_status": "partial_live_sync",
+  "sync_status": "recent_screenshot_sync_in_progress",
   "pokemon": [
-    {
-      "local_id": 1,
-      "species_name": "Cinderace",
-      "type_1": "Fire",
-      "caught": true,
-      "owned_count": 1,
-      "in_team": true,
-      "team_slot": 1,
-      "level": 75,
-      "notes": "User referred to this current party member as the fire bunny."
-    },
-    {
-      "local_id": 2,
-      "species_name": "Arcanine",
-      "type_1": "Fire",
-      "caught": true,
-      "owned_count": 1,
-      "in_team": true,
-      "team_slot": 2,
-      "level": 67
-    },
-    {
-      "local_id": 3,
-      "species_name": "Zamazenta",
-      "type_1": "Fighting",
-      "caught": true,
-      "owned_count": 1,
-      "in_team": true,
-      "team_slot": 3,
-      "level": 71,
-      "notes": "Mapped from the user's description of the Shield mascot/legendary Pokemon."
-    },
-    {
-      "local_id": 4,
-      "species_name": "Drednaw",
-      "type_1": "Water",
-      "type_2": "Rock",
-      "caught": true,
-      "owned_count": 1,
-      "in_team": true,
-      "team_slot": 4,
-      "level": 72,
-      "notes": "Mapped from the user's spoken party description; can be corrected from the upcoming screenshots if needed."
-    }
+    {"local_id":1,"species_name":"Cinderace","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":1,"level":75},
+    {"local_id":2,"species_name":"Arcanine","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":2,"level":67},
+    {"local_id":3,"species_name":"Zamazenta","type_1":"Fighting","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":3,"level":73},
+    {"local_id":4,"species_name":"Drednaw","type_1":"Water","type_2":"Rock","caught":true,"owned_count":1,"in_team":true,"team_slot":4,"level":73},
+    {"local_id":5,"species_name":"Eternatus","type_1":"Poison","type_2":"Dragon","caught":true,"owned_count":1,"in_team":true,"team_slot":5,"level":71},
+    {"local_id":6,"species_name":"Jolteon","type_1":"Electric","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":6,"level":72}
   ],
   "progress": {
-    "current_area": null,
-    "badges_obtained": null,
+    "current_area": "Wyndon",
+    "play_time": "67:28",
+    "badges_obtained": 8,
+    "badges_total": 8,
     "money_poke_dollars": null,
-    "team_captured": "partial_4_of_6",
+    "team_captured": true,
     "boxes_captured": false,
-    "league_card_captured": false,
+    "league_card_captured": true,
+    "trainer_id": "205335",
+    "gym_challenge_number": "243",
     "pokedex_progress_captured": true,
     "pokedex_progress_file": "shield_dex_progress.json",
-    "galar_pokedex": {"caught": 61, "seen": 231},
-    "isle_of_armor_pokedex": {"caught": 22, "seen": 83},
-    "crown_tundra_pokedex": {"caught": 23, "seen": 95},
-    "combined_reported_dex_counter_sum": {"caught": 106, "seen": 409, "unique_species": null}
+    "galar_pokedex": {"caught":61,"seen":231},
+    "isle_of_armor_pokedex": {"caught":22,"seen":83},
+    "crown_tundra_pokedex": {"caught":23,"seen":95},
+    "combined_reported_dex_counter_sum": {"caught":106,"seen":409,"unique_species":null}
   },
   "completion_policy": {
     "include_expansion_content_in_shield_completion": true,
@@ -71,8 +37,9 @@
   "session": {
     "active": true,
     "state_capture_pending": true,
-    "notes": "Shield is active. Four current party members and the three Pokedex counters are synced; remaining team slots, current area, badges, money, boxes, and League Card await updated screenshots/details."
+    "photos_received": ["part_1", "part_2"],
+    "notes": "Recent screenshots have synchronized the full six-member party, current Wyndon save state, League Card/trainer ID, all eight badges, Pokedex counters, and detailed party records. Additional recent photo parts are still expected."
   },
-  "notes": "Pokemon Shield is the active live run. Current data is intentionally partial and should be refined from the user's upcoming screenshots.",
-  "source": "User live Pokemon Shield report"
+  "notes": "Pokemon Shield is the active live run. Recent screenshots supersede the earlier partial spoken team snapshot where exact values differ.",
+  "source": "User live Shield report plus recent Part 1 and Part 2 screenshots"
 }
