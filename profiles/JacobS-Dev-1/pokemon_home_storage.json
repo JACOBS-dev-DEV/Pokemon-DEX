@@ -18,6 +18,14 @@
     "registered": 308,
     "source": "User report from Pokemon HOME"
   },
+  "regional_pokedex_snapshot": {
+    "galar": {
+      "registered_approx": 25,
+      "exact": false,
+      "scope": "Pokemon Sword and Pokemon Shield Galar region in Pokemon HOME",
+      "notes": "User reported around 25 registered Pokemon in the Galar regional area. Preserve as approximate until an exact HOME regional count is shown or reported."
+    }
+  },
   "records_snapshot": {
     "pokemon_deposited": 235,
     "pokemon_withdrawn": 95,
@@ -70,6 +78,7 @@
     "duplicates_recorded_individually": 0,
     "source_games_recorded": 3,
     "pokedex_registered": 308,
+    "galar_registered_approx": 25,
     "sword_transfer_candidates_confirmed": 2
   },
   "tracking_policy": {
@@ -134,12 +143,13 @@
     "box_or_group_names": true,
     "individual_pokemon_details": true,
     "champion_area_or_box_organization_details": true,
-    "mobile_view_or_trade_area_capture": true
+    "mobile_view_or_trade_area_capture": true,
+    "exact_galar_regional_registration_count": true
   },
   "activity_context": {
     "recently_reopened_after_long_inactivity": true,
     "notes": "User said Pokemon HOME had not been used in a very long time before opening it again for this capture. Records are cumulative account statistics, while individual Pokemon/box organization may reflect older transfers and duplicates."
   },
-  "notes": "Pokemon HOME now has two individually confirmed Box 1 records for the current Sword planning session: Gible Lv.1 and Ponyta Lv.1. Neither is marked transferred to Sword yet. The last explicit HOME account total remains 184 until a fresh total is reported.",
-  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, Records screenshot, transfer workflow, and current Box 1 screenshot"
+  "notes": "Pokemon HOME now has two individually confirmed Box 1 records for the current Sword planning session: Gible Lv.1 and Ponyta Lv.1. Neither is marked transferred to Sword yet. The last explicit HOME account total remains 184 until a fresh total is reported. HOME Galar regional registrations are currently tracked as approximately 25, separate from exact in-game Sword/Shield Pokedex counters.",
+  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, regional Galar registration estimate, Records screenshot, transfer workflow, and current Box 1 screenshot"
 }
