@@ -5,7 +5,8 @@
     "poke_dollars": {
       "display_name": "Poké Dollars",
       "symbol": "₽",
-      "balance": 29988
+      "balance": 29988,
+      "balance_status": "exact_from_DEV7_live_update"
     },
     "watts": {
       "display_name": "Watts",
@@ -47,7 +48,19 @@
       "balance_before": 23324,
       "balance_after": 29988,
       "reason": "touch keypad exact balance",
-      "location": null
+      "location": null,
+      "source": "DEV7 user live update"
+    },
+    {
+      "currency": "poke_dollars",
+      "kind": "trainer_reward",
+      "amount": 936,
+      "balance_before": null,
+      "balance_after": null,
+      "reason": "Defeated Schoolgirl Hannah",
+      "location": "Route 3",
+      "source": "Verified Route 3 trainer reward plus user-confirmed victory",
+      "notes": "The reward is logged as confirmed, but it is not arithmetically added to the 29,988 balance because the newer DEV7 exact balance may already include this reward and other intervening activity."
     }
   ],
   "balance_observations": [
@@ -58,8 +71,19 @@
       "source_ref": null,
       "confidence": 1.0,
       "location": "Motostoke / early Gym Challenge progression",
-      "applied": true
+      "applied": true,
+      "current_status": "historical"
+    },
+    {
+      "currency": "poke_dollars",
+      "observed_balance": 29988,
+      "source": "DEV7_live_update",
+      "source_ref": "touch keypad exact balance",
+      "confidence": 1.0,
+      "location": "Route 3 progression",
+      "applied": true,
+      "current_status": "current_exact"
     }
   ],
-  "source": "Local live progress; exact balances are recorded only when explicitly reported or extracted from a provided screen/image."
+  "source": "Local live progress; exact DEV7 balance preserved while confirmed trainer rewards are logged without double-counting uncertain timing."
 }

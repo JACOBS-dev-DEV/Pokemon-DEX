@@ -11,18 +11,9 @@
       "trainers_defeated": 2,
       "trainers_total": null,
       "trainer_check_complete": false,
-      "pokemon_caught": [
-        "Rookidee",
-        "Zigzagoon",
-        "Yamper"
-      ],
+      "pokemon_caught": ["Rookidee", "Zigzagoon", "Yamper"],
       "special_encounters": [
-        {
-          "species_name": "Rookidee",
-          "kind": "brilliant_aura",
-          "caught": true,
-          "notes": "Shimmering/glowing overworld encounter; not recorded as shiny."
-        }
+        {"species_name":"Rookidee","kind":"brilliant_aura","caught":true,"notes":"Shimmering/glowing overworld encounter; not recorded as shiny."}
       ],
       "possible_catches": [],
       "pokemon_check_complete": false,
@@ -30,7 +21,7 @@
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Earlier route. Lass Lauren was defeated here. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee were caught here."
+      "notes": "Earlier route. Two trainers are now marked defeated from the user's DEV7 live update; Lass Lauren is the identified trainer. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee were caught here."
     },
     {
       "area_id": "wild-area-first-visit",
@@ -43,13 +34,7 @@
       "trainer_check_complete": false,
       "pokemon_caught": [],
       "special_encounters": [],
-      "possible_catches": [
-        {
-          "species_name": "Duskull",
-          "status": "encountered",
-          "caught": false
-        }
-      ],
+      "possible_catches": [{"species_name":"Duskull","status":"encountered","caught":false}],
       "pokemon_check_complete": false,
       "pokemon_centers": [],
       "pokemon_center_check_complete": false,
@@ -81,8 +66,8 @@
       "visited": true,
       "current": true,
       "complete": false,
-      "trainers_defeated": 2,
-      "trainers_total": null,
+      "trainers_defeated": 4,
+      "trainers_total": 6,
       "trainer_check_complete": false,
       "trainer_battles": [
         {
@@ -91,26 +76,64 @@
           "result": "win",
           "identity_status": "pending",
           "notes": "User confirmed one trainer defeated on Route 3 while heading toward Turffield; identity and roster not yet provided."
+        },
+        {
+          "trainer_name": "Schoolgirl Hannah",
+          "trainer_class": "Schoolgirl",
+          "result": "win",
+          "status": "completed",
+          "opponent_team": [{"species_name":"Pancham","level":13}],
+          "reward_poke_dollars": 936,
+          "identity_status": "confirmed_from_user_screenshot",
+          "result_source": "User explicit confirmation",
+          "notes": "Battle introduction was shown in the user's screenshot and the user later explicitly confirmed Hannah was defeated."
+        },
+        {
+          "trainer_name": "Schoolboy Marvin",
+          "trainer_class": "Schoolboy",
+          "result": "win",
+          "status": "completed",
+          "opponent_team": [{"species_name":"Budew","level":12},{"species_name":"Gossifleur","level":12}],
+          "reward_poke_dollars": 720,
+          "identity_status": "confirmed_from_user_screenshot",
+          "result_source": "User-provided post-battle screenshot",
+          "notes": "Battle introduction and defeat dialogue were both shown in the user's Route 3 screenshots. Roster/reward verified against Route 3 references."
+        },
+        {
+          "trainer_name": "Postman Tad",
+          "trainer_class": "Postman",
+          "result": "win",
+          "status": "completed",
+          "opponent_team": [{"species_name":"Delibird","level":14}],
+          "reward_poke_dollars": 1344,
+          "identity_status": "confirmed_from_user_screenshot",
+          "result_source": "User-provided post-battle screenshot",
+          "notes": "Battle introduction and defeat dialogue were both shown in the user's Route 3 screenshots. Roster/reward verified against Route 3 references."
+        },
+        {
+          "trainer_name": "Schoolboy Peter",
+          "trainer_class": "Schoolboy",
+          "result": null,
+          "status": "battle_started_result_pending",
+          "opponent_team": [{"species_name":"Sizzlipede","level":13},{"species_name":"Dottler","level":14}],
+          "reward_poke_dollars_if_win": 840,
+          "identity_status": "confirmed_from_user_screenshot",
+          "notes": "Battle introduction shown in the user's screenshot. Result remains pending until a victory/defeat is shown or reported."
         }
       ],
-      "pokemon_caught": [],
+      "pokemon_caught": ["Rolycoly"],
       "special_encounters": [],
       "possible_catches": [
-        {
-          "species_name": "Gossifleur",
-          "type_1": "Grass",
-          "status": "encountered",
-          "caught": false,
-          "notes": "User identified a Gossifleur while traveling toward Turffield; catch not yet confirmed."
-        }
+        {"species_name":"Gossifleur","type_1":"Grass","status":"encountered","caught":false,"notes":"User identified a Gossifleur while traveling toward Turffield; catch not yet confirmed."},
+        {"species_name":"Vulpix","type_1":"Fire","status":"caught_registered_location_unconfirmed","caught":true,"number_battled":2,"notes":"User-provided Sword Pokédex screenshot confirms Galar No. 068 Vulpix is caught/registered and has Number Battled 2. Exact catch location is not shown, so it is not added to Route 3's pokemon_caught list."}
       ],
       "pokemon_check_complete": false,
       "pokemon_centers": [],
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Current route toward Turffield and the first Grass Gym. One trainer defeated (identity pending). Gossifleur encountered; catch status pending. Route 3 Growlithe is Shield-only; Sword's corresponding visible encounter is Vulpix."
+      "notes": "Current route toward Turffield and the first Grass Gym. Four trainers are confirmed defeated: one earlier unidentified trainer, Schoolgirl Hannah, Schoolboy Marvin, and Postman Tad. Schoolboy Peter's battle has started but its result is pending. Rolycoly was caught/registered here at Lv. 12 with Number Battled 2."
     }
   ],
-  "source": "User-reported live Pokemon Sword progress plus verified Sword/Shield Route 3 version differences"
+  "source": "User-reported live Pokemon Sword progress, DEV7 live edits, user-provided screenshots, and verified Sword Route 3 trainer/version data"
 }
