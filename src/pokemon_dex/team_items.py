@@ -2,7 +2,8 @@
 
 The tracker is intentionally scoped to the six current party slots. It records
 item changes as history so live edits never silently erase what a Pokemon was
-holding before.
+holding before. Party-management helpers can also synchronize the species label
+for each slot without inventing a held item for a newly inserted Pokemon.
 """
 
 from __future__ import annotations
@@ -89,7 +90,9 @@ def _slot_entry(data: dict, slot: int) -> dict:
         raise TeamItemError("Team slot must be between 1 and 6.")
     entry = next((item for item in data.get("team_items", []) if int(item.get("slot", 0)) == slot), None)
     if entry is None:
-        raise TeamItemError(f"Team slot {slot} is not configured.")
+        entry = {"slot": slot, "species_name": None, "held_item": None, "history": []}
+        data.setdefault("team_items", []).append(entry)
+        data["team_items"].sort(key=lambda row: int(row.get("slot", 99)))
     entry.setdefault("history", [])
     return entry
 
@@ -167,4 +170,55 @@ def swap_held_items(
     b["history"].append({"timestamp": stamp, "from": item_b, "to": item_a, "reason": reason})
     _backup(resolved_path, root=root)
     _save(resolved_path, data)
+    return data
+
+
+def sync_team_item_species(
+    members: list[dict],
+    *,
+    clear_changed_items: bool = True,
+    reason: str = "party membership changed",
+    path: Path | None = None,
+    root: Path = ROOT,
+) -> dict:
+    """Synchronize slot species labels with the active party.
+
+    A replacement/removal clears an old held item by default because the new
+    Pokemon's item is unknown until explicitly observed. The previous value is
+    retained in history. For a pure slot reorder, callers can first swap held
+    items and then call this with ``clear_changed_items=False`` so the item moves
+    with the Pokemon instead of being erased.
+    """
+    root = root.resolve()
+    resolved_path = _safe_path(path, root=root)
+    data = _load(resolved_path)
+    member_species = {
+        int(member.get("slot")): member.get("species_name")
+        for member in members
+        if str(member.get("slot", "")).isdigit() and 1 <= int(member.get("slot")) <= 6
+    }
+    changed = False
+    stamp = _timestamp()
+    for slot in range(1, 7):
+        entry = _slot_entry(data, slot)
+        old_species = entry.get("species_name")
+        new_species = member_species.get(slot)
+        if old_species == new_species:
+            continue
+        if clear_changed_items and entry.get("held_item") is not None:
+            old_item = entry.get("held_item")
+            entry["held_item"] = None
+            entry["history"].append(
+                {
+                    "timestamp": stamp,
+                    "from": old_item,
+                    "to": None,
+                    "reason": f"{reason}: {old_species or 'empty'} -> {new_species or 'empty'}",
+                }
+            )
+        entry["species_name"] = new_species
+        changed = True
+    if changed:
+        _backup(resolved_path, root=root)
+        _save(resolved_path, data)
     return data
