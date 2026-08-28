@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pokemon.schema.json",
+  "title": "Pokemon-DEX complete Pokemon record",
+  "type": "object",
+  "required": ["national_dex", "species_name", "form"],
+  "properties": {
+    "national_dex": {"type": ["integer", "string"]},
+    "species_name": {"type": "string"},
+    "form": {"type": "string", "default": "base"},
+    "generation": {"type": ["integer", "null"]},
+    "region": {"type": ["string", "null"]},
+    "types": {"type": "array", "items": {"type": "string"}, "maxItems": 2},
+    "abilities": {"type": "array", "items": {"type": "string"}},
+    "base_stats": {
+      "type": "object",
+      "properties": {
+        "hp": {"type": ["integer", "null"]},
+        "attack": {"type": ["integer", "null"]},
+        "defense": {"type": ["integer", "null"]},
+        "special_attack": {"type": ["integer", "null"]},
+        "special_defense": {"type": ["integer", "null"]},
+        "speed": {"type": ["integer", "null"]}
+      }
+    },
+    "height": {"type": ["number", "null"]},
+    "weight": {"type": ["number", "null"]},
+    "evolution": {"type": ["object", "null"]},
+    "moves": {"type": "array", "items": {"type": "string"}},
+    "game_availability": {"type": "array", "items": {"type": "string"}},
+    "regional_dex_numbers": {"type": "object"},
+    "art": {"type": "object"},
+    "sources": {"type": "array", "items": {"type": "string"}},
+    "personal_records": {"type": "array"}
+  },
+  "additionalProperties": true
+}

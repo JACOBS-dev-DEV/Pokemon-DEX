@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "modes": [
+    {"id":"pokedex","name":"Pokedex","description":"Browse the complete species, form, game, and personal-record database."},
+    {"id":"personal","name":"Personal Collection","description":"Track caught, owned, team, battle, ribbon, stat, and save-game records."},
+    {"id":"trainer_battle","name":"Trainer Battle","description":"Battle trainer rosters using the local battle engine."},
+    {"id":"wild_battle","name":"Wild Battle","description":"Battle a generated or configured wild Pokemon encounter."},
+    {"id":"training","name":"Training Battle","description":"Offline practice battles used to test teams and battle rules."},
+    {"id":"simulation","name":"Battle Simulation","description":"Run deterministic local battle simulations without modifying save data."}
+  ]
+}

@@ -30,15 +30,24 @@ def load_personal_records() -> list[dict]:
         game = str(data.get("game", path.stem.replace("_", " ").title()))
         for raw in data.get("pokemon", []):
             species = raw.get("species_name") or raw.get("name") or "Unknown"
+            owned_count = raw.get("owned_count")
+            if owned_count is None:
+                owned_count = raw.get("obtained_count")
             record = {
                 "profile_id": profile_id,
                 "game": game,
                 "species_name": str(species),
                 "caught": bool(raw.get("caught", False)),
+                "complete": bool(raw.get("complete", False)),
+                "evolved": bool(raw.get("evolved", False)),
                 "in_team": bool(raw.get("in_team", False)),
                 "team_slot": raw.get("team_slot"),
-                "owned_count": raw.get("owned_count"),
+                "owned_count": owned_count,
+                "obtained_count": raw.get("obtained_count"),
                 "battle_count": raw.get("battle_count"),
+                "research_total": raw.get("research_total"),
+                "regional_id": raw.get("regional_id"),
+                "national_dex": raw.get("national_dex") or raw.get("dex_id"),
                 "type_1": raw.get("type_1"),
                 "type_2": raw.get("type_2"),
                 "found_at_level": raw.get("found_at_level"),
@@ -57,13 +66,27 @@ def summarize_games(records: list[dict] | None = None) -> list[dict]:
         game = record["game"]
         summary = grouped.setdefault(
             game,
-            {"game": game, "records": 0, "caught": 0, "team": 0, "owned_total": 0, "battles": 0},
+            {
+                "game": game,
+                "records": 0,
+                "caught": 0,
+                "complete": 0,
+                "evolved": 0,
+                "team": 0,
+                "owned_total": 0,
+                "battles": 0,
+                "research_total": 0,
+            },
         )
         summary["records"] += 1
         summary["caught"] += int(record["caught"])
+        summary["complete"] += int(record.get("complete", False))
+        summary["evolved"] += int(record.get("evolved", False))
         summary["team"] += int(record["in_team"])
         if isinstance(record.get("owned_count"), int):
             summary["owned_total"] += record["owned_count"]
         if isinstance(record.get("battle_count"), int):
             summary["battles"] += record["battle_count"]
+        if isinstance(record.get("research_total"), int):
+            summary["research_total"] += record["research_total"]
     return sorted(grouped.values(), key=lambda item: item["game"])

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1",
+  "trainers": [
+    {
+      "trainer_id": "jacobs-dev",
+      "name": "JacobS / Dev",
+      "trainer_class": "Player",
+      "game_mode": "personal",
+      "team": [
+        {"species_name": "Chimchar", "level": 5, "max_hp": 19, "attack": 11, "defense": 9},
+        {"species_name": "Scorbunny", "level": 5, "max_hp": 20, "attack": 11, "defense": 9}
+      ]
+    },
+    {
+      "trainer_id": "training-rival",
+      "name": "Training Rival",
+      "trainer_class": "Rival",
+      "game_mode": "training",
+      "team": [
+        {"species_name": "Squirtle", "level": 5, "max_hp": 20, "attack": 10, "defense": 11},
+        {"species_name": "Pikachu", "level": 5, "max_hp": 18, "attack": 11, "defense": 8}
+      ]
+    }
+  ]
+}
