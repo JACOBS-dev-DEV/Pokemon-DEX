@@ -1,10 +1,33 @@
 {
-  "schema_version": "1",
+  "schema_version": "2",
   "games": [
-    {"id":"lets_go","name":"Pokemon Let's Go Pikachu/Eevee"},
-    {"id":"sword_shield","name":"Pokemon Sword/Shield"},
-    {"id":"brilliant_diamond_shining_pearl","name":"Pokemon Brilliant Diamond/Shining Pearl"},
-    {"id":"legends_arceus","name":"Pokemon Legends: Arceus"},
-    {"id":"scarlet_violet","name":"Pokemon Scarlet/Violet"}
+    {
+      "id": "lets_go",
+      "name": "Pokemon Let's Go Pikachu/Eevee"
+    },
+    {
+      "id": "sword",
+      "name": "Pokemon Sword",
+      "family": "sword_shield",
+      "supports_expansion_pass": true
+    },
+    {
+      "id": "shield",
+      "name": "Pokemon Shield",
+      "family": "sword_shield",
+      "supports_expansion_pass": true
+    },
+    {
+      "id": "brilliant_diamond_shining_pearl",
+      "name": "Pokemon Brilliant Diamond/Shining Pearl"
+    },
+    {
+      "id": "legends_arceus",
+      "name": "Pokemon Legends: Arceus"
+    },
+    {
+      "id": "scarlet_violet",
+      "name": "Pokemon Scarlet/Violet"
+    }
   ]
 }
