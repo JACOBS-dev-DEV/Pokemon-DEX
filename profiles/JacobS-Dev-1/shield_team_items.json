@@ -1,0 +1,14 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "team_items": [
+    {"slot": 1, "species_name": "Cinderace", "held_item": null, "history": []},
+    {"slot": 2, "species_name": "Arcanine", "held_item": null, "history": []},
+    {"slot": 3, "species_name": "Zamazenta", "held_item": null, "history": []},
+    {"slot": 4, "species_name": "Drednaw", "held_item": null, "history": []},
+    {"slot": 5, "species_name": null, "held_item": null, "history": []},
+    {"slot": 6, "species_name": null, "held_item": null, "history": []}
+  ],
+  "notes": "Shield team-only held-item tracker. Items remain unknown until confirmed from the user's updated screenshots or live report.",
+  "source": "Prepared from partial live Shield party report"
+}
