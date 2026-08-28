@@ -1,0 +1,13 @@
+{
+  "schema_version": "1",
+  "dexes": [
+    {"id":"national","name":"National Dex"},
+    {"id":"kanto","name":"Kanto Dex"},
+    {"id":"galar","name":"Galar Dex"},
+    {"id":"sinnoh","name":"Sinnoh Dex"},
+    {"id":"hisui","name":"Hisui Dex"},
+    {"id":"paldea","name":"Paldea Dex"},
+    {"id":"kitakami","name":"Kitakami Dex"},
+    {"id":"blueberry","name":"Blueberry Dex"}
+  ]
+}
