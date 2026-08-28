@@ -1,0 +1,24 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "curry_log": [
+    {
+      "sequence": 1,
+      "name": "Spicy Burger-Steak Curry",
+      "taste_rating": "Wobbuffet Class",
+      "location": "Route 3 camp area",
+      "effects": {
+        "hp_restored": "half",
+        "experience": "a few Exp. Points",
+        "friendship": "Raboot and the rest of the party got friendlier"
+      },
+      "confirmed_from": "User-provided curry result screenshots",
+      "notes": "Exact berry/ingredient recipe quantities were not visible, so they are intentionally not invented."
+    }
+  ],
+  "summary": {
+    "curries_logged": 1,
+    "latest_rating": "Wobbuffet Class"
+  },
+  "source": "User-provided live Pokemon Sword curry screenshots"
+}
