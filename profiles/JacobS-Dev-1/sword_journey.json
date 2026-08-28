@@ -2,12 +2,12 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "route_3_toward_turffield",
+    "current_phase": "galar_mine_toward_turffield",
     "dynamax_band_received": true,
     "gym_challenge_registered": true,
     "gym_challenge_started": true,
-    "current_area": "Route 3",
-    "next_step": "reach_turffield_grass_gym",
+    "current_area": "Galar Mine",
+    "next_step": "continue_through_galar_mine_toward_turffield",
     "train_boarded": true,
     "wild_area_reached": true,
     "motostoke_reached": true,
@@ -15,6 +15,7 @@
     "opening_ceremony_started": true,
     "opening_ceremony_complete": true,
     "route_3_reached": true,
+    "galar_mine_reached": true,
     "turffield_reached": false,
     "starter_current_species": "Raboot"
   },
@@ -33,13 +34,18 @@
     {"id":"schoolgirl_hannah_defeated","complete":true,"notes":"User explicitly confirmed Schoolgirl Hannah was defeated on Route 3."},
     {"id":"schoolboy_marvin_defeated","complete":true,"notes":"User-provided Route 3 screenshots show Marvin's battle introduction and defeat dialogue."},
     {"id":"postman_tad_defeated","complete":true,"notes":"User-provided Route 3 screenshots show Tad's battle introduction and defeat dialogue."},
+    {"id":"schoolboy_peter_defeated","complete":true,"notes":"User-provided post-battle dialogue screenshot confirms Schoolboy Peter was defeated on Route 3."},
     {"id":"route_3_rolycoly_caught","complete":true,"notes":"Live screenshots show a wild Lv. 12 Rolycoly encounter followed by its Galar No. 161 Pokédex registration page."},
     {"id":"route_3_curry_wobbuffet_class","complete":true,"notes":"User cooked Spicy Burger-Steak Curry and received Wobbuffet Class. The result screen states HP restored by half, a few Exp. Points gained, and Raboot plus the rest of the party became friendlier."},
-    {"id":"reach_turffield","complete":false,"pending":true,"notes":"Next destination is Turffield and the Grass Gym; do not mark reached until the user confirms arrival."}
+    {"id":"home_transfers_gible_ponyta","complete":true,"notes":"Later Sword party screenshots confirm the Lv. 1 Gible and regular Ponyta from Pokemon HOME were transferred into Sword and joined the active party."},
+    {"id":"galar_mine_first_arrival","complete":true,"notes":"A live screenshot shows the user battling a Lv. 11 Diglett inside Galar Mine after Route 3 progression."},
+    {"id":"reach_turffield","complete":false,"pending":true,"notes":"Turffield and the Grass Gym remain ahead; do not mark reached until confirmed."
+    }
   ],
   "pending_pokemon_encounters": [
     {"species_name":"Duskull","type_1":"Ghost","caught":false,"location":"Wild Area","status":"encounter_reported_catch_not_confirmed","notes":"User referred to the skull-like Ghost-type Pokemon; tracked as Duskull pending catch confirmation."},
-    {"species_name":"Gossifleur","type_1":"Grass","caught":false,"location":"Route 3","status":"encounter_reported_catch_not_confirmed","notes":"User identified Gossifleur while traveling toward Turffield; catch not yet confirmed."}
+    {"species_name":"Gossifleur","type_1":"Grass","caught":false,"location":"Route 3","status":"encounter_reported_catch_not_confirmed","notes":"User identified Gossifleur while traveling toward Turffield; catch not yet confirmed."},
+    {"species_name":"Diglett","type_1":"Ground","caught":false,"location":"Galar Mine","level":11,"status":"battle_started_catch_result_pending","notes":"User-provided live screenshot shows a Lv. 11 Diglett encounter in Galar Mine. Catch/battle result is not yet confirmed."}
   ],
   "trainer_battles": [
     {"opponent":"Hop","result":"win","sequence":1,"phase":"early_game","before_dynamax_band":true,"notes":"First early-game win against Hop."},
@@ -48,20 +54,19 @@
     {"opponent":"Hop","result":"win","sequence":4,"phase":"post_opening_ceremony","location":"Motostoke progression","hop_battle_number":3,"notes":"Third confirmed win against Hop."},
     {"opponent":"Schoolgirl Hannah","trainer_class":"Schoolgirl","result":"win","sequence":5,"phase":"route_3_toward_turffield","location":"Route 3","identity_pending":false,"opponent_team":[{"species_name":"Pancham","level":13}],"reward_poke_dollars":936,"identity_source":"User-provided battle-introduction screenshot","roster_source":"Verified Route 3 trainer roster","result_source":"User explicit confirmation","notes":"User explicitly confirmed Schoolgirl Hannah was defeated after the battle-introduction screenshot."},
     {"opponent":"Schoolboy Marvin","trainer_class":"Schoolboy","result":"win","sequence":6,"phase":"route_3_toward_turffield","location":"Route 3","identity_pending":false,"opponent_team":[{"species_name":"Budew","level":12},{"species_name":"Gossifleur","level":12}],"reward_poke_dollars":720,"identity_source":"User-provided battle-introduction screenshot","result_source":"User-provided defeat-dialogue screenshot","roster_source":"Verified Route 3 trainer roster"},
-    {"opponent":"Postman Tad","trainer_class":"Postman","result":"win","sequence":7,"phase":"route_3_toward_turffield","location":"Route 3","identity_pending":false,"opponent_team":[{"species_name":"Delibird","level":14}],"reward_poke_dollars":1344,"identity_source":"User-provided battle-introduction screenshot","result_source":"User-provided defeat-dialogue screenshot","roster_source":"Verified Route 3 trainer roster"}
+    {"opponent":"Postman Tad","trainer_class":"Postman","result":"win","sequence":7,"phase":"route_3_toward_turffield","location":"Route 3","identity_pending":false,"opponent_team":[{"species_name":"Delibird","level":14}],"reward_poke_dollars":1344,"identity_source":"User-provided battle-introduction screenshot","result_source":"User-provided defeat-dialogue screenshot","roster_source":"Verified Route 3 trainer roster"},
+    {"opponent":"Schoolboy Peter","trainer_class":"Schoolboy","result":"win","sequence":8,"phase":"route_3_toward_turffield","location":"Route 3","identity_pending":false,"opponent_team":[{"species_name":"Sizzlipede","level":13},{"species_name":"Dottler","level":14}],"reward_poke_dollars":840,"identity_source":"User-provided battle-introduction screenshot","result_source":"User-provided post-battle dialogue screenshot","roster_source":"Verified Route 3 trainer roster","notes":"Peter's post-battle dialogue confirms the win."}
   ],
-  "pending_trainer_battles": [
-    {"opponent":"Schoolboy Peter","trainer_class":"Schoolboy","location":"Route 3","status":"battle_started_result_pending","opponent_team":[{"species_name":"Sizzlipede","level":13},{"species_name":"Dottler","level":14}],"reward_poke_dollars_if_win":840,"identity_source":"User-provided battle-introduction screenshot","roster_source":"Verified Route 3 trainer roster","notes":"Do not count as a win until the user confirms or shows Peter's defeat."}
-  ],
+  "pending_trainer_battles": [],
   "summary": {
-    "trainer_battles_logged": 7,
-    "trainer_wins": 7,
+    "trainer_battles_logged": 8,
+    "trainer_wins": 8,
     "trainer_losses": 0,
     "hop_wins": 3,
     "pending_hop_battles": 0,
     "identified_route_2_trainer_wins": 1,
-    "route_3_trainer_wins": 4,
-    "pending_route_3_trainer_battles": 1
+    "route_3_trainer_wins": 5,
+    "pending_route_3_trainer_battles": 0
   },
-  "source": "User-reported live Pokemon Sword progress plus verified Route 2 and Route 3 trainer rosters and user-provided live screenshots"
+  "source": "User-reported live Pokemon Sword progress plus verified Route 2/Route 3 trainer rosters, Pokemon HOME transfer records, and user-provided live screenshots"
 }
