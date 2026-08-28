@@ -178,7 +178,22 @@
       "evolved_from": "Scorbunny",
       "obtained_method": "evolution",
       "notes": "User-provided live evolution screenshot confirms the starter Scorbunny evolved into Raboot. Level recorded as 16, Scorbunny's standard evolution threshold."
+    },
+    {
+      "local_id": 14,
+      "dex_id": 161,
+      "species_name": "Rolycoly",
+      "type_1": "Rock",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 2,
+      "pokedex_registered": true,
+      "caught_location": "Route 3",
+      "found_at_level": 12,
+      "level": 12,
+      "notes": "User-provided live Route 3 screenshots show a wild Lv. 12 Rolycoly encounter followed by its Galar Pokédex No. 161 registration page with Number Battled 2."
     }
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user live edits from DEV7 and user-provided Pokédex/evolution screenshots"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user live edits from DEV7 and user-provided Pokédex/evolution/live-play screenshots"
 }
