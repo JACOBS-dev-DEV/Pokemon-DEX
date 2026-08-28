@@ -49,14 +49,20 @@
         385,
         399, 400
       ],
-      "caught_ids_reported_count": 56,
-      "caught_ids_remaining_to_identify": 5,
+      "caught_ids_transcribed_count": 56,
+      "reported_id_list_claimed_complete": true,
+      "all_reported_ids_are_caught": true,
+      "caught_counter_minus_transcribed_ids": 5,
+      "counter_discrepancy_status": "unresolved_transcription_or_range_parsing_difference",
+      "do_not_invent_additional_caught_ids": true,
       "species_names_status": "not_yet_supplied",
       "id_interpretation_notes": [
+        "The user confirmed these numbers were read directly from their Pokemon Shield Galar Pokedex and represent all caught IDs they named.",
+        "The user considers the spoken ID list almost accurate; any difference from the game's 61-caught counter should be treated as a transcription/range-parsing issue, not as five invented missing Pokemon.",
         "Explicit spoken ranges using 'to' were expanded, such as 4 to 6, 10 to 12, 29 to 31, 34 to 35, 42 to 43, 45 to 46, 70 to 71, 144 to 145, 161 to 162, 164 to 166, and 399 to 400.",
         "Spoken dash-like pauses without the word 'to' were treated as separate IDs, such as 215, 222, 227, 230, 246, and 265.",
         "The user corrected a spoken 96 to 98; only 98 is stored.",
-        "The spoken value between 119 and 144 was interpreted as 136 because the list was otherwise ascending; confirm from screenshots if needed."
+        "The spoken value between 119 and 144 is currently transcribed as 136 because the sequence was otherwise ascending; preserve this as a transcription detail until independently confirmed."
       ]
     },
     {
@@ -87,5 +93,5 @@
     "count_crown_tundra": true,
     "apply_same_combined_policy_to_sword": false
   },
-  "source": "User-reported live Pokemon Shield Pokedex counters and Galar caught Dex numbers"
+  "source": "User-reported live Pokemon Shield Pokedex counters and caught Galar Dex numbers read directly from the in-game Pokedex"
 }
