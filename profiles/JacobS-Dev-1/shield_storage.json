@@ -7,7 +7,21 @@
   "summary": {
     "boxes_recorded": 0,
     "pokemon_recorded": 0,
-    "off_save_storage_possible": true
+    "off_save_storage_possible": true,
+    "approximate_full_boxes_reported": 2,
+    "approximate_only": true
+  },
+  "organization": {
+    "duplicate_area": {
+      "exists": true,
+      "marker_or_color": "red",
+      "notes": "User reported that red-marked entries/area are used for duplicates. Exact box/slot layout has not been captured yet."
+    },
+    "duplicate_disposition": {
+      "usually_traded_away": true,
+      "foreign_language_name_note": "User also tends to trade away duplicate Pokemon with Chinese names.",
+      "individual_trade_history_captured": false
+    }
   },
   "external_storage": {
     "pokemon_home": {
@@ -24,6 +38,6 @@
     "slot_contents": true,
     "pokemon_home_contents": true
   },
-  "notes": "No Shield PC/box screenshots are currently available. The user does not want to capture them right now. Keep Shield boxes, the six-member active Champion team, and Pokemon HOME storage separate. Do not infer box or HOME contents from Pokedex caught IDs.",
-  "source": "User-reported Shield storage state and future screenshot plan"
+  "notes": "User currently estimates roughly two full Shield PC boxes, but the exact box contents are not captured. Keep Shield boxes, the six-member active Champion team, and Pokemon HOME storage separate. Do not infer box or HOME contents from Pokedex caught IDs.",
+  "source": "User-reported Shield storage state, duplicate organization, and future screenshot plan"
 }
