@@ -1,20 +1,22 @@
 {
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Shield",
-  "sync_status": "recent_screenshot_sync_in_progress",
+  "sync_status": "current_available_photos_synced",
   "pokemon": [
-    {"local_id":1,"species_name":"Cinderace","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":1,"level":75},
-    {"local_id":2,"species_name":"Arcanine","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":2,"level":67},
-    {"local_id":3,"species_name":"Zamazenta","type_1":"Fighting","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":3,"level":73},
-    {"local_id":4,"species_name":"Drednaw","type_1":"Water","type_2":"Rock","caught":true,"owned_count":1,"in_team":true,"team_slot":4,"level":73},
-    {"local_id":5,"species_name":"Eternatus","type_1":"Poison","type_2":"Dragon","caught":true,"owned_count":1,"in_team":true,"team_slot":5,"level":71},
-    {"local_id":6,"species_name":"Jolteon","type_1":"Electric","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":6,"level":72}
+    {"local_id":1,"species_name":"Cinderace","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":1,"level":75,"champion":true},
+    {"local_id":2,"species_name":"Arcanine","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":2,"level":67,"champion":true},
+    {"local_id":3,"species_name":"Zamazenta","type_1":"Fighting","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":3,"level":73,"champion":true},
+    {"local_id":4,"species_name":"Drednaw","type_1":"Water","type_2":"Rock","caught":true,"owned_count":1,"in_team":true,"team_slot":4,"level":73,"champion":true},
+    {"local_id":5,"species_name":"Eternatus","type_1":"Poison","type_2":"Dragon","caught":true,"owned_count":1,"in_team":true,"team_slot":5,"level":71,"champion":true},
+    {"local_id":6,"species_name":"Jolteon","type_1":"Electric","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":6,"level":72,"champion":true}
   ],
   "progress": {
     "current_area": "Wyndon",
     "play_time": "67:28",
     "badges_obtained": 8,
     "badges_total": 8,
+    "champion": true,
+    "champion_team_captured": true,
     "money_poke_dollars": null,
     "team_captured": true,
     "boxes_captured": false,
@@ -36,10 +38,16 @@
   },
   "session": {
     "active": true,
-    "state_capture_pending": true,
-    "photos_received": ["part_1", "part_2"],
-    "notes": "Recent screenshots have synchronized the full six-member party, current Wyndon save state, League Card/trainer ID, all eight badges, Pokedex counters, and detailed party records. Additional recent photo parts are still expected."
+    "available_photo_capture_complete": true,
+    "state_capture_pending": false,
+    "photos_received": ["part_1", "part_2", "part_3.0", "part_3.1"],
+    "pending_future_data": [
+      "PC/box contents",
+      "remaining main Galar Pokedex caught IDs/species not yet supplied",
+      "future live Shield changes"
+    ],
+    "notes": "All Shield screenshots currently available from the user have been synchronized. Box contents and remaining main-Galar Dex identities are intentionally left pending until supplied later."
   },
-  "notes": "Pokemon Shield is the active live run. Recent screenshots supersede the earlier partial spoken team snapshot where exact values differ.",
-  "source": "User live Shield report plus recent Part 1 and Part 2 screenshots"
+  "notes": "Pokemon Shield remains the active live run. Current available photo data is fully synchronized without inventing missing box or Pokedex entries.",
+  "source": "User live Shield reports plus Parts 1, 2, 3.0, and 3.1 screenshot batches"
 }
