@@ -1,4 +1,32 @@
 {
   "schema_version": "1",
-  "profiles": []
+  "profiles": [
+    {
+      "path": "res/profiles/profile.template.json",
+      "scope": "canonical",
+      "id": null,
+      "name": "",
+      "form": "base",
+      "game": null,
+      "profile": null
+    },
+    {
+      "path": "profiles/JacobS-Dev-1/brilliant_diamond.json",
+      "scope": "personal",
+      "id": null,
+      "name": null,
+      "form": "base",
+      "game": "Pokemon Brilliant Diamond",
+      "profile": "JacobS-Dev-1"
+    },
+    {
+      "path": "profiles/JacobS-Dev-1/sword.json",
+      "scope": "personal",
+      "id": null,
+      "name": null,
+      "form": "base",
+      "game": "Pokemon Sword",
+      "profile": "JacobS-Dev-1"
+    }
+  ]
 }
