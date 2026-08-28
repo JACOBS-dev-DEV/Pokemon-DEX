@@ -1,7 +1,7 @@
 {
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Shield",
-  "sync_status": "awaiting_live_sync",
+  "sync_status": "live_session_started_awaiting_state_capture",
   "pokemon": [],
   "progress": {
     "current_area": null,
@@ -11,6 +11,11 @@
     "boxes_captured": false,
     "league_card_captured": false
   },
-  "notes": "User reported an existing Pokemon Shield run and may switch to it next. This file is only a placeholder for live synchronization; no progress is assumed until the user shows or reports the current Shield save state.",
-  "source": "User requested Shield progress tracking; awaiting live save details"
+  "session": {
+    "active": true,
+    "state_capture_pending": true,
+    "notes": "Shield has been launched. Await the user's current save details before filling progression, team, money, boxes, or League Card fields."
+  },
+  "notes": "Pokemon Shield is now the active live run. No save progress is assumed until the user shows or reports the current state.",
+  "source": "User confirmed Pokemon Shield is now being played"
 }
