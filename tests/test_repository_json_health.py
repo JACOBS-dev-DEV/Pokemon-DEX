@@ -14,6 +14,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 JSON_ROOTS = (ROOT / "profiles", ROOT / "res")
 MERGE_MARKERS = ("<<<<<<<", "=======", ">>>>>>>")
+RUNTIME_DIR_NAMES = {"_backups", "_backup", "_tmp", "_temp"}
+
+
+def _is_runtime_artifact(path: Path) -> bool:
+    return any(part in RUNTIME_DIR_NAMES for part in path.parts)
 
 
 class RepositoryJsonHealthTests(unittest.TestCase):
@@ -25,6 +30,9 @@ class RepositoryJsonHealthTests(unittest.TestCase):
                 continue
 
             for path in sorted(json_root.rglob("*.json")):
+                if _is_runtime_artifact(path):
+                    continue
+
                 text = path.read_text(encoding="utf-8")
                 relative = path.relative_to(ROOT)
 
