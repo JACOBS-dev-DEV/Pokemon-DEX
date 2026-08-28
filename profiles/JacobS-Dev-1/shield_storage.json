@@ -2,16 +2,28 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Shield",
   "captured": false,
+  "storage_complete": false,
   "boxes": [],
   "summary": {
     "boxes_recorded": 0,
-    "pokemon_recorded": 0
+    "pokemon_recorded": 0,
+    "off_save_storage_possible": true
+  },
+  "external_storage": {
+    "pokemon_home": {
+      "accessible": true,
+      "contents_captured": false,
+      "transfers_confirmed": true,
+      "duplicate_transfers_possible": true,
+      "notes": "User reported moving some Shield Pokemon, especially duplicates, into Pokemon HOME. Shield PC boxes therefore should not be treated as a complete inventory of everything caught/owned from this save."
+    }
   },
   "pending": {
     "box_screenshots": true,
     "box_names": true,
-    "slot_contents": true
+    "slot_contents": true,
+    "pokemon_home_contents": true
   },
-  "notes": "No Shield PC/box screenshots are currently available. The user does not want to capture them right now. Keep storage separate from the six-member active Champion team and do not infer box contents from Pokédex caught IDs.",
-  "source": "Prepared for future user-provided Pokemon Shield PC/box screenshots"
+  "notes": "No Shield PC/box screenshots are currently available. The user does not want to capture them right now. Keep Shield boxes, the six-member active Champion team, and Pokemon HOME storage separate. Do not infer box or HOME contents from Pokedex caught IDs.",
+  "source": "User-reported Shield storage state and future screenshot plan"
 }
