@@ -133,7 +133,19 @@
       "evolved_from": "Blipbug",
       "obtained_method": "evolution",
       "notes": "User confirmed the active Blipbug evolved into Dottler."
+    },
+    {
+      "local_id": 11,
+      "species_name": "Gossifleur",
+      "type_1": "Grass",
+      "type_2": null,
+      "caught": false,
+      "owned_count": 0,
+      "battle_count": 0,
+      "encountered": true,
+      "encounter_location": "Route 3",
+      "notes": "User identified Gossifleur while traveling toward Turffield; catch not yet confirmed."
     }
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress and current team evolution updates"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress and current team/evolution/encounter updates"
 }
