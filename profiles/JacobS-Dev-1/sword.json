@@ -1,0 +1,14 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "pokemon": [
+    {"local_id":1,"dex_id":4,"species_name":"Scorbunny","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"battle_count":0},
+    {"local_id":2,"dex_id":24,"species_name":"Skwovet","type_1":"Normal","type_2":null,"caught":true,"owned_count":1,"battle_count":4},
+    {"local_id":3,"dex_id":21,"species_name":"Rookidee","type_1":"Flying","type_2":null,"caught":true,"owned_count":2,"battle_count":2},
+    {"local_id":4,"dex_id":34,"species_name":"Wooloo","type_1":"Normal","type_2":null,"caught":false,"owned_count":0,"battle_count":1},
+    {"local_id":5,"dex_id":10,"species_name":"Blipbug","type_1":"Bug","type_2":null,"caught":true,"owned_count":2,"battle_count":1},
+    {"local_id":6,"dex_id":null,"species_name":"Nickin","type_1":null,"type_2":null,"caught":false,"owned_count":0,"battle_count":1},
+    {"local_id":7,"dex_id":null,"species_name":"Chewtle","type_1":null,"type_2":null,"caught":true,"owned_count":1,"battle_count":1}
+  ],
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1"
+}
