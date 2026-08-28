@@ -145,7 +145,20 @@
       "encountered": true,
       "encounter_location": "Route 3",
       "notes": "User identified Gossifleur while traveling toward Turffield; catch not yet confirmed."
+    },
+    {
+      "local_id": 12,
+      "dex_id": 68,
+      "species_name": "Vulpix",
+      "type_1": "Fire",
+      "type_2": null,
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 2,
+      "pokedex_registered": true,
+      "caught_location": null,
+      "notes": "User-provided Sword Pokédex screenshot shows Vulpix as Galar No. 068 with the caught/registered marker and Number Battled 2. Exact catch location is not shown, so it is intentionally left unset."
     }
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress and current team/evolution/encounter updates"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress, current team/evolution/encounter updates, and user-provided Pokédex screenshots"
 }
