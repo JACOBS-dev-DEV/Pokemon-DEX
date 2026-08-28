@@ -7,7 +7,57 @@
       "name": "Galar Pokedex",
       "content_scope": "base_game",
       "caught": 61,
-      "seen": 231
+      "seen": 231,
+      "caught_ids_reported": [
+        4, 5, 6,
+        10, 11, 12,
+        14,
+        21,
+        24,
+        29, 30, 31,
+        34, 35,
+        42, 43,
+        45, 46,
+        48,
+        60,
+        68,
+        70, 71,
+        95,
+        98,
+        107,
+        111, 112,
+        116, 119,
+        136,
+        144, 145,
+        159,
+        161, 162,
+        164, 165, 166,
+        168,
+        178,
+        196,
+        198,
+        215,
+        222,
+        227,
+        230,
+        234,
+        246,
+        265,
+        287,
+        305,
+        318,
+        385,
+        399, 400
+      ],
+      "caught_ids_reported_count": 56,
+      "caught_ids_remaining_to_identify": 5,
+      "species_names_status": "not_yet_supplied",
+      "id_interpretation_notes": [
+        "Explicit spoken ranges using 'to' were expanded, such as 4 to 6, 10 to 12, 29 to 31, 34 to 35, 42 to 43, 45 to 46, 70 to 71, 144 to 145, 161 to 162, 164 to 166, and 399 to 400.",
+        "Spoken dash-like pauses without the word 'to' were treated as separate IDs, such as 215, 222, 227, 230, 246, and 265.",
+        "The user corrected a spoken 96 to 98; only 98 is stored.",
+        "The spoken value between 119 and 144 was interpreted as 136 because the list was otherwise ascending; confirm from screenshots if needed."
+      ]
     },
     {
       "dex_id": "isle_of_armor",
@@ -37,5 +87,5 @@
     "count_crown_tundra": true,
     "apply_same_combined_policy_to_sword": false
   },
-  "source": "User-reported live Pokemon Shield Pokedex counters"
+  "source": "User-reported live Pokemon Shield Pokedex counters and Galar caught Dex numbers"
 }
