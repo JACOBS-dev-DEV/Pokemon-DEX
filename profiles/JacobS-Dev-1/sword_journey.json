@@ -1,0 +1,34 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "journey": {
+    "current_phase": "early_game_pre_dynamax_band",
+    "dynamax_band_received": false,
+    "gym_challenge_started": false
+  },
+  "trainer_battles": [
+    {
+      "opponent": "Hop",
+      "result": "win",
+      "sequence": 1,
+      "phase": "early_game",
+      "before_dynamax_band": true,
+      "notes": "First early-game win against Hop."
+    },
+    {
+      "opponent": "Hop",
+      "result": "win",
+      "sequence": 2,
+      "phase": "early_game",
+      "before_dynamax_band": true,
+      "notes": "Second early-game win against Hop, before receiving the Dynamax Band."
+    }
+  ],
+  "summary": {
+    "trainer_battles_logged": 2,
+    "trainer_wins": 2,
+    "trainer_losses": 0,
+    "hop_wins": 2
+  },
+  "source": "User-reported live Pokemon Sword progress"
+}
