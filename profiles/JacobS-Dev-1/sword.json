@@ -7,8 +7,9 @@
     {"local_id":3,"dex_id":21,"species_name":"Rookidee","type_1":"Flying","type_2":null,"caught":true,"owned_count":2,"battle_count":2},
     {"local_id":4,"dex_id":34,"species_name":"Wooloo","type_1":"Normal","type_2":null,"caught":false,"owned_count":0,"battle_count":1},
     {"local_id":5,"dex_id":10,"species_name":"Blipbug","type_1":"Bug","type_2":null,"caught":true,"owned_count":2,"battle_count":1},
-    {"local_id":6,"dex_id":null,"species_name":"Nickin","type_1":null,"type_2":null,"caught":false,"owned_count":0,"battle_count":1},
-    {"local_id":7,"dex_id":null,"species_name":"Chewtle","type_1":null,"type_2":null,"caught":true,"owned_count":1,"battle_count":1}
+    {"local_id":6,"dex_id":29,"species_name":"Nickin","type_1":"Dark","type_2":null,"caught":false,"owned_count":0,"battle_count":1,"notes":"Original sheet spelling preserved; likely Nickit."},
+    {"local_id":7,"dex_id":42,"species_name":"Chewtle","type_1":"Water","type_2":null,"caught":true,"owned_count":1,"battle_count":1},
+    {"local_id":8,"dex_id":31,"species_name":"Zigzagoon","form":"Galarian","type_1":"Dark","type_2":"Normal","caught":true,"owned_count":1,"battle_count":0,"caught_location":"Route 2","notes":"User-reported live catch; no nickname tracking."}
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress"
 }
