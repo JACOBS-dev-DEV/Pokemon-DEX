@@ -39,6 +39,7 @@
       "caught": true,
       "owned_count": 3,
       "battle_count": 4,
+      "in_team": false,
       "caught_location": "Route 2",
       "special_encounters": [
         {
@@ -88,12 +89,14 @@
       "species_name": "Chewtle",
       "type_1": "Water",
       "type_2": null,
+      "sex": "female",
       "caught": true,
       "owned_count": 1,
       "battle_count": 1,
       "in_team": true,
       "team_slot": 5,
-      "level": 12
+      "level": 13,
+      "notes": "Current level and team slot confirmed by the user's latest Sword EXP screen."
     },
     {
       "local_id": 8,
@@ -114,11 +117,15 @@
       "species_name": "Yamper",
       "type_1": "Electric",
       "type_2": null,
+      "sex": "male",
       "caught": true,
       "owned_count": 1,
       "battle_count": 1,
+      "in_team": true,
+      "team_slot": 6,
+      "level": 9,
       "caught_location": "Route 2",
-      "notes": "User-reported live catch; no nickname tracking."
+      "notes": "User-reported Route 2 catch; current team slot and Lv. 9 confirmed by the latest Sword EXP screen."
     },
     {
       "local_id": 10,
@@ -129,13 +136,12 @@
       "caught": true,
       "owned_count": 1,
       "battle_count": 0,
-      "in_team": true,
-      "team_slot": 3,
+      "in_team": false,
       "level": 10,
       "evolved": true,
       "evolved_from": "Blipbug",
       "obtained_method": "evolution",
-      "notes": "User confirmed the active Blipbug evolved into Dottler."
+      "notes": "User confirmed the active Blipbug evolved into Dottler. Later removed from the active party when the HOME-transfer lineup was formed."
     },
     {
       "local_id": 11,
@@ -155,12 +161,16 @@
       "species_name": "Vulpix",
       "type_1": "Fire",
       "type_2": null,
+      "sex": "male",
       "caught": true,
       "owned_count": 1,
       "battle_count": 2,
       "pokedex_registered": true,
+      "in_team": true,
+      "team_slot": 4,
+      "level": 10,
       "caught_location": null,
-      "notes": "User-provided Sword Pokédex screenshot shows Vulpix as Galar No. 068 with the caught/registered marker and Number Battled 2. Exact catch location is not shown, so it is intentionally left unset."
+      "notes": "Galar No. 068 with Number Battled 2. Exact catch location remains unset; current team slot and Lv. 10 are confirmed by the latest Sword EXP screen."
     },
     {
       "local_id": 13,
@@ -168,16 +178,17 @@
       "species_name": "Raboot",
       "type_1": "Fire",
       "type_2": null,
+      "sex": "male",
       "caught": true,
       "owned_count": 1,
       "battle_count": 0,
       "in_team": true,
       "team_slot": 1,
-      "level": 16,
+      "level": 18,
       "evolved": true,
       "evolved_from": "Scorbunny",
       "obtained_method": "evolution",
-      "notes": "User-provided live evolution screenshot confirms the starter Scorbunny evolved into Raboot. Level recorded as 16, Scorbunny's standard evolution threshold."
+      "notes": "Starter evolution confirmed from live screenshots; latest Sword EXP screen confirms Lv. 18 in team slot 1."
     },
     {
       "local_id": 14,
@@ -193,7 +204,57 @@
       "found_at_level": 12,
       "level": 12,
       "notes": "User-provided live Route 3 screenshots show a wild Lv. 12 Rolycoly encounter followed by its Galar Pokédex No. 161 registration page with Number Battled 2."
+    },
+    {
+      "local_id": 15,
+      "species_name": "Gible",
+      "form": "regular",
+      "type_1": "Dragon",
+      "type_2": "Ground",
+      "sex": "female",
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 0,
+      "in_team": true,
+      "team_slot": 2,
+      "level": 8,
+      "obtained_level": 1,
+      "obtained_method": "pokemon_home_transfer",
+      "source_storage": "Pokemon HOME Box 1",
+      "notes": "Confirmed transferred from Pokemon HOME into Sword at Lv. 1; latest Sword EXP screen confirms Lv. 8 in team slot 2. The caught flag represents obtained/owned status in this personal tracker, not a wild Sword capture."
+    },
+    {
+      "local_id": 16,
+      "species_name": "Ponyta",
+      "form": "regular",
+      "type_1": "Fire",
+      "type_2": null,
+      "sex": "male",
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 0,
+      "in_team": true,
+      "team_slot": 3,
+      "level": 9,
+      "obtained_level": 1,
+      "obtained_method": "pokemon_home_transfer",
+      "source_storage": "Pokemon HOME Box 1",
+      "notes": "Confirmed transferred from Pokemon HOME into Sword at Lv. 1; latest Sword EXP screen confirms Lv. 9 in team slot 3. The caught flag represents obtained/owned status in this personal tracker, not a wild Sword capture."
+    },
+    {
+      "local_id": 17,
+      "species_name": "Diglett",
+      "type_1": "Ground",
+      "type_2": null,
+      "sex": "female",
+      "caught": false,
+      "owned_count": 0,
+      "battle_count": 0,
+      "encountered": true,
+      "encounter_location": "Galar Mine",
+      "encountered_level": 11,
+      "notes": "User-provided live screenshot shows a Lv. 11 Diglett encounter in Galar Mine. Catch/battle result is not yet confirmed."
     }
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user live edits from DEV7 and user-provided Pokédex/evolution/live-play screenshots"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user live edits, Pokemon HOME transfers, and user-provided live Sword screenshots"
 }
