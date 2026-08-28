@@ -93,7 +93,7 @@
       "battle_count": 1,
       "in_team": true,
       "team_slot": 5,
-      "level": 12
+      "level": 13
     },
     {
       "local_id": 8,
@@ -118,7 +118,10 @@
       "owned_count": 1,
       "battle_count": 1,
       "caught_location": "Route 2",
-      "notes": "User-reported live catch; no nickname tracking."
+      "notes": "User-reported live catch; no nickname tracking.",
+      "in_team": true,
+      "team_slot": 1,
+      "level": 10
     },
     {
       "local_id": 10,
@@ -160,7 +163,10 @@
       "battle_count": 2,
       "pokedex_registered": true,
       "caught_location": null,
-      "notes": "User-provided Sword Pokédex screenshot shows Vulpix as Galar No. 068 with the caught/registered marker and Number Battled 2. Exact catch location is not shown, so it is intentionally left unset."
+      "notes": "User-provided Sword Pokédex screenshot shows Vulpix as Galar No. 068 with the caught/registered marker and Number Battled 2. Exact catch location is not shown, so it is intentionally left unset.",
+      "level": 11,
+      "in_team": true,
+      "team_slot": 1
     },
     {
       "local_id": 13,
@@ -173,8 +179,8 @@
       "battle_count": 0,
       "in_team": true,
       "team_slot": 1,
-      "level": 16,
-      "evolved": true,
+      "level": 18,
+      "evolved": false,
       "evolved_from": "Scorbunny",
       "obtained_method": "evolution",
       "notes": "User-provided live evolution screenshot confirms the starter Scorbunny evolved into Raboot. Level recorded as 16, Scorbunny's standard evolution threshold."
