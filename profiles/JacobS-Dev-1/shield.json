@@ -1,0 +1,16 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "sync_status": "awaiting_live_sync",
+  "pokemon": [],
+  "progress": {
+    "current_area": null,
+    "badges_obtained": null,
+    "money_poke_dollars": null,
+    "team_captured": false,
+    "boxes_captured": false,
+    "league_card_captured": false
+  },
+  "notes": "User reported an existing Pokemon Shield run and may switch to it next. This file is only a placeholder for live synchronization; no progress is assumed until the user shows or reports the current Shield save state.",
+  "source": "User requested Shield progress tracking; awaiting live save details"
+}
