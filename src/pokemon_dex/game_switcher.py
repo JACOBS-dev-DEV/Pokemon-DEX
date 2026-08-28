@@ -14,6 +14,7 @@ REGISTRY_FILE = ROOT / "res" / "data" / "registries" / "games.json"
 
 PERSONAL_GAME_FILES = {
     "Pokemon Sword": PROFILE_DIR / "sword.json",
+    "Pokemon Shield": PROFILE_DIR / "shield.json",
     "Pokemon Brilliant Diamond": PROFILE_DIR / "brilliant_diamond.json",
     "Pokemon Legends: Arceus": PROFILE_DIR / "legends_arceus.json",
 }
@@ -58,6 +59,16 @@ def active_game() -> str:
     return selected if selected in games else (games[0] if games else "Pokemon Sword")
 
 
+def _summary_standard(data: dict) -> dict:
+    rows = list(data.get("pokemon", []))
+    return {
+        "recorded_species": len(rows),
+        "caught_species_records": sum(1 for row in rows if row.get("caught")),
+        "team_records": sum(1 for row in rows if row.get("in_team")),
+        "sync_status": data.get("sync_status", "synced"),
+    }
+
+
 def _summary_sword(data: dict) -> dict:
     rows = list(data.get("pokemon", []))
     caught = [row for row in rows if row.get("caught")]
@@ -67,15 +78,7 @@ def _summary_sword(data: dict) -> dict:
         "owned_total": sum(int(row.get("owned_count") or 0) for row in caught),
         "team_records": sum(1 for row in rows if row.get("in_team")),
         "pending_encounters": sum(1 for row in rows if row.get("encountered") and not row.get("caught")),
-    }
-
-
-def _summary_brilliant_diamond(data: dict) -> dict:
-    rows = list(data.get("pokemon", []))
-    return {
-        "recorded_species": len(rows),
-        "caught_species_records": sum(1 for row in rows if row.get("caught")),
-        "team_records": sum(1 for row in rows if row.get("in_team")),
+        "sync_status": data.get("sync_status", "synced"),
     }
 
 
@@ -88,22 +91,21 @@ def _summary_legends_arceus(data: dict) -> dict:
         "complete_entries": sum(1 for row in rows if row.get("complete")),
         "obtained_total": int(progress.get("obtained_total") or 0),
         "regional_goal": progress.get("regional_goal"),
+        "sync_status": data.get("sync_status", "synced"),
     }
 
 
 def game_summary(game: str) -> dict:
     path = PERSONAL_GAME_FILES.get(game)
     if path is None or not path.exists():
-        return {"personal_data": false, "game": game}
+        return {"personal_data": False, "game": game}
     data = _read_json(path)
     if game == "Pokemon Sword":
         summary = _summary_sword(data)
-    elif game == "Pokemon Brilliant Diamond":
-        summary = _summary_brilliant_diamond(data)
     elif game == "Pokemon Legends: Arceus":
         summary = _summary_legends_arceus(data)
     else:
-        summary = {"recorded_species": len(data.get("pokemon", []))}
+        summary = _summary_standard(data)
     return {"personal_data": True, "game": game, **summary}
 
 
