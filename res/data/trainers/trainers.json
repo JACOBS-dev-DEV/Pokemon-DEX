@@ -1,5 +1,5 @@
 {
-  "schema_version": "1",
+  "schema_version": "2",
   "trainers": [
     {
       "trainer_id": "jacobs-dev",
@@ -7,8 +7,8 @@
       "trainer_class": "Player",
       "game_mode": "personal",
       "team": [
-        {"species_name": "Chimchar", "level": 5, "max_hp": 19, "attack": 11, "defense": 9},
-        {"species_name": "Scorbunny", "level": 5, "max_hp": 20, "attack": 11, "defense": 9}
+        {"species_name":"Chimchar","level":5,"max_hp":19,"attack":11,"defense":9,"special_attack":11,"special_defense":10,"speed":11,"types":["Fire"],"moves":["ember","scratch"]},
+        {"species_name":"Scorbunny","level":5,"max_hp":20,"attack":11,"defense":9,"special_attack":10,"special_defense":9,"speed":12,"types":["Fire"],"moves":["ember","quick-attack"]}
       ]
     },
     {
@@ -17,8 +17,8 @@
       "trainer_class": "Rival",
       "game_mode": "training",
       "team": [
-        {"species_name": "Squirtle", "level": 5, "max_hp": 20, "attack": 10, "defense": 11},
-        {"species_name": "Pikachu", "level": 5, "max_hp": 18, "attack": 11, "defense": 8}
+        {"species_name":"Squirtle","level":5,"max_hp":20,"attack":10,"defense":11,"special_attack":10,"special_defense":11,"speed":9,"types":["Water"],"moves":["water-gun","tackle"]},
+        {"species_name":"Pikachu","level":5,"max_hp":18,"attack":11,"defense":8,"special_attack":11,"special_defense":9,"speed":14,"types":["Electric"],"moves":["thunder-shock","quick-attack"]}
       ]
     }
   ]
