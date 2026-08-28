@@ -10,8 +10,8 @@
       "slot": 1,
       "species_name": "Scorbunny",
       "sex": "male",
-      "level": 13,
-      "current_level_source": "user correction after DEV5",
+      "level": 14,
+      "current_level_source": "user live correction",
       "current_hp": null,
       "max_hp": null,
       "status": "unknown_current",
@@ -50,43 +50,68 @@
         ],
         "source": "User-provided Pokemon Sword summary screenshots"
       },
-      "source": "Current level corrected by user; detailed numeric snapshot preserved from earlier screenshots"
+      "source": "Current level reported live by user; detailed numeric snapshot preserved from earlier screenshots"
     },
     {
       "slot": 2,
       "species_name": "Rookidee",
       "sex": "female",
-      "level": 10,
-      "current_hp": 30,
-      "max_hp": 30,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 12,
+      "current_level_source": "user live correction",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 10,
+        "current_hp": 30,
+        "max_hp": 30,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "Current level reported live by user"
     },
     {
       "slot": 3,
       "species_name": "Blipbug",
       "sex": "female",
-      "level": 8,
-      "current_hp": 24,
-      "max_hp": 24,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 10,
+      "current_level_source": "user live correction",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 8,
+        "current_hp": 24,
+        "max_hp": 24,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "Current level reported live by user"
     },
     {
       "slot": 4,
       "species_name": "Skwovet",
       "sex": "male",
-      "level": 9,
-      "current_hp": 32,
-      "max_hp": 32,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 10,
+      "current_level_source": "user live correction",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 9,
+        "current_hp": 32,
+        "max_hp": 32,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "Current level reported live by user"
     },
     {
       "slot": 5,
       "species_name": "Chewtle",
       "sex": "female",
       "level": 9,
+      "current_level_source": "user live report",
       "current_hp": null,
       "max_hp": null,
       "status": "unknown_current",
@@ -103,13 +128,21 @@
       "slot": 6,
       "species_name": "Rookidee",
       "sex": "female",
-      "level": 9,
-      "current_hp": 27,
-      "max_hp": 27,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 11,
+      "current_level_source": "user live correction",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 9,
+        "current_hp": 27,
+        "max_hp": 27,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "Current level reported live by user"
     }
   ],
-  "notes": "This is a live snapshot, not a fixed/locked party. Scorbunny's current level is 13; its older Lv.12 detailed stats/HP/moves are retained only as a historical confirmed snapshot until newer details are captured. Chewtle is now Lv.9; its Lv.8 HP detail is preserved as historical data.",
+  "notes": "Live levels: Scorbunny 14, first Rookidee 12, Blipbug 10, Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled.",
   "source": "User-provided Pokemon Sword party/summary screenshots plus live corrections"
 }
