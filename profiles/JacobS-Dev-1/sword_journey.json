@@ -5,13 +5,20 @@
     "current_phase": "early_game_post_dynamax_band",
     "dynamax_band_received": true,
     "gym_challenge_started": false,
-    "current_area": "Route 2"
+    "current_area": "Route 2",
+    "next_step": "board_train",
+    "train_boarded": false
   },
   "milestones": [
     {
       "id": "dynamax_band_received",
       "complete": true,
       "notes": "User reported receiving/unlocking the Dynamax Band."
+    },
+    {
+      "id": "board_train",
+      "complete": false,
+      "notes": "User reported being about to board the train; do not mark complete until boarding is confirmed."
     }
   ],
   "trainer_battles": [
