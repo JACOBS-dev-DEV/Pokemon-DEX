@@ -1,0 +1,24 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "wallet": {
+    "poke_dollars": {
+      "display_name": "Poké Dollars",
+      "symbol": "₽",
+      "balance": null
+    },
+    "watts": {
+      "display_name": "Watts",
+      "symbol": "W",
+      "balance": null
+    },
+    "battle_points": {
+      "display_name": "Battle Points",
+      "symbol": "BP",
+      "balance": null
+    }
+  },
+  "transactions": [],
+  "balance_observations": [],
+  "source": "Local live progress; balances remain unknown until explicitly reported or extracted from a provided screen/image."
+}
