@@ -36,6 +36,15 @@
       "form": "base",
       "game": "Pokemon Sword",
       "profile": "JacobS-Dev-1"
+    },
+    {
+      "path": "profiles/JacobS-Dev-1/sword_journey.json",
+      "scope": "personal",
+      "id": null,
+      "name": null,
+      "form": "base",
+      "game": "Pokemon Sword",
+      "profile": "JacobS-Dev-1"
     }
   ]
 }
