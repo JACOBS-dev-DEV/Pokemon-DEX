@@ -2,57 +2,28 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "motostoke_opening_ceremony",
+    "current_phase": "motostoke_post_opening_ceremony_rival_battle_pending",
     "dynamax_band_received": true,
     "gym_challenge_registered": true,
     "gym_challenge_started": true,
-    "current_area": "Motostoke Stadium",
-    "next_step": "complete_opening_ceremony",
+    "current_area": "Motostoke",
+    "next_step": "battle_hop_third_time",
     "train_boarded": true,
     "wild_area_reached": true,
     "motostoke_reached": true,
     "hotel_reached": true,
     "opening_ceremony_started": true,
-    "opening_ceremony_complete": false
+    "opening_ceremony_complete": true
   },
   "milestones": [
-    {
-      "id": "dynamax_band_received",
-      "complete": true,
-      "notes": "User reported receiving/unlocking the Dynamax Band."
-    },
-    {
-      "id": "board_train",
-      "complete": true,
-      "notes": "Confirmed by subsequent arrival in the Wild Area."
-    },
-    {
-      "id": "wild_area_first_arrival",
-      "complete": true,
-      "notes": "User reported reaching and traveling through the Wild Area."
-    },
-    {
-      "id": "motostoke_first_arrival",
-      "complete": true,
-      "notes": "User reported reaching Motostoke after the Wild Area."
-    },
-    {
-      "id": "gym_challenge_registration",
-      "complete": true,
-      "notes": "User confirmed Gym Challenge registration with challenge number 243."
-    },
-    {
-      "id": "visit_budew_drop_inn",
-      "complete": true,
-      "notes": "Confirmed by progression to the Gym Challenge opening ceremony."
-    },
-    {
-      "id": "gym_challenge_opening_ceremony",
-      "complete": false,
-      "in_progress": true,
-      "location": "Motostoke Stadium",
-      "notes": "User reported currently being at the opening ceremony."
-    }
+    {"id":"dynamax_band_received","complete":true,"notes":"User reported receiving/unlocking the Dynamax Band."},
+    {"id":"board_train","complete":true,"notes":"Confirmed by subsequent arrival in the Wild Area."},
+    {"id":"wild_area_first_arrival","complete":true,"notes":"User reported reaching and traveling through the Wild Area."},
+    {"id":"motostoke_first_arrival","complete":true,"notes":"User reported reaching Motostoke after the Wild Area."},
+    {"id":"gym_challenge_registration","complete":true,"notes":"User confirmed Gym Challenge registration with challenge number 243."},
+    {"id":"visit_budew_drop_inn","complete":true,"notes":"Confirmed by progression to the Gym Challenge opening ceremony."},
+    {"id":"gym_challenge_opening_ceremony","complete":true,"notes":"Completed by subsequent progression to the next rival battle."},
+    {"id":"hop_battle_3","complete":false,"in_progress":false,"pending":true,"notes":"User reported being about to battle Hop for the third time. Result remains pending until the battle is actually finished."}
   ],
   "pending_pokemon_encounters": [
     {
@@ -65,22 +36,8 @@
     }
   ],
   "trainer_battles": [
-    {
-      "opponent": "Hop",
-      "result": "win",
-      "sequence": 1,
-      "phase": "early_game",
-      "before_dynamax_band": true,
-      "notes": "First early-game win against Hop."
-    },
-    {
-      "opponent": "Hop",
-      "result": "win",
-      "sequence": 2,
-      "phase": "early_game",
-      "before_dynamax_band": true,
-      "notes": "Second early-game win against Hop, before receiving the Dynamax Band."
-    },
+    {"opponent":"Hop","result":"win","sequence":1,"phase":"early_game","before_dynamax_band":true,"notes":"First early-game win against Hop."},
+    {"opponent":"Hop","result":"win","sequence":2,"phase":"early_game","before_dynamax_band":true,"notes":"Second early-game win against Hop, before receiving the Dynamax Band."},
     {
       "opponent": "Lass Lauren",
       "trainer_class": "Lass",
@@ -90,14 +47,19 @@
       "before_dynamax_band": true,
       "location": "Route 2",
       "identity_pending": false,
-      "opponent_team": [
-        {
-          "species_name": "Chewtle",
-          "level": 6
-        }
-      ],
+      "opponent_team": [{"species_name":"Chewtle","level":6}],
       "reward_poke_dollars": 504,
       "notes": "Trainer identity confirmed from the user-provided Route 2 screenshot and verified against the Route 2 trainer roster."
+    }
+  ],
+  "pending_trainer_battles": [
+    {
+      "opponent": "Hop",
+      "relationship": "rival",
+      "hop_battle_number": 3,
+      "result": "pending",
+      "phase": "post_opening_ceremony",
+      "notes": "User expects this to be their third win against Hop, but no result is recorded until confirmed."
     }
   ],
   "summary": {
@@ -105,6 +67,7 @@
     "trainer_wins": 3,
     "trainer_losses": 0,
     "hop_wins": 2,
+    "pending_hop_battles": 1,
     "identified_route_2_trainer_wins": 1
   },
   "source": "User-reported live Pokemon Sword progress plus verified Route 2 trainer roster"
