@@ -10,8 +10,9 @@
   "storage_snapshot": {
     "pokemon_currently_stored": 184,
     "empty_boxes_reported": 193,
-    "individual_contents_captured": false,
-    "notes": "User reported 184 Pokemon currently in HOME and 193 empty boxes. Individual box contents are not yet captured."
+    "individual_contents_captured": "partial",
+    "count_freshness": "184 is the last explicit account-level total; do not recompute it from later individual Box 1 additions without a fresh HOME total",
+    "notes": "User reported 184 Pokemon currently in HOME and 193 empty boxes. Individual contents are now partially captured from Box 1."
   },
   "pokedex_snapshot": {
     "registered": 308,
@@ -26,18 +27,50 @@
     "total_points_earned": 21473,
     "source": "User-provided Pokemon HOME Records screenshot"
   },
-  "pokemon": [],
+  "pokemon": [
+    {
+      "home_local_id": 1,
+      "species_name": "Gible",
+      "form": "regular",
+      "level": 1,
+      "type_1": "Dragon",
+      "type_2": "Ground",
+      "location": "Box 1",
+      "recently_added": true,
+      "target_game": "Pokemon Sword",
+      "transfer_status": "candidate_not_yet_transferred",
+      "visible_marker": "orange circular/disc-like icon visible in HOME screenshot",
+      "marker_interpretation": "not_inferred",
+      "source": "User-provided Pokemon HOME Box 1 screenshot and live level confirmation"
+    },
+    {
+      "home_local_id": 2,
+      "species_name": "Ponyta",
+      "form": "regular",
+      "level": 1,
+      "type_1": "Fire",
+      "type_2": null,
+      "location": "Box 1",
+      "recently_added": true,
+      "target_game": "Pokemon Sword",
+      "transfer_status": "candidate_not_yet_transferred",
+      "visible_marker": "HOME screenshot shows origin/status icons near this entry",
+      "marker_interpretation": "not_inferred",
+      "source": "User-provided Pokemon HOME Box 1 screenshot and live level confirmation"
+    }
+  ],
   "linked_game_sources": [
     "Pokemon Shield",
     "Pokemon Sword",
     "Pokemon Legends: Arceus"
   ],
   "summary": {
-    "pokemon_recorded_individually": 0,
+    "pokemon_recorded_individually": 2,
     "pokemon_stored_reported": 184,
     "duplicates_recorded_individually": 0,
     "source_games_recorded": 3,
-    "pokedex_registered": 308
+    "pokedex_registered": 308,
+    "sword_transfer_candidates_confirmed": 2
   },
   "tracking_policy": {
     "keep_separate_from_game_pc_boxes": true,
@@ -72,24 +105,28 @@
       "species_name": "Growlithe",
       "form": "Hisuian",
       "source_game": "Pokemon Legends: Arceus",
-      "status": "owned_or_available_from_arceus_but_not_selected_for_sword",
-      "notes": "User reported having the other-generation/Hisuian Growlithe associated with Pokemon Legends: Arceus. Keep it separate from the regular Growlithe target for Sword."
+      "status": "owned_or_available_from_arceus_but_not_usable_for_current_sword_transfer_plan",
+      "notes": "User reported having the Hisuian Growlithe associated with Pokemon Legends: Arceus; keep it separate from the regular Growlithe target for Sword."
     },
     {
       "species_name": "Ponyta",
-      "from": "Pokemon HOME",
+      "form": "regular",
+      "level": 1,
+      "from": "Pokemon HOME Box 1",
       "to": "Pokemon Sword",
-      "status": "possible_candidate_not_yet_transferred",
-      "notes": "User is considering a Ponyta from HOME, but prefers an individual with a regular/default species name rather than a Chinese-language name when possible."
+      "status": "confirmed_candidate_not_yet_transferred",
+      "notes": "User added a Lv.1 Ponyta to HOME Box 1 and may transfer it into Sword. Exact transfer remains pending."
     },
     {
-      "species_name": null,
-      "type_1": "Rock",
-      "type_2": "Dragon",
-      "from": "Pokemon HOME",
+      "species_name": "Gible",
+      "form": "regular",
+      "level": 1,
+      "type_1": "Dragon",
+      "type_2": "Ground",
+      "from": "Pokemon HOME Box 1",
       "to": "Pokemon Sword",
-      "status": "possible_candidate_exact_species_pending",
-      "notes": "User is considering transferring a Rock/Dragon Pokemon as a Dragon-type attacker. Exact species and level are not yet confirmed."
+      "status": "confirmed_candidate_not_yet_transferred",
+      "notes": "This replaces the earlier uncertain Rock/Dragon placeholder. The screenshot identifies the candidate as Gible, which is Dragon/Ground, and the user confirmed it is Lv.1."
     }
   ],
   "pending": {
@@ -103,6 +140,6 @@
     "recently_reopened_after_long_inactivity": true,
     "notes": "User said Pokemon HOME had not been used in a very long time before opening it again for this capture. Records are cumulative account statistics, while individual Pokemon/box organization may reflect older transfers and duplicates."
   },
-  "notes": "User has Pokemon HOME Premium access and reported that some Pokemon, including duplicates from Shield, were transferred into HOME. HOME ownership is tracked separately from Shield PC boxes so transfers do not look like lost Pokemon. Current Sword transfer candidates include Ponyta and an as-yet-unidentified Rock/Dragon Pokemon; regular Growlithe was checked and not found.",
-  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, Records screenshot, transfer workflow, and current Sword transfer planning"
+  "notes": "Pokemon HOME now has two individually confirmed Box 1 records for the current Sword planning session: Gible Lv.1 and Ponyta Lv.1. Neither is marked transferred to Sword yet. The last explicit HOME account total remains 184 until a fresh total is reported.",
+  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, Records screenshot, transfer workflow, and current Box 1 screenshot"
 }
