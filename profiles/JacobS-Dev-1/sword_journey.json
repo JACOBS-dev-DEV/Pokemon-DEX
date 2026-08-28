@@ -74,14 +74,33 @@
       "notes": "Third confirmed win against Hop."
     }
   ],
-  "pending_trainer_battles": [],
+  "pending_trainer_battles": [
+    {
+      "opponent": "Schoolgirl Hannah",
+      "trainer_class": "Schoolgirl",
+      "location": "Route 3",
+      "status": "battle_started_result_pending",
+      "result": null,
+      "opponent_team": [
+        {
+          "species_name": "Pancham",
+          "level": 13
+        }
+      ],
+      "reward_poke_dollars_if_won": 936,
+      "identity_source": "User-provided battle-introduction screenshot",
+      "roster_source": "Verified Route 3 trainer roster",
+      "notes": "Screenshot confirms the battle has started. Do not count a win or trainer defeat until the result is confirmed."
+    }
+  ],
   "summary": {
     "trainer_battles_logged": 4,
     "trainer_wins": 4,
     "trainer_losses": 0,
     "hop_wins": 3,
     "pending_hop_battles": 0,
-    "identified_route_2_trainer_wins": 1
+    "identified_route_2_trainer_wins": 1,
+    "pending_route_3_trainer_battles": 1
   },
-  "source": "User-reported live Pokemon Sword progress plus verified Route 2 trainer roster"
+  "source": "User-reported live Pokemon Sword progress plus verified Route 2 and Route 3 trainer rosters"
 }
