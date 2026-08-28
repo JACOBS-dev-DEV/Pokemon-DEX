@@ -2,6 +2,16 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+# Support both direct execution from VS Code (python src/pokemon_dex/main.py)
+# and normal package execution (python -m pokemon_dex.main / installed script).
+if __package__ in {None, ""}:
+    SRC_DIR = Path(__file__).resolve().parents[1]
+    if str(SRC_DIR) not in sys.path:
+        sys.path.insert(0, str(SRC_DIR))
+
 from pokemon_dex import build_indexes, validate_database
 from pokemon_dex.database import get_status
 
