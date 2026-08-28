@@ -1,0 +1,68 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "groups": [
+    {
+      "group_id": "team-yell",
+      "name": "Team Yell",
+      "kind": "opponent_group",
+      "relationship": "story_opposition",
+      "encountered": false,
+      "first_expected_area": "Motostoke",
+      "notes": "Tracked as an opponent group separately from the player's party. Do not mark individual members defeated until battles are actually confirmed."
+    }
+  ],
+  "opponents": [
+    {
+      "opponent_id": "hop-early-1",
+      "name": "Hop",
+      "group_id": null,
+      "relationship": "rival",
+      "location": "early_game",
+      "result": "win",
+      "battle_sequence": 1,
+      "roster": [],
+      "roster_status": "not_captured_from_current_record"
+    },
+    {
+      "opponent_id": "hop-early-2",
+      "name": "Hop",
+      "group_id": null,
+      "relationship": "rival",
+      "location": "early_game",
+      "result": "win",
+      "battle_sequence": 2,
+      "roster": [],
+      "roster_status": "not_captured_from_current_record"
+    },
+    {
+      "opponent_id": "route-2-lass-lauren",
+      "name": "Lass Lauren",
+      "trainer_class": "Lass",
+      "group_id": null,
+      "relationship": "route_trainer",
+      "location": "Route 2",
+      "result": "win",
+      "battle_sequence": 3,
+      "reward_poke_dollars": 504,
+      "roster": [
+        {
+          "species_name": "Chewtle",
+          "level": 6
+        }
+      ],
+      "roster_status": "confirmed"
+    }
+  ],
+  "pending_opponents": [
+    {
+      "group_id": "team-yell",
+      "name": "Team Yell member",
+      "location": "Motostoke hotel area",
+      "status": "known_group_battle_not_yet_confirmed",
+      "roster": [],
+      "notes": "Placeholder for the upcoming opponent encounter structure only; no battle result or Pokémon roster is assumed yet."
+    }
+  ],
+  "source": "User-reported live Sword progress plus confirmed Lass Lauren battle"
+}
