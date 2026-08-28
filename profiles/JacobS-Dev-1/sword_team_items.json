@@ -3,13 +3,13 @@
   "game": "Pokemon Sword",
   "scope": "current_team_only",
   "team_items": [
-    {"slot":1,"species_name":"Scorbunny","held_item":null,"history":[]},
+    {"slot":1,"species_name":"Raboot","held_item":null,"history":[]},
     {"slot":2,"species_name":"Rookidee","held_item":null,"history":[]},
-    {"slot":3,"species_name":"Blipbug","held_item":null,"history":[]},
-    {"slot":4,"species_name":"Skwovet","held_item":null,"history":[]},
+    {"slot":3,"species_name":"Dottler","held_item":null,"history":[]},
+    {"slot":4,"species_name":null,"held_item":null,"history":[]},
     {"slot":5,"species_name":"Chewtle","held_item":null,"history":[]},
     {"slot":6,"species_name":"Rookidee","held_item":null,"history":[]}
   ],
-  "notes": "Held items are tracked only for the active six-member party. Unknown items remain null until confirmed.",
-  "source": "Current party snapshot from user-provided screenshots; held items not yet reported"
+  "notes": "Held items are tracked only for the active six-member party. Slot 4 is currently empty after the DEV7 team edit. Unknown items remain null until confirmed.",
+  "source": "Current Sword party after DEV7 synchronization and Raboot evolution"
 }
