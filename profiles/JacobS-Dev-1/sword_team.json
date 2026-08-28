@@ -86,11 +86,18 @@
       "slot": 5,
       "species_name": "Chewtle",
       "sex": "female",
-      "level": 8,
-      "current_hp": 28,
-      "max_hp": 28,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 9,
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 8,
+        "current_hp": 28,
+        "max_hp": 28,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "User-reported level-up to Lv.9; prior Lv.8 HP snapshot retained as historical detail"
     },
     {
       "slot": 6,
@@ -103,6 +110,6 @@
       "source": "User-provided current party screenshot"
     }
   ],
-  "notes": "This is a live snapshot, not a fixed/locked party. Scorbunny's current level is 13; its older Lv.12 detailed stats/HP/moves are retained only as a historical confirmed snapshot until newer details are captured.",
+  "notes": "This is a live snapshot, not a fixed/locked party. Scorbunny's current level is 13; its older Lv.12 detailed stats/HP/moves are retained only as a historical confirmed snapshot until newer details are captured. Chewtle is now Lv.9; its Lv.8 HP detail is preserved as historical data.",
   "source": "User-provided Pokemon Sword party/summary screenshots plus live corrections"
 }
