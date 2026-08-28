@@ -1,0 +1,21 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "areas": [
+    {
+      "area_id": "route-2",
+      "name": "Route 2",
+      "visited": true,
+      "current": true,
+      "complete": false,
+      "trainers_defeated": 1,
+      "trainers_total": null,
+      "trainer_check_complete": false,
+      "pokemon_caught": ["Zigzagoon"],
+      "pokemon_check_complete": false,
+      "items_check_complete": false,
+      "notes": "Current early-game route. One trainer victory is logged here; trainer identity pending."
+    }
+  ],
+  "source": "User-reported live Pokemon Sword progress"
+}
