@@ -11,18 +11,11 @@
       "trainers_defeated": 1,
       "trainers_total": null,
       "trainer_check_complete": false,
-      "pokemon_caught": ["Zigzagoon"],
-      "possible_catches": [
-        {
-          "display_name": "Mark jumper",
-          "status": "possible",
-          "exact_species_pending": true,
-          "caught": false
-        }
-      ],
+      "pokemon_caught": ["Zigzagoon", "Yamper"],
+      "possible_catches": [],
       "pokemon_check_complete": false,
       "items_check_complete": false,
-      "notes": "Current early-game route. One trainer victory is logged here; trainer identity pending. 'Mark jumper' is retained as a user-reported possible catch until the exact species name is confirmed."
+      "notes": "Current early-game route. One trainer victory is logged here; trainer identity pending. Yamper was confirmed from the earlier possible-catch placeholder and is now caught."
     }
   ],
   "source": "User-reported live Pokemon Sword progress"
