@@ -96,7 +96,15 @@
       "in_team": true,
       "team_slot": 5,
       "level": 13,
-      "notes": "Current level and team slot confirmed by the user's latest Sword EXP screen."
+      "nature": "Hasty",
+      "ability": "Strong Jaw",
+      "stats": {"hp": 40, "attack": 24, "defense": 16, "special_attack": 15, "special_defense": 15, "speed": 19},
+      "moves": ["Tackle", "Water Gun", "Bite"],
+      "caught_location": "Route 2",
+      "found_at_level": 5,
+      "met_date": "2026-08-28",
+      "characteristic": "Takes plenty of siestas!",
+      "notes": "Current specimen details confirmed by user-provided Sword summary screenshots."
     },
     {
       "local_id": 8,
@@ -123,9 +131,16 @@
       "battle_count": 1,
       "in_team": true,
       "team_slot": 6,
-      "level": 9,
+      "level": 10,
+      "nature": "Hardy",
+      "ability": "Ball Fetch",
+      "stats": {"hp": 33, "attack": 14, "defense": 18, "special_attack": 13, "special_defense": 17, "speed": 11},
+      "moves": ["Tail Whip", "Tackle", "Nuzzle", "Bite"],
       "caught_location": "Route 2",
-      "notes": "User-reported Route 2 catch; current team slot and Lv. 9 confirmed by the latest Sword EXP screen."
+      "found_at_level": 8,
+      "met_date": "2026-08-28",
+      "characteristic": "Capable of taking hits!",
+      "notes": "Route 2 catch; current Lv. 10 and full specimen details confirmed by user-provided Sword summary screenshots."
     },
     {
       "local_id": 10,
@@ -168,9 +183,16 @@
       "pokedex_registered": true,
       "in_team": true,
       "team_slot": 4,
-      "level": 10,
-      "caught_location": null,
-      "notes": "Galar No. 068 with Number Battled 2. Exact catch location remains unset; current team slot and Lv. 10 are confirmed by the latest Sword EXP screen."
+      "level": 11,
+      "nature": "Quirky",
+      "ability": "Flash Fire",
+      "stats": {"hp": 29, "attack": 15, "defense": 16, "special_attack": 19, "special_defense": 21, "speed": 20},
+      "moves": ["Ember", "Tail Whip", "Disable", "Quick Attack"],
+      "caught_location": "Route 3",
+      "found_at_level": 10,
+      "met_date": "2026-08-28",
+      "characteristic": "Often lost in thought!",
+      "notes": "Galar No. 068 with Number Battled 2. Route 3 catch at Lv. 10 and current Lv. 11 specimen details confirmed by user-provided Sword screenshots."
     },
     {
       "local_id": 13,
@@ -185,10 +207,18 @@
       "in_team": true,
       "team_slot": 1,
       "level": 18,
+      "nature": "Calm",
+      "ability": "Blaze",
+      "stats": {"hp": 56, "attack": 36, "defense": 32, "special_attack": 29, "special_defense": 31, "speed": 39},
+      "moves": ["Tackle", "Double Kick", "Ember", "Quick Attack"],
+      "met_date": "2026-08-27",
+      "caught_location": "Postwick",
+      "found_at_level": 5,
+      "characteristic": "Likes to thrash about!",
       "evolved": true,
       "evolved_from": "Scorbunny",
       "obtained_method": "evolution",
-      "notes": "Starter evolution confirmed from live screenshots; latest Sword EXP screen confirms Lv. 18 in team slot 1."
+      "notes": "Starter evolution and current Lv. 18 specimen details confirmed from live Sword screenshots."
     },
     {
       "local_id": 14,
@@ -218,10 +248,21 @@
       "in_team": true,
       "team_slot": 2,
       "level": 8,
+      "nature": "Timid",
+      "ability": "Sand Veil",
+      "stats": {"hp": 29, "attack": 16, "defense": 14, "special_attack": 12, "special_defense": 13, "speed": 14},
+      "moves": ["Tackle", "Sand Tomb", "Sand Attack"],
       "obtained_level": 1,
       "obtained_method": "pokemon_home_transfer",
       "source_storage": "Pokemon HOME Box 1",
-      "notes": "Confirmed transferred from Pokemon HOME into Sword at Lv. 1; latest Sword EXP screen confirms Lv. 8 in team slot 2. The caught flag represents obtained/owned status in this personal tracker, not a wild Sword capture."
+      "origin": {
+        "egg_received_date": "2025-04-01",
+        "egg_received_from": "Faraway Place",
+        "hatched_date": "2025-04-01",
+        "hatched_location": "faraway place"
+      },
+      "characteristic": "Takes plenty of siestas!",
+      "notes": "Confirmed transferred from Pokemon HOME into Sword at Lv. 1. User-provided Sword summary screens confirm the specimen is Timid with Sand Veil and currently Lv. 8. The caught flag represents obtained/owned status in this personal tracker, not a wild Sword capture."
     },
     {
       "local_id": 16,
@@ -236,10 +277,17 @@
       "in_team": true,
       "team_slot": 3,
       "level": 9,
+      "nature": "Careful",
+      "ability": "Flash Fire",
+      "stats": {"hp": 28, "attack": 20, "defense": 15, "special_attack": 15, "special_defense": 18, "speed": 23},
+      "moves": ["Growl", "Tackle", "Tail Whip"],
       "obtained_level": 1,
       "obtained_method": "pokemon_home_transfer",
       "source_storage": "Pokemon HOME Box 1",
-      "notes": "Confirmed transferred from Pokemon HOME into Sword at Lv. 1; latest Sword EXP screen confirms Lv. 9 in team slot 3. The caught flag represents obtained/owned status in this personal tracker, not a wild Sword capture."
+      "origin_game": "Pokemon GO",
+      "transfer_path": ["Pokemon GO", "Pokemon HOME", "Pokemon Sword"],
+      "characteristic": "Alert to sounds!",
+      "notes": "Confirmed transferred from Pokemon HOME into Sword at Lv. 1. User-provided Sword summary screens confirm regular Ponyta originated in Pokemon GO, is Careful with Flash Fire, and is currently Lv. 9."
     },
     {
       "local_id": 17,
