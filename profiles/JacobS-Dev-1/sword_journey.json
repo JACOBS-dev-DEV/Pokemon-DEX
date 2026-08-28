@@ -22,13 +22,22 @@
       "phase": "early_game",
       "before_dynamax_band": true,
       "notes": "Second early-game win against Hop, before receiving the Dynamax Band."
+    },
+    {
+      "opponent": "Unrecorded Trainer",
+      "result": "win",
+      "sequence": 3,
+      "phase": "early_game",
+      "before_dynamax_band": true,
+      "notes": "Additional trainer victory reported by the user; opponent name was not recorded."
     }
   ],
   "summary": {
-    "trainer_battles_logged": 2,
-    "trainer_wins": 2,
+    "trainer_battles_logged": 3,
+    "trainer_wins": 3,
     "trainer_losses": 0,
-    "hop_wins": 2
+    "hop_wins": 2,
+    "unrecorded_trainer_wins": 1
   },
   "source": "User-reported live Pokemon Sword progress"
 }
