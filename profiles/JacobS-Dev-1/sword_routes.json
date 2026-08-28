@@ -78,7 +78,7 @@
       "current": true,
       "complete": false,
       "trainers_defeated": 1,
-      "trainers_total": null,
+      "trainers_total": 6,
       "trainer_check_complete": false,
       "trainer_battles": [
         {
@@ -87,6 +87,16 @@
           "result": "win",
           "identity_status": "pending",
           "notes": "User confirmed one trainer defeated on Route 3 while heading toward Turffield; identity and roster not yet provided."
+        },
+        {
+          "trainer_name": "Schoolgirl Hannah",
+          "trainer_class": "Schoolgirl",
+          "result": null,
+          "status": "battle_started_result_pending",
+          "opponent_team": [{"species_name":"Pancham","level":13}],
+          "reward_poke_dollars_if_won": 936,
+          "identity_status": "confirmed_from_user_screenshot",
+          "notes": "Battle introduction confirmed. Do not increase trainers_defeated until the result is confirmed."
         }
       ],
       "pokemon_caught": [],
@@ -98,6 +108,14 @@
           "status": "encountered",
           "caught": false,
           "notes": "User identified a Gossifleur while traveling toward Turffield; catch not yet confirmed."
+        },
+        {
+          "species_name": "Vulpix",
+          "type_1": "Fire",
+          "status": "caught_registered_location_unconfirmed",
+          "caught": true,
+          "number_battled": 2,
+          "notes": "User-provided Sword Pokédex screenshot confirms Galar No. 068 Vulpix is caught/registered and has Number Battled 2. Exact catch location is not shown, so it is not added to Route 3's pokemon_caught list yet."
         }
       ],
       "pokemon_check_complete": false,
@@ -105,8 +123,8 @@
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Current route toward Turffield and the first Grass Gym. One trainer defeated (identity pending). Gossifleur encountered; catch status pending. Route 3 Growlithe is Shield-only; Sword's corresponding visible encounter is Vulpix."
+      "notes": "Current route toward Turffield and the first Grass Gym. One trainer is already confirmed defeated (identity pending), and a battle with Schoolgirl Hannah is currently in progress. Gossifleur encountered; catch status pending. Vulpix is caught/registered with 2 battled, but its exact catch location is not independently shown."
     }
   ],
-  "source": "User-reported live Pokemon Sword progress plus verified Sword/Shield Route 3 version differences"
+  "source": "User-reported live Pokemon Sword progress, user-provided screenshots, and verified Sword Route 3 trainer/version data"
 }
