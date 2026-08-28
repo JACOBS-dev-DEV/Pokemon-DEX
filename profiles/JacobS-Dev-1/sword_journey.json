@@ -2,16 +2,18 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "journey": {
-    "current_phase": "motostoke_registered_pre_hotel",
+    "current_phase": "motostoke_opening_ceremony",
     "dynamax_band_received": true,
     "gym_challenge_registered": true,
-    "gym_challenge_started": false,
-    "current_area": "Motostoke",
-    "next_step": "visit_budew_drop_inn",
+    "gym_challenge_started": true,
+    "current_area": "Motostoke Stadium",
+    "next_step": "complete_opening_ceremony",
     "train_boarded": true,
     "wild_area_reached": true,
     "motostoke_reached": true,
-    "hotel_reached": false
+    "hotel_reached": true,
+    "opening_ceremony_started": true,
+    "opening_ceremony_complete": false
   },
   "milestones": [
     {
@@ -41,8 +43,15 @@
     },
     {
       "id": "visit_budew_drop_inn",
+      "complete": true,
+      "notes": "Confirmed by progression to the Gym Challenge opening ceremony."
+    },
+    {
+      "id": "gym_challenge_opening_ceremony",
       "complete": false,
-      "notes": "User reported being about to go to the hotel; leave incomplete until arrival is confirmed."
+      "in_progress": true,
+      "location": "Motostoke Stadium",
+      "notes": "User reported currently being at the opening ceremony."
     }
   ],
   "pending_pokemon_encounters": [
