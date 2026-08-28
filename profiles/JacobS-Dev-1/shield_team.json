@@ -1,0 +1,219 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "trainer_name": "JacobS-Dev-1",
+  "trainer_id": "205335",
+  "team_locked": false,
+  "snapshot_kind": "recent_screenshot_party",
+  "team": [
+    {
+      "slot": 1,
+      "species_name": "Cinderace",
+      "sex": "male",
+      "level": 75,
+      "current_hp": 219,
+      "max_hp": 219,
+      "status": "healthy",
+      "type_1": "Fire",
+      "type_2": null,
+      "original_trainer": "JacobS-Dev-1",
+      "trainer_id": "205335",
+      "current_exp": 444577,
+      "exp_to_next_level": 3014,
+      "held_item": "Everstone",
+      "nature": "Naive",
+      "met_date": "2024-12-06",
+      "met_location": "Postwick",
+      "met_level": 5,
+      "characteristic": "It's strong willed!",
+      "moves": [
+        {"name": "Double-Edge", "type": "Normal", "pp": 15, "max_pp": 15},
+        {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
+        {"name": "Pyro Ball", "type": "Fire", "pp": 5, "max_pp": 5},
+        {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
+      ],
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
+    },
+    {
+      "slot": 2,
+      "species_name": "Arcanine",
+      "sex": "female",
+      "level": 67,
+      "current_hp": 215,
+      "max_hp": 215,
+      "status": "healthy",
+      "type_1": "Fire",
+      "type_2": null,
+      "original_trainer": "JacobS-Dev-1",
+      "trainer_id": "205335",
+      "current_exp": 386944,
+      "exp_to_next_level": 6096,
+      "held_item": "Bright Powder",
+      "nature": "Rash",
+      "met_date": "2024-12-07",
+      "met_location": "Route 3",
+      "met_level": 13,
+      "characteristic": "It hates to lose!",
+      "moves": [
+        {"name": "Leer", "type": "Normal", "pp": 30, "max_pp": 30},
+        {"name": "Extreme Speed", "type": "Normal", "pp": 5, "max_pp": 5},
+        {"name": "Bite", "type": "Dark", "pp": 25, "max_pp": 25},
+        {"name": "Flame Wheel", "type": "Fire", "pp": 24, "max_pp": 25}
+      ],
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
+    },
+    {
+      "slot": 3,
+      "species_name": "Zamazenta",
+      "sex": null,
+      "level": 73,
+      "current_hp": 226,
+      "max_hp": 226,
+      "status": "healthy",
+      "type_1": "Fighting",
+      "type_2": null,
+      "original_trainer": "JacobS-Dev-1",
+      "trainer_id": "205335",
+      "current_exp": 487292,
+      "exp_to_next_level": 19238,
+      "held_item": "Rusted Shield",
+      "nature": "Mild",
+      "met_date": "2025-01-18",
+      "met_location": "Tower Summit",
+      "met_level": 70,
+      "characteristic": "It likes to thrash about!",
+      "moves": [
+        {"name": "Slash", "type": "Normal", "pp": 20, "max_pp": 20},
+        {"name": "Crunch", "type": "Dark", "pp": 15, "max_pp": 15},
+        {"name": "Iron Head", "type": "Steel", "pp": 5, "max_pp": 15},
+        {"name": "Iron Defense", "type": "Steel", "pp": 15, "max_pp": 15}
+      ],
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
+    },
+    {
+      "slot": 4,
+      "species_name": "Drednaw",
+      "sex": "female",
+      "level": 73,
+      "current_hp": 234,
+      "max_hp": 234,
+      "status": "healthy",
+      "type_1": "Water",
+      "type_2": "Rock",
+      "original_trainer": "JacobS-Dev-1",
+      "trainer_id": "205335",
+      "current_exp": 404620,
+      "exp_to_next_level": 604,
+      "held_item": "Big Root",
+      "nature": "Modest",
+      "met_date": "2024-12-06",
+      "met_location": "Route 2",
+      "met_level": 7,
+      "characteristic": "It's capable of taking hits!",
+      "moves": [
+        {"name": "Liquidation", "type": "Water", "pp": 10, "max_pp": 10},
+        {"name": "Razor Shell", "type": "Water", "pp": 10, "max_pp": 10},
+        {"name": "Jaw Lock", "type": "Dark", "pp": 10, "max_pp": 10},
+        {"name": "Head Smash", "type": "Rock", "pp": 5, "max_pp": 5}
+      ],
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
+    },
+    {
+      "slot": 5,
+      "species_name": "Eternatus",
+      "sex": null,
+      "level": 71,
+      "current_hp": 303,
+      "max_hp": 303,
+      "status": "healthy",
+      "type_1": "Poison",
+      "type_2": "Dragon",
+      "original_trainer": "JacobS-Dev-1",
+      "trainer_id": "205335",
+      "held_item": null,
+      "ability": "Pressure",
+      "nature": "Impish",
+      "met_date": "2025-01-18",
+      "met_location": "Tower Summit",
+      "met_level": 60,
+      "characteristic": "It's somewhat vain!",
+      "stats": {
+        "hp": 303,
+        "attack": 137,
+        "defense": 189,
+        "sp_attack": 194,
+        "sp_defense": 166,
+        "speed": 215
+      },
+      "moves": [
+        {"name": "Cross Poison", "type": "Poison", "pp": 20, "max_pp": 20},
+        {"name": "Dragon Pulse", "type": "Dragon", "pp": 10, "max_pp": 10},
+        {"name": "Flamethrower", "type": "Fire", "pp": 15, "max_pp": 15},
+        {"name": "Dynamax Cannon", "type": "Dragon", "pp": 5, "max_pp": 5}
+      ],
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
+    },
+    {
+      "slot": 6,
+      "species_name": "Jolteon",
+      "sex": "male",
+      "level": 72,
+      "current_hp": 198,
+      "max_hp": 198,
+      "status": "healthy",
+      "type_1": "Electric",
+      "type_2": null,
+      "original_trainer": "JacobS-Dev-1",
+      "trainer_id": "205335",
+      "held_item": "Black Glasses",
+      "ability": "Volt Absorb",
+      "nature": "Careful",
+      "met_date": "2024-12-07",
+      "met_location": "Route 4",
+      "met_level": 14,
+      "characteristic": "It's strongly defiant!",
+      "stats": {
+        "hp": 198,
+        "attack": 129,
+        "defense": 126,
+        "sp_attack": 165,
+        "sp_defense": 188,
+        "speed": 215
+      },
+      "moves": [
+        {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
+        {"name": "Thunder Fang", "type": "Electric", "pp": 15, "max_pp": 15},
+        {"name": "Thunder", "type": "Electric", "pp": 10, "max_pp": 10},
+        {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
+      ],
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
+    }
+  ],
+  "summary": {
+    "confirmed_slots": 6,
+    "total_slots": 6,
+    "healthy_slots": 6,
+    "champion_slots": 6,
+    "galar_champion_ribbons_confirmed": 6
+  },
+  "notes": "Full recent Shield party snapshot captured from user screenshots. Part 3 corrected nature/met-history values and the user confirmed all six are their Champion team, matching the visible Champion ribbon page on each member.",
+  "source": "User-provided recent Pokemon Shield party, summary, moves, met-data, ribbon screenshots, and champion confirmation"
+}

@@ -10,32 +10,17 @@
       "slot": 1,
       "species_name": "Scorbunny",
       "sex": "male",
-      "level": 12,
-      "current_hp": 37,
-      "max_hp": 37,
-      "status": "healthy",
+      "level": 14,
+      "current_level_source": "user live correction",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
       "type_1": "Fire",
       "type_2": null,
       "original_trainer": "JacobS-dev-1",
       "trainer_id": "307650",
-      "current_exp": 1249,
-      "exp_to_next_level": 12,
-      "stats": {
-        "hp": 37,
-        "attack": 22,
-        "defense": 18,
-        "sp_attack": 17,
-        "sp_defense": 17,
-        "speed": 21
-      },
       "ability": "Blaze",
       "ability_description": "Powers up Fire-type moves when the Pokemon's HP is low.",
-      "moves": [
-        {"name": "Tackle", "type": "Normal", "pp": 35, "max_pp": 35},
-        {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
-        {"name": "Ember", "type": "Fire", "pp": 25, "max_pp": 25},
-        {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
-      ],
       "nature": "Calm",
       "met_date": "2026-08-27",
       "met_location": "Postwick",
@@ -43,59 +28,126 @@
       "characteristic": "Likes to thrash about!",
       "ribbons": [],
       "ribbons_confirmed_none": true,
-      "source": "User-provided Pokemon Sword summary screenshots"
+      "last_confirmed_detail_snapshot": {
+        "level": 12,
+        "current_hp": 37,
+        "max_hp": 37,
+        "current_exp": 1249,
+        "exp_to_next_level": 12,
+        "stats": {
+          "hp": 37,
+          "attack": 22,
+          "defense": 18,
+          "sp_attack": 17,
+          "sp_defense": 17,
+          "speed": 21
+        },
+        "moves": [
+          {"name": "Tackle", "type": "Normal", "pp": 35, "max_pp": 35},
+          {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
+          {"name": "Ember", "type": "Fire", "pp": 25, "max_pp": 25},
+          {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
+        ],
+        "source": "User-provided Pokemon Sword summary screenshots"
+      },
+      "source": "Current level reported live by user; detailed numeric snapshot preserved from earlier screenshots"
     },
     {
       "slot": 2,
       "species_name": "Rookidee",
       "sex": "female",
-      "level": 10,
-      "current_hp": 30,
-      "max_hp": 30,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 12,
+      "current_level_source": "user live correction",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 10,
+        "current_hp": 30,
+        "max_hp": 30,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "Current level reported live by user"
     },
     {
       "slot": 3,
-      "species_name": "Blipbug",
+      "species_name": "Dottler",
       "sex": "female",
-      "level": 8,
-      "current_hp": 24,
-      "max_hp": 24,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 10,
+      "current_level_source": "user confirmed evolution",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "type_1": "Bug",
+      "type_2": "Psychic",
+      "evolved_from": "Blipbug",
+      "evolution_level": 10,
+      "last_confirmed_detail_snapshot": {
+        "species_name": "Blipbug",
+        "level": 8,
+        "current_hp": 24,
+        "max_hp": 24,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "User confirmed the active Blipbug evolved into Dottler at Lv.10"
     },
     {
       "slot": 4,
       "species_name": "Skwovet",
       "sex": "male",
-      "level": 9,
-      "current_hp": 32,
-      "max_hp": 32,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 10,
+      "current_level_source": "user live correction",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 9,
+        "current_hp": 32,
+        "max_hp": 32,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "Current level reported live by user"
     },
     {
       "slot": 5,
       "species_name": "Chewtle",
       "sex": "female",
-      "level": 8,
-      "current_hp": 28,
-      "max_hp": 28,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 9,
+      "current_level_source": "user live report",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 8,
+        "current_hp": 28,
+        "max_hp": 28,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "User-reported level-up to Lv.9; prior Lv.8 HP snapshot retained as historical detail"
     },
     {
       "slot": 6,
       "species_name": "Rookidee",
       "sex": "female",
-      "level": 9,
-      "current_hp": 27,
-      "max_hp": 27,
-      "status": "healthy",
-      "source": "User-provided current party screenshot"
+      "level": 11,
+      "current_level_source": "user live correction",
+      "current_hp": null,
+      "max_hp": null,
+      "status": "unknown_current",
+      "last_confirmed_detail_snapshot": {
+        "level": 9,
+        "current_hp": 27,
+        "max_hp": 27,
+        "status": "healthy",
+        "source": "User-provided current party screenshot"
+      },
+      "source": "Current level reported live by user"
     }
   ],
-  "notes": "This is a live snapshot, not a fixed/locked party. Individual Rookidee identities are not assumed beyond their visible party slots.",
-  "source": "User-provided Pokemon Sword party and summary screenshots"
+  "notes": "Live levels: Scorbunny 14, first Rookidee 12, Dottler 10 (evolved from Blipbug), Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled or evolved.",
+  "source": "User-provided Pokemon Sword party/summary screenshots plus live corrections"
 }

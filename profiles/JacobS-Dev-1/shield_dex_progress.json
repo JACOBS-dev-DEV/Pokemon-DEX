@@ -1,0 +1,112 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "dexes": [
+    {
+      "dex_id": "galar",
+      "name": "Galar Pokedex",
+      "content_scope": "base_game",
+      "caught": 61,
+      "seen": 231,
+      "caught_ids_reported": [
+        4, 5, 6,
+        10, 11, 12,
+        14,
+        21,
+        24,
+        29, 30, 31,
+        34, 35,
+        42, 43,
+        45, 46,
+        48,
+        60,
+        68,
+        70, 71,
+        95,
+        98,
+        107,
+        111, 112,
+        116, 117, 118, 119,
+        136,
+        144, 145,
+        159,
+        161, 162,
+        164, 165, 166, 167, 168,
+        178,
+        196,
+        198,
+        215,
+        222,
+        227, 228, 229, 230,
+        234,
+        246,
+        265,
+        287,
+        305,
+        318,
+        385,
+        399, 400
+      ],
+      "caught_ids_transcribed_count": 61,
+      "reported_id_list_claimed_complete": true,
+      "all_reported_ids_are_caught": true,
+      "caught_counter_matches_transcribed_ids": true,
+      "counter_discrepancy_status": "resolved_by_range_clarification",
+      "species_names_status": "not_yet_supplied",
+      "range_interpretation": {
+        "expanded_ranges": [
+          "4-6",
+          "10-12",
+          "29-31",
+          "34-35",
+          "42-43",
+          "45-46",
+          "70-71",
+          "111-112",
+          "116-119",
+          "144-145",
+          "161-162",
+          "164-168",
+          "227-230",
+          "399-400"
+        ],
+        "individual_ids_that_sounded_dash_separated": [215, 222, 246, 265]
+      },
+      "id_interpretation_notes": [
+        "The user confirmed the numbers were read directly from the Pokemon Shield Galar Pokedex and represent all currently caught IDs.",
+        "The user clarified that most multi-number phrases were minimum-to-maximum ranges, while some numbers were individual entries.",
+        "Expanding 116-119, 164-168, and 227-230 resolves the earlier transcription shortfall and makes the ID count exactly match the in-game 61 caught counter.",
+        "The user corrected a spoken 96 to 98; only 98 is stored.",
+        "The spoken value between 119 and 144 remains transcribed as 136 because that best matches the ascending sequence and the final 61-count reconstruction."
+      ]
+    },
+    {
+      "dex_id": "isle_of_armor",
+      "name": "Isle of Armor Pokedex",
+      "content_scope": "dlc",
+      "caught": 22,
+      "seen": 83
+    },
+    {
+      "dex_id": "crown_tundra",
+      "name": "Crown Tundra Pokedex",
+      "content_scope": "dlc",
+      "caught": 23,
+      "seen": 95
+    }
+  ],
+  "combined_reported_counters": {
+    "caught_sum": 106,
+    "seen_sum": 409,
+    "counting_policy": "base_plus_both_dlc_counters",
+    "unique_species": null,
+    "notes": "These totals are arithmetic sums of the three in-game Pokedex counters. They are not labeled as unique species because regional/DLC Pokedexes can overlap."
+  },
+  "shield_completion_policy": {
+    "count_base_game": true,
+    "count_isle_of_armor": true,
+    "count_crown_tundra": true,
+    "apply_same_combined_policy_to_sword": false
+  },
+  "source": "User-reported live Pokemon Shield Pokedex counters and caught Galar Dex numbers read directly from the in-game Pokedex, with later range clarification"
+}

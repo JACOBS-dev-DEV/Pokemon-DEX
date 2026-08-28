@@ -1,0 +1,43 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "captured": false,
+  "storage_complete": false,
+  "boxes": [],
+  "summary": {
+    "boxes_recorded": 0,
+    "pokemon_recorded": 0,
+    "off_save_storage_possible": true,
+    "approximate_full_boxes_reported": 2,
+    "approximate_only": true
+  },
+  "organization": {
+    "duplicate_area": {
+      "exists": true,
+      "marker_or_color": "red",
+      "notes": "User reported that red-marked entries/area are used for duplicates. Exact box/slot layout has not been captured yet."
+    },
+    "duplicate_disposition": {
+      "usually_traded_away": true,
+      "foreign_language_name_note": "User also tends to trade away duplicate Pokemon with Chinese names.",
+      "individual_trade_history_captured": false
+    }
+  },
+  "external_storage": {
+    "pokemon_home": {
+      "accessible": true,
+      "contents_captured": false,
+      "transfers_confirmed": true,
+      "duplicate_transfers_possible": true,
+      "notes": "User reported moving some Shield Pokemon, especially duplicates, into Pokemon HOME. Shield PC boxes therefore should not be treated as a complete inventory of everything caught/owned from this save."
+    }
+  },
+  "pending": {
+    "box_screenshots": true,
+    "box_names": true,
+    "slot_contents": true,
+    "pokemon_home_contents": true
+  },
+  "notes": "User currently estimates roughly two full Shield PC boxes, but the exact box contents are not captured. Keep Shield boxes, the six-member active Champion team, and Pokemon HOME storage separate. Do not infer box or HOME contents from Pokedex caught IDs.",
+  "source": "User-reported Shield storage state, duplicate organization, and future screenshot plan"
+}

@@ -1,0 +1,155 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "service": "Pokemon HOME",
+  "accessible": true,
+  "captured": true,
+  "membership": {
+    "premium": true,
+    "source": "User report"
+  },
+  "storage_snapshot": {
+    "pokemon_currently_stored": 184,
+    "empty_boxes_reported": 193,
+    "individual_contents_captured": "partial",
+    "count_freshness": "184 is the last explicit account-level total; do not recompute it from later individual Box 1 additions without a fresh HOME total",
+    "notes": "User reported 184 Pokemon currently in HOME and 193 empty boxes. Individual contents are now partially captured from Box 1."
+  },
+  "pokedex_snapshot": {
+    "registered": 308,
+    "source": "User report from Pokemon HOME"
+  },
+  "regional_pokedex_snapshot": {
+    "galar": {
+      "registered_approx": 25,
+      "exact": false,
+      "scope": "Pokemon Sword and Pokemon Shield Galar region in Pokemon HOME",
+      "notes": "User reported around 25 registered Pokemon in the Galar regional area. Preserve as approximate until an exact HOME regional count is shown or reported."
+    }
+  },
+  "records_snapshot": {
+    "pokemon_deposited": 235,
+    "pokemon_withdrawn": 95,
+    "pokemon_traded_via_mobile_device": 189,
+    "tasks_completed": 6,
+    "days_visited_pokemon_home": 91,
+    "total_points_earned": 21473,
+    "source": "User-provided Pokemon HOME Records screenshot"
+  },
+  "pokemon": [
+    {
+      "home_local_id": 1,
+      "species_name": "Gible",
+      "form": "regular",
+      "level": 1,
+      "type_1": "Dragon",
+      "type_2": "Ground",
+      "location": "Box 1",
+      "recently_added": true,
+      "target_game": "Pokemon Sword",
+      "transfer_status": "candidate_not_yet_transferred",
+      "visible_marker": "orange circular/disc-like icon visible in HOME screenshot",
+      "marker_interpretation": "not_inferred",
+      "source": "User-provided Pokemon HOME Box 1 screenshot and live level confirmation"
+    },
+    {
+      "home_local_id": 2,
+      "species_name": "Ponyta",
+      "form": "regular",
+      "level": 1,
+      "type_1": "Fire",
+      "type_2": null,
+      "location": "Box 1",
+      "recently_added": true,
+      "target_game": "Pokemon Sword",
+      "transfer_status": "candidate_not_yet_transferred",
+      "visible_marker": "HOME screenshot shows origin/status icons near this entry",
+      "marker_interpretation": "not_inferred",
+      "source": "User-provided Pokemon HOME Box 1 screenshot and live level confirmation"
+    }
+  ],
+  "linked_game_sources": [
+    "Pokemon Shield",
+    "Pokemon Sword",
+    "Pokemon Legends: Arceus"
+  ],
+  "summary": {
+    "pokemon_recorded_individually": 2,
+    "pokemon_stored_reported": 184,
+    "duplicates_recorded_individually": 0,
+    "source_games_recorded": 3,
+    "pokedex_registered": 308,
+    "galar_registered_approx": 25,
+    "sword_transfer_candidates_confirmed": 2
+  },
+  "tracking_policy": {
+    "keep_separate_from_game_pc_boxes": true,
+    "preserve_source_game_when_known": true,
+    "preserve_duplicate_copies_as_individual_records": true,
+    "do_not_infer_contents_from_pokedex": true,
+    "record_game_transfers_as_events": true,
+    "duplicate_trade_policy": "Duplicates may be traded away; user also tends to trade duplicate Pokemon with Chinese names."
+  },
+  "transfer_selection_preferences": {
+    "target_game": "Pokemon Sword",
+    "prefer_regular_species_names": true,
+    "avoid_foreign_language_names_when_an_alternative_is_available": true,
+    "preferred_battle_role": "attacker",
+    "prefer_early_run_obedience_safe_levels": true,
+    "wanted_team_roles": [
+      "dragon-type attacker"
+    ],
+    "notes": "For the early Sword run, prefer transfer candidates that fit the current obedience level and have regular/default species names when possible."
+  },
+  "transfer_log": [],
+  "pending_transfer_checks": [
+    {
+      "species_name": "Growlithe",
+      "form": "regular",
+      "from": "Pokemon HOME",
+      "to": "Pokemon Sword",
+      "status": "not_found_in_home",
+      "notes": "User checked HOME and does not currently have a regular Growlithe available to transfer into Sword."
+    },
+    {
+      "species_name": "Growlithe",
+      "form": "Hisuian",
+      "source_game": "Pokemon Legends: Arceus",
+      "status": "owned_or_available_from_arceus_but_not_usable_for_current_sword_transfer_plan",
+      "notes": "User reported having the Hisuian Growlithe associated with Pokemon Legends: Arceus; keep it separate from the regular Growlithe target for Sword."
+    },
+    {
+      "species_name": "Ponyta",
+      "form": "regular",
+      "level": 1,
+      "from": "Pokemon HOME Box 1",
+      "to": "Pokemon Sword",
+      "status": "confirmed_candidate_not_yet_transferred",
+      "notes": "User added a Lv.1 Ponyta to HOME Box 1 and may transfer it into Sword. Exact transfer remains pending."
+    },
+    {
+      "species_name": "Gible",
+      "form": "regular",
+      "level": 1,
+      "type_1": "Dragon",
+      "type_2": "Ground",
+      "from": "Pokemon HOME Box 1",
+      "to": "Pokemon Sword",
+      "status": "confirmed_candidate_not_yet_transferred",
+      "notes": "This replaces the earlier uncertain Rock/Dragon placeholder. The screenshot identifies the candidate as Gible, which is Dragon/Ground, and the user confirmed it is Lv.1."
+    }
+  ],
+  "pending": {
+    "individual_home_box_contents": true,
+    "box_or_group_names": true,
+    "individual_pokemon_details": true,
+    "champion_area_or_box_organization_details": true,
+    "mobile_view_or_trade_area_capture": true,
+    "exact_galar_regional_registration_count": true
+  },
+  "activity_context": {
+    "recently_reopened_after_long_inactivity": true,
+    "notes": "User said Pokemon HOME had not been used in a very long time before opening it again for this capture. Records are cumulative account statistics, while individual Pokemon/box organization may reflect older transfers and duplicates."
+  },
+  "notes": "Pokemon HOME now has two individually confirmed Box 1 records for the current Sword planning session: Gible Lv.1 and Ponyta Lv.1. Neither is marked transferred to Sword yet. The last explicit HOME account total remains 184 until a fresh total is reported. HOME Galar regional registrations are currently tracked as approximately 25, separate from exact in-game Sword/Shield Pokedex counters.",
+  "source": "User-reported Pokemon HOME access/storage/Pokedex totals, regional Galar registration estimate, Records screenshot, transfer workflow, and current Box 1 screenshot"
+}

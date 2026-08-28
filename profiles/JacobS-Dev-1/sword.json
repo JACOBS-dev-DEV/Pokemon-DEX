@@ -13,7 +13,7 @@
       "battle_count": 0,
       "in_team": true,
       "team_slot": 1,
-      "level": 16
+      "level": 14
     },
     {
       "local_id": 2,
@@ -23,7 +23,10 @@
       "type_2": null,
       "caught": true,
       "owned_count": 1,
-      "battle_count": 2
+      "battle_count": 2,
+      "in_team": true,
+      "team_slot": 4,
+      "level": 10
     },
     {
       "local_id": 3,
@@ -61,8 +64,9 @@
       "type_1": "Bug",
       "type_2": null,
       "caught": true,
-      "owned_count": 2,
-      "battle_count": 3
+      "owned_count": 1,
+      "battle_count": 3,
+      "evolution_note": "One previously owned Blipbug evolved into Dottler."
     },
     {
       "local_id": 6,
@@ -83,7 +87,10 @@
       "type_2": null,
       "caught": true,
       "owned_count": 1,
-      "battle_count": 1
+      "battle_count": 1,
+      "in_team": true,
+      "team_slot": 5,
+      "level": 9
     },
     {
       "local_id": 8,
@@ -109,7 +116,36 @@
       "battle_count": 1,
       "caught_location": "Route 2",
       "notes": "User-reported live catch; no nickname tracking."
+    },
+    {
+      "local_id": 10,
+      "dex_id": 11,
+      "species_name": "Dottler",
+      "type_1": "Bug",
+      "type_2": "Psychic",
+      "caught": true,
+      "owned_count": 1,
+      "battle_count": 0,
+      "in_team": true,
+      "team_slot": 3,
+      "level": 10,
+      "evolved": true,
+      "evolved_from": "Blipbug",
+      "obtained_method": "evolution",
+      "notes": "User confirmed the active Blipbug evolved into Dottler."
+    },
+    {
+      "local_id": 11,
+      "species_name": "Gossifleur",
+      "type_1": "Grass",
+      "type_2": null,
+      "caught": false,
+      "owned_count": 0,
+      "battle_count": 0,
+      "encountered": true,
+      "encounter_location": "Route 3",
+      "notes": "User identified Gossifleur while traveling toward Turffield; catch not yet confirmed."
     }
   ],
-  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress"
+  "source": "Google Sheet: Pokemon-(Sword) / Sheet1 plus user-reported live progress and current team/evolution/encounter updates"
 }

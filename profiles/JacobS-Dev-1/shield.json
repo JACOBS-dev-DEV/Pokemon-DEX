@@ -1,0 +1,53 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "sync_status": "current_available_photos_synced",
+  "pokemon": [
+    {"local_id":1,"species_name":"Cinderace","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":1,"level":75,"champion":true},
+    {"local_id":2,"species_name":"Arcanine","type_1":"Fire","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":2,"level":67,"champion":true},
+    {"local_id":3,"species_name":"Zamazenta","type_1":"Fighting","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":3,"level":73,"champion":true},
+    {"local_id":4,"species_name":"Drednaw","type_1":"Water","type_2":"Rock","caught":true,"owned_count":1,"in_team":true,"team_slot":4,"level":73,"champion":true},
+    {"local_id":5,"species_name":"Eternatus","type_1":"Poison","type_2":"Dragon","caught":true,"owned_count":1,"in_team":true,"team_slot":5,"level":71,"champion":true},
+    {"local_id":6,"species_name":"Jolteon","type_1":"Electric","type_2":null,"caught":true,"owned_count":1,"in_team":true,"team_slot":6,"level":72,"champion":true}
+  ],
+  "progress": {
+    "current_area": "Wyndon",
+    "play_time": "67:28",
+    "badges_obtained": 8,
+    "badges_total": 8,
+    "champion": true,
+    "champion_team_captured": true,
+    "money_poke_dollars": null,
+    "team_captured": true,
+    "boxes_captured": false,
+    "league_card_captured": true,
+    "trainer_id": "205335",
+    "gym_challenge_number": "243",
+    "pokedex_progress_captured": true,
+    "pokedex_progress_file": "shield_dex_progress.json",
+    "galar_pokedex": {"caught":61,"seen":231,"caught_ids_transcribed":61},
+    "isle_of_armor_pokedex": {"caught":22,"seen":83},
+    "crown_tundra_pokedex": {"caught":23,"seen":95},
+    "combined_reported_dex_counter_sum": {"caught":106,"seen":409,"unique_species":null}
+  },
+  "completion_policy": {
+    "include_expansion_content_in_shield_completion": true,
+    "expansion_content": ["The Isle of Armor", "The Crown Tundra"],
+    "sword_policy": "do_not_apply_this_combined_count_to_sword",
+    "notes": "Shield completion counts the base and both DLC Pokedex counters. The combined 106 caught / 409 seen value is a sum of reported counters, not a unique-species count."
+  },
+  "session": {
+    "active": true,
+    "available_photo_capture_complete": true,
+    "state_capture_pending": false,
+    "photos_received": ["part_1", "part_2", "part_3.0", "part_3.1"],
+    "pending_future_data": [
+      "PC/box contents",
+      "optional species-name mapping for the 61 reported Galar Dex IDs",
+      "future live Shield changes"
+    ],
+    "notes": "All Shield screenshots currently available from the user have been synchronized. The user clarified the spoken Galar numbers include ranges and individual IDs; the reconstructed list now contains exactly 61 caught IDs, matching the in-game caught counter. Box contents remain pending until future screenshots are available."
+  },
+  "notes": "Pokemon Shield remains the active live run. Current available photo data and the complete 61-ID Galar caught list are synchronized without inventing box contents or species names.",
+  "source": "User live Shield reports plus Parts 1, 2, 3.0, and 3.1 screenshot batches and later Dex-range clarification"
+}

@@ -1,0 +1,30 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Sword",
+  "storage_kind": "pc_boxes",
+  "boxes": [],
+  "unassigned_storage": [],
+  "summary": {
+    "boxes_captured": 0,
+    "pokemon_recorded": 0,
+    "contents_status": "awaiting_user_box_images"
+  },
+  "entry_schema_notes": {
+    "supported_fields": [
+      "box_number",
+      "box_name",
+      "slot",
+      "species_name",
+      "form",
+      "sex",
+      "level",
+      "held_item",
+      "markings",
+      "status",
+      "notes"
+    ],
+    "policy": "Only populate Pokémon/storage details confirmed from the user or supplied screenshots. Do not infer unseen box contents."
+  },
+  "notes": "Storage scaffold prepared for future PC/box screenshots. Active party remains separate from PC storage. User may refer to this generally as Pokemon Bank/storage/boxes.",
+  "source": "User requested future Pokemon storage/box tracking; contents not yet supplied"
+}

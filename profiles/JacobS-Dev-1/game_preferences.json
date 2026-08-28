@@ -1,0 +1,10 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "active_game": "Pokemon Shield",
+  "default_battle_role": "attacker",
+  "one_on_one_battle_role": "attacker",
+  "team_battle_optional_roles": ["defense", "support"],
+  "role_notes": "Attacker is the user's normal/default role. Defense and support/helper roles are optional and mainly intended for team-oriented battle formats.",
+  "active_game_notes": "Pokemon Shield is now the active live run. Sword remains preserved at its last confirmed state.",
+  "source": "User-reported battle-style preference and live game switch"
+}

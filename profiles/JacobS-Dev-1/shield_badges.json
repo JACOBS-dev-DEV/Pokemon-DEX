@@ -1,0 +1,16 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Shield",
+  "badges": [
+    {"order":1,"badge_id":"grass","badge_name":"Grass Badge","gym_leader":"Milo","location":"Turffield","obtained":true},
+    {"order":2,"badge_id":"water","badge_name":"Water Badge","gym_leader":"Nessa","location":"Hulbury","obtained":true},
+    {"order":3,"badge_id":"fire","badge_name":"Fire Badge","gym_leader":"Kabu","location":"Motostoke","obtained":true},
+    {"order":4,"badge_id":"ghost","badge_name":"Ghost Badge","gym_leader":"Allister","location":"Stow-on-Side","obtained":true},
+    {"order":5,"badge_id":"fairy","badge_name":"Fairy Badge","gym_leader":"Opal","location":"Ballonlea","obtained":true},
+    {"order":6,"badge_id":"ice","badge_name":"Ice Badge","gym_leader":"Melony","location":"Circhester","obtained":true},
+    {"order":7,"badge_id":"dark","badge_name":"Dark Badge","gym_leader":"Piers","location":"Spikemuth","obtained":true},
+    {"order":8,"badge_id":"dragon","badge_name":"Dragon Badge","gym_leader":"Raihan","location":"Hammerlocke","obtained":true}
+  ],
+  "summary": {"obtained":8,"total":8,"complete":true},
+  "source": "Shield badge structure plus user-provided recent League Card showing completed badge medallion and all-level catch/listen privileges"
+}

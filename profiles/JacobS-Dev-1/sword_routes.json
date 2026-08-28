@@ -11,11 +11,7 @@
       "trainers_defeated": 1,
       "trainers_total": null,
       "trainer_check_complete": false,
-      "pokemon_caught": [
-        "Rookidee",
-        "Zigzagoon",
-        "Yamper"
-      ],
+      "pokemon_caught": ["Rookidee", "Zigzagoon", "Yamper"],
       "special_encounters": [
         {
           "species_name": "Rookidee",
@@ -61,7 +57,7 @@
       "area_id": "motostoke-first-visit",
       "name": "Motostoke",
       "visited": true,
-      "current": true,
+      "current": false,
       "complete": false,
       "trainers_defeated": 0,
       "trainers_total": null,
@@ -73,8 +69,44 @@
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "First arrival confirmed after crossing the Wild Area. Gym Challenge registration/opening progression is still pending confirmation."
+      "notes": "First arrival confirmed after crossing the Wild Area. Gym Challenge registration, League Card update, opening ceremony, and third Hop battle are complete."
+    },
+    {
+      "area_id": "route-3",
+      "name": "Route 3",
+      "visited": true,
+      "current": true,
+      "complete": false,
+      "trainers_defeated": 1,
+      "trainers_total": null,
+      "trainer_check_complete": false,
+      "trainer_battles": [
+        {
+          "trainer_name": null,
+          "trainer_class": null,
+          "result": "win",
+          "identity_status": "pending",
+          "notes": "User confirmed one trainer defeated on Route 3 while heading toward Turffield; identity and roster not yet provided."
+        }
+      ],
+      "pokemon_caught": [],
+      "special_encounters": [],
+      "possible_catches": [
+        {
+          "species_name": "Gossifleur",
+          "type_1": "Grass",
+          "status": "encountered",
+          "caught": false,
+          "notes": "User identified a Gossifleur while traveling toward Turffield; catch not yet confirmed."
+        }
+      ],
+      "pokemon_check_complete": false,
+      "pokemon_centers": [],
+      "pokemon_center_check_complete": false,
+      "items_found": [],
+      "items_check_complete": false,
+      "notes": "Current route toward Turffield and the first Grass Gym. One trainer defeated (identity pending). Gossifleur encountered; catch status pending. Route 3 Growlithe is Shield-only; Sword's corresponding visible encounter is Vulpix."
     }
   ],
-  "source": "User-reported live Pokemon Sword progress"
+  "source": "User-reported live Pokemon Sword progress plus verified Sword/Shield Route 3 version differences"
 }

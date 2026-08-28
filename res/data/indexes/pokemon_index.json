@@ -1,122 +1,28 @@
 {
   "schema_version": "1",
   "profiles": [
-    {
-      "path": "res/profiles/profile.template.json",
-      "scope": "canonical",
-      "id": null,
-      "name": "",
-      "form": "base",
-      "game": null,
-      "profile": null
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/brilliant_diamond.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Brilliant Diamond",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/legends_arceus.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Legends: Arceus",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword_badges.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword_journey.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword_opponents.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword_routes.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword_team.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword_team_items.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword_technical_moves.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/sword_wallet.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    },
-    {
-      "path": "profiles/JacobS-Dev-1/trainer.json",
-      "scope": "personal",
-      "id": null,
-      "name": null,
-      "form": "base",
-      "game": "Pokemon Sword",
-      "profile": "JacobS-Dev-1"
-    }
+    {"path":"res/profiles/profile.template.json","scope":"canonical","id":null,"name":"","form":"base","game":null,"profile":null},
+    {"path":"profiles/JacobS-Dev-1/brilliant_diamond.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Brilliant Diamond","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/game_preferences.json","scope":"personal","id":null,"name":null,"form":"base","game":null,"profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/legends_arceus.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Legends: Arceus","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/pokemon_home_storage.json","scope":"personal","id":null,"name":null,"form":"base","game":null,"profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/shield.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Shield","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/shield_badges.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Shield","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/shield_dex_progress.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Shield","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/shield_storage.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Shield","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/shield_team.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Shield","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/shield_team_items.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Shield","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/shield_trainer.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Shield","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_badges.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_journey.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_opponents.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_routes.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_storage.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_team.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_team_items.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_technical_moves.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/sword_wallet.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"},
+    {"path":"profiles/JacobS-Dev-1/trainer.json","scope":"personal","id":null,"name":null,"form":"base","game":"Pokemon Sword","profile":"JacobS-Dev-1"}
   ]
 }
