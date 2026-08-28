@@ -99,29 +99,11 @@
       "source": "User confirmed the active Blipbug evolved into Dottler at Lv.10"
     },
     {
-      "slot": 4,
-      "species_name": "Skwovet",
-      "sex": "male",
-      "level": 10,
-      "current_level_source": "user live correction",
-      "current_hp": null,
-      "max_hp": null,
-      "status": "unknown_current",
-      "last_confirmed_detail_snapshot": {
-        "level": 9,
-        "current_hp": 32,
-        "max_hp": 32,
-        "status": "healthy",
-        "source": "User-provided current party screenshot"
-      },
-      "source": "Current level reported live by user"
-    },
-    {
       "slot": 5,
       "species_name": "Chewtle",
       "sex": "female",
-      "level": 9,
-      "current_level_source": "user live report",
+      "level": 12,
+      "current_level_source": "DEV7 live edit",
       "current_hp": null,
       "max_hp": null,
       "status": "unknown_current",
@@ -132,7 +114,7 @@
         "status": "healthy",
         "source": "User-provided current party screenshot"
       },
-      "source": "User-reported level-up to Lv.9; prior Lv.8 HP snapshot retained as historical detail"
+      "source": "DEV7 user live update raised Chewtle to Lv.12; earlier HP snapshot retained as history"
     },
     {
       "slot": 6,
@@ -153,6 +135,6 @@
       "source": "Current level reported live by user"
     }
   ],
-  "notes": "Live party: Raboot (evolved from starter Scorbunny; Lv.16 inferred from the normal evolution threshold), first Rookidee 12, Dottler 10, Skwovet 10, Chewtle 9, second Rookidee 11. Older screenshot HP/stat values are retained only as historical confirmed snapshots when a member has since leveled or evolved.",
-  "source": "User-provided Pokemon Sword party/summary/evolution screenshots plus live corrections"
+  "notes": "Live party after DEV7 synchronization: Raboot 16, first Rookidee 12, Dottler 10, slot 4 currently empty after Skwovet was marked out of the team, Chewtle 12, second Rookidee 11. Older screenshot HP/stat values remain historical snapshots.",
+  "source": "User-provided Pokemon Sword party/summary/evolution screenshots plus DEV7 live edits"
 }
