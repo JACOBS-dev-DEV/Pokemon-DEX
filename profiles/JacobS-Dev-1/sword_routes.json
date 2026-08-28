@@ -6,7 +6,7 @@
       "area_id": "route-2",
       "name": "Route 2",
       "visited": true,
-      "current": true,
+      "current": false,
       "complete": false,
       "trainers_defeated": 1,
       "trainers_total": null,
@@ -26,7 +26,50 @@
       "pokemon_center_check_complete": false,
       "items_found": [],
       "items_check_complete": false,
-      "notes": "Current early-game route. One trainer victory is logged here; trainer identity pending. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee have been caught here. Pokemon Center and item fields are available but remain empty until confirmed by live progress."
+      "notes": "Earlier route. Lass Lauren was defeated here. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee were caught here."
+    },
+    {
+      "area_id": "wild-area-first-visit",
+      "name": "Wild Area",
+      "visited": true,
+      "current": false,
+      "complete": false,
+      "trainers_defeated": 0,
+      "trainers_total": null,
+      "trainer_check_complete": false,
+      "pokemon_caught": [],
+      "special_encounters": [],
+      "possible_catches": [
+        {
+          "species_name": "Duskull",
+          "status": "encountered",
+          "caught": false
+        }
+      ],
+      "pokemon_check_complete": false,
+      "pokemon_centers": [],
+      "pokemon_center_check_complete": false,
+      "items_found": [],
+      "items_check_complete": false,
+      "notes": "First Wild Area visit confirmed. Duskull was encountered but its catch has not been confirmed."
+    },
+    {
+      "area_id": "motostoke-first-visit",
+      "name": "Motostoke",
+      "visited": true,
+      "current": true,
+      "complete": false,
+      "trainers_defeated": 0,
+      "trainers_total": null,
+      "trainer_check_complete": false,
+      "pokemon_caught": [],
+      "possible_catches": [],
+      "pokemon_check_complete": false,
+      "pokemon_centers": [],
+      "pokemon_center_check_complete": false,
+      "items_found": [],
+      "items_check_complete": false,
+      "notes": "First arrival confirmed after crossing the Wild Area. Gym Challenge registration/opening progression is still pending confirmation."
     }
   ],
   "source": "User-reported live Pokemon Sword progress"
