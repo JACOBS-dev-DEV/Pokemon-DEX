@@ -5,7 +5,8 @@
     "poke_dollars": {
       "display_name": "Poké Dollars",
       "symbol": "₽",
-      "balance": 23324
+      "balance": 23324,
+      "balance_status": "last_known_exact_not_recomputed_after_untracked_route_3_activity"
     },
     "watts": {
       "display_name": "Watts",
@@ -38,6 +39,17 @@
       "reason": "Exact balance reported by user",
       "location": "Motostoke / early Gym Challenge progression",
       "source": "User-reported exact balance"
+    },
+    {
+      "currency": "poke_dollars",
+      "kind": "trainer_reward",
+      "amount": 936,
+      "balance_before": null,
+      "balance_after": null,
+      "reason": "Defeated Schoolgirl Hannah",
+      "location": "Route 3",
+      "source": "Verified Route 3 trainer reward plus user-confirmed victory",
+      "notes": "Reward is confirmed, but the exact current wallet balance is not recomputed because at least one other Route 3 trainer reward and any intervening spending were not captured exactly."
     }
   ],
   "balance_observations": [
@@ -48,8 +60,9 @@
       "source_ref": null,
       "confidence": 1.0,
       "location": "Motostoke / early Gym Challenge progression",
-      "applied": true
+      "applied": true,
+      "current_status": "historical_last_known_exact"
     }
   ],
-  "source": "Local live progress; exact balances are recorded only when explicitly reported or extracted from a provided screen/image."
+  "source": "Local live progress; exact balances are recorded only when explicitly reported or extracted from a provided screen/image. Confirmed rewards may be logged without inventing an exact current total when intervening transactions are unknown."
 }
