@@ -56,6 +56,15 @@
       "profile": "JacobS-Dev-1"
     },
     {
+      "path": "profiles/JacobS-Dev-1/sword_opponents.json",
+      "scope": "personal",
+      "id": null,
+      "name": null,
+      "form": "base",
+      "game": "Pokemon Sword",
+      "profile": "JacobS-Dev-1"
+    },
+    {
       "path": "profiles/JacobS-Dev-1/sword_routes.json",
       "scope": "personal",
       "id": null,
@@ -65,7 +74,43 @@
       "profile": "JacobS-Dev-1"
     },
     {
+      "path": "profiles/JacobS-Dev-1/sword_team.json",
+      "scope": "personal",
+      "id": null,
+      "name": null,
+      "form": "base",
+      "game": "Pokemon Sword",
+      "profile": "JacobS-Dev-1"
+    },
+    {
+      "path": "profiles/JacobS-Dev-1/sword_team_items.json",
+      "scope": "personal",
+      "id": null,
+      "name": null,
+      "form": "base",
+      "game": "Pokemon Sword",
+      "profile": "JacobS-Dev-1"
+    },
+    {
+      "path": "profiles/JacobS-Dev-1/sword_technical_moves.json",
+      "scope": "personal",
+      "id": null,
+      "name": null,
+      "form": "base",
+      "game": "Pokemon Sword",
+      "profile": "JacobS-Dev-1"
+    },
+    {
       "path": "profiles/JacobS-Dev-1/sword_wallet.json",
+      "scope": "personal",
+      "id": null,
+      "name": null,
+      "form": "base",
+      "game": "Pokemon Sword",
+      "profile": "JacobS-Dev-1"
+    },
+    {
+      "path": "profiles/JacobS-Dev-1/trainer.json",
       "scope": "personal",
       "id": null,
       "name": null,

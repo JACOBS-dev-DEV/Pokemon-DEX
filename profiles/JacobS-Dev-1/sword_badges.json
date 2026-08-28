@@ -2,15 +2,74 @@
   "profile_id": "JacobS-Dev-1",
   "game": "Pokemon Sword",
   "badges": [
-    {"order": 1, "badge_id": "grass", "badge_name": "Grass Badge", "gym_leader": "Milo", "location": "Turffield", "obtained": false},
-    {"order": 2, "badge_id": "water", "badge_name": "Water Badge", "gym_leader": "Nessa", "location": "Hulbury", "obtained": false},
-    {"order": 3, "badge_id": "fire", "badge_name": "Fire Badge", "gym_leader": "Kabu", "location": "Motostoke", "obtained": false},
-    {"order": 4, "badge_id": "fighting", "badge_name": "Fighting Badge", "gym_leader": "Bea", "location": "Stow-on-Side", "obtained": false},
-    {"order": 5, "badge_id": "fairy", "badge_name": "Fairy Badge", "gym_leader": "Opal", "location": "Ballonlea", "obtained": false},
-    {"order": 6, "badge_id": "rock", "badge_name": "Rock Badge", "gym_leader": "Gordie", "location": "Circhester", "obtained": false},
-    {"order": 7, "badge_id": "dark", "badge_name": "Dark Badge", "gym_leader": "Piers", "location": "Spikemuth", "obtained": false},
-    {"order": 8, "badge_id": "dragon", "badge_name": "Dragon Badge", "gym_leader": "Raihan", "location": "Hammerlocke", "obtained": false}
+    {
+      "order": 1,
+      "badge_id": "grass",
+      "badge_name": "Grass Badge",
+      "gym_leader": "Milo",
+      "location": "Turffield",
+      "obtained": false
+    },
+    {
+      "order": 2,
+      "badge_id": "water",
+      "badge_name": "Water Badge",
+      "gym_leader": "Nessa",
+      "location": "Hulbury",
+      "obtained": false
+    },
+    {
+      "order": 3,
+      "badge_id": "fire",
+      "badge_name": "Fire Badge",
+      "gym_leader": "Kabu",
+      "location": "Motostoke",
+      "obtained": false
+    },
+    {
+      "order": 4,
+      "badge_id": "fighting",
+      "badge_name": "Fighting Badge",
+      "gym_leader": "Bea",
+      "location": "Stow-on-Side",
+      "obtained": false
+    },
+    {
+      "order": 5,
+      "badge_id": "fairy",
+      "badge_name": "Fairy Badge",
+      "gym_leader": "Opal",
+      "location": "Ballonlea",
+      "obtained": false
+    },
+    {
+      "order": 6,
+      "badge_id": "rock",
+      "badge_name": "Rock Badge",
+      "gym_leader": "Gordie",
+      "location": "Circhester",
+      "obtained": false
+    },
+    {
+      "order": 7,
+      "badge_id": "dark",
+      "badge_name": "Dark Badge",
+      "gym_leader": "Piers",
+      "location": "Spikemuth",
+      "obtained": false
+    },
+    {
+      "order": 8,
+      "badge_id": "dragon",
+      "badge_name": "Dragon Badge",
+      "gym_leader": "Raihan",
+      "location": "Hammerlocke",
+      "obtained": false
+    }
   ],
-  "summary": {"obtained": 0, "total": 8},
+  "summary": {
+    "obtained": 0,
+    "total": 8
+  },
   "source": "Pokemon Sword badge structure; personal obtained state starts false until confirmed during live play."
 }

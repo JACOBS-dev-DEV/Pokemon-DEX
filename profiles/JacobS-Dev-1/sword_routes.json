@@ -11,7 +11,11 @@
       "trainers_defeated": 1,
       "trainers_total": null,
       "trainer_check_complete": false,
-      "pokemon_caught": ["Rookidee", "Zigzagoon", "Yamper"],
+      "pokemon_caught": [
+        "Rookidee",
+        "Zigzagoon",
+        "Yamper"
+      ],
       "special_encounters": [
         {
           "species_name": "Rookidee",
