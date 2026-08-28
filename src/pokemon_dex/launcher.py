@@ -20,6 +20,10 @@ def _run_child(kind: str) -> int:
         from pokemon_dex.live_gui import run_gui
 
         return run_gui()
+    if kind == "badges":
+        from pokemon_dex.badge_gui import run_badge_gui
+
+        return run_badge_gui()
     if kind == "wallet":
         from pokemon_dex.wallet_gui import run_wallet_gui
 
@@ -37,30 +41,37 @@ def run_app() -> int:
     while True:
         pygame.init()
         pygame.display.set_caption("Pokemon-DEX Home")
-        screen = pygame.display.set_mode((900, 620), pygame.RESIZABLE)
+        screen = pygame.display.set_mode((980, 620), pygame.RESIZABLE)
         clock = pygame.time.Clock()
         title = pygame.font.Font(None, 52)
-        heading = pygame.font.Font(None, 32)
+        heading = pygame.font.Font(None, 29)
         body = pygame.font.Font(None, 23)
-        small = pygame.font.Font(None, 19)
+        small = pygame.font.Font(None, 18)
         running = True
         next_view: str | None = None
 
         while running:
             width, height = screen.get_size()
-            card_w = min(330, max(240, (width - 96) // 2))
-            gap = 28
-            total = card_w * 2 + gap
-            x0 = max(24, (width - total) // 2)
-            y = 210
-            dex_rect = pygame.Rect(x0, y, card_w, 150)
-            wallet_rect = pygame.Rect(x0 + card_w + gap, y, card_w, 150)
+            gap = 20
+            horizontal_margin = 34
+            usable = width - horizontal_margin * 2 - gap * 2
+            card_w = min(280, max(205, usable // 3))
+            total = card_w * 3 + gap * 2
+            x0 = max(20, (width - total) // 2)
+            y = 205
+            card_h = 155
+            dex_rect = pygame.Rect(x0, y, card_w, card_h)
+            badge_rect = pygame.Rect(x0 + card_w + gap, y, card_w, card_h)
+            wallet_rect = pygame.Rect(x0 + 2 * (card_w + gap), y, card_w, card_h)
             exit_rect = pygame.Rect((width - 160) // 2, height - 88, 160, 44)
 
             def handle_press(pos):
                 nonlocal running, next_view
                 if dex_rect.collidepoint(pos):
                     next_view = "dex"
+                    running = False
+                elif badge_rect.collidepoint(pos):
+                    next_view = "badges"
                     running = False
                 elif wallet_rect.collidepoint(pos):
                     next_view = "wallet"
@@ -87,9 +98,17 @@ def run_app() -> int:
             _text(screen, small, "Touch/mouse-first home | choose what you want to manage", 38, 120, (175, 182, 197))
 
             _button(screen, pygame, heading, "Pokédex / Progress", dex_rect)
-            _text(screen, small, "My Dex • Routes • Journey • Battles", dex_rect.x + 26, dex_rect.y + 96, (180, 186, 200))
+            _text(screen, small, "My Dex • Routes • Journey", dex_rect.x + 20, dex_rect.y + 100, (180, 186, 200))
+            _text(screen, small, "Battles • live edits", dex_rect.x + 20, dex_rect.y + 122, (180, 186, 200))
+
+            _button(screen, pygame, heading, "Gym Badges", badge_rect)
+            _text(screen, small, "8 Sword badges • tap to check off", badge_rect.x + 18, badge_rect.y + 100, (180, 186, 200))
+            _text(screen, small, "backed up before save", badge_rect.x + 18, badge_rect.y + 122, (180, 186, 200))
+
             _button(screen, pygame, heading, "Game Wallet", wallet_rect)
-            _text(screen, small, "Poké Dollars • Watts • BP • ledger", wallet_rect.x + 26, wallet_rect.y + 96, (180, 186, 200))
+            _text(screen, small, "Poké Dollars • Watts • BP", wallet_rect.x + 18, wallet_rect.y + 100, (180, 186, 200))
+            _text(screen, small, "ledger • exact balances", wallet_rect.x + 18, wallet_rect.y + 122, (180, 186, 200))
+
             _button(screen, pygame, body, "Exit", exit_rect)
 
             pygame.display.flip()
