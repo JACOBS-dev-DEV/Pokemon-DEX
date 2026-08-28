@@ -70,6 +70,17 @@ def _atomic_write(path: Path, data: dict) -> None:
         raise WalletError(f"Could not save wallet file: {path.name}") from exc
 
 
+def _amount_value(transaction: dict) -> int:
+    """Return a safe signed amount; balance observations may legitimately be None."""
+    value = transaction.get("amount")
+    if value is None:
+        return 0
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return 0
+
+
 def load_wallet(path: Path = DEFAULT_WALLET, *, root: Path = ROOT) -> dict:
     """Load one local game wallet without changing it."""
     path = _safe_path(path, root=root)
@@ -80,19 +91,23 @@ def wallet_summary(path: Path = DEFAULT_WALLET, *, root: Path = ROOT) -> dict:
     """Return balances and compact ledger totals for display."""
     data = load_wallet(path, root=root)
     transactions = data.get("transactions", [])
-    earned = sum(max(0, int(tx.get("amount", 0))) for tx in transactions)
-    spent = sum(abs(min(0, int(tx.get("amount", 0)))) for tx in transactions)
+    earned = sum(max(0, _amount_value(tx)) for tx in transactions)
+    spent = sum(abs(min(0, _amount_value(tx))) for tx in transactions)
+    per_currency: dict[str, dict] = {}
+    for currency, value in data.get("wallet", {}).items():
+        currency_transactions = [tx for tx in transactions if tx.get("currency") == currency]
+        per_currency[currency] = {
+            "display_name": value.get("display_name", currency),
+            "symbol": value.get("symbol", ""),
+            "balance": value.get("balance"),
+            "earned": sum(max(0, _amount_value(tx)) for tx in currency_transactions),
+            "spent": sum(abs(min(0, _amount_value(tx))) for tx in currency_transactions),
+            "transactions": len(currency_transactions),
+        }
     return {
         "profile_id": data.get("profile_id"),
         "game": data.get("game"),
-        "currencies": {
-            key: {
-                "display_name": value.get("display_name", key),
-                "symbol": value.get("symbol", ""),
-                "balance": value.get("balance"),
-            }
-            for key, value in data.get("wallet", {}).items()
-        },
+        "currencies": per_currency,
         "transactions": len(transactions),
         "earned_total": earned,
         "spent_total": spent,
