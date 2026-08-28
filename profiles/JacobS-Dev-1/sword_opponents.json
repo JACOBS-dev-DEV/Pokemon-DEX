@@ -45,16 +45,23 @@
       "result": "win",
       "battle_sequence": 3,
       "reward_poke_dollars": 504,
-      "roster": [
-        {
-          "species_name": "Chewtle",
-          "level": 6
-        }
-      ],
+      "roster": [{"species_name":"Chewtle","level":6}],
       "roster_status": "confirmed"
     }
   ],
   "pending_opponents": [
+    {
+      "opponent_id": "hop-rival-3",
+      "group_id": null,
+      "name": "Hop",
+      "relationship": "rival",
+      "location": "Motostoke progression",
+      "status": "battle_not_yet_confirmed",
+      "hop_battle_number": 3,
+      "roster": [],
+      "roster_status": "not_yet_captured",
+      "notes": "User reported being about to battle Hop for a third time. Keep pending until result is confirmed."
+    },
     {
       "group_id": "team-yell",
       "name": "Team Yell member",
