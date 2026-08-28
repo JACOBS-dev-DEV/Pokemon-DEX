@@ -46,6 +46,10 @@ def route_summary() -> dict:
         "complete": sum(1 for area in areas if area.get("complete")),
         "trainers_defeated": sum(int(area.get("trainers_defeated") or 0) for area in areas),
         "pokemon_caught": sum(len(area.get("pokemon_caught", [])) for area in areas),
+        "pokemon_centers": sum(len(area.get("pokemon_centers", [])) for area in areas),
+        "items_found": sum(len(area.get("items_found", [])) for area in areas),
+        "center_checks_complete": sum(1 for area in areas if area.get("pokemon_center_check_complete")),
+        "item_checks_complete": sum(1 for area in areas if area.get("items_check_complete")),
     }
 
 
@@ -66,25 +70,62 @@ def _backup(path: Path) -> None:
 
 def _save(path: Path, data: dict) -> None:
     temp = path.with_suffix(path.suffix + ".tmp")
-    temp.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    temp.replace(path)
+    try:
+        temp.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        temp.replace(path)
+    except OSError:
+        try:
+            temp.unlink(missing_ok=True)
+        except OSError:
+            pass
+        raise
 
 
-def update_area(area: dict, updates: dict) -> dict:
+def _find_area(data: dict, area_id: str) -> dict:
+    for raw in data.get("areas", []):
+        if raw.get("area_id") == area_id:
+            return raw
+    raise ValueError("Route area was not found in its source file.")
+
+
+def _load_target(area: dict) -> tuple[Path, dict, dict]:
     path = _safe_path(str(area.get("source_file", "")))
     with path.open("r", encoding="utf-8") as handle:
         data = json.load(handle)
-    target = None
-    for raw in data.get("areas", []):
-        if raw.get("area_id") == area.get("area_id"):
-            target = raw
-            break
-    if target is None:
-        raise ValueError("Route area was not found in its source file.")
+    target = _find_area(data, str(area.get("area_id", "")))
+    return path, data, target
 
+
+def _result(path: Path, data: dict, target: dict) -> dict:
+    result = dict(target)
+    result["game"] = data.get("game", "Unknown Game")
+    result["profile_id"] = data.get("profile_id")
+    result["source_file"] = path.relative_to(ROOT).as_posix()
+    return result
+
+
+def update_area(area: dict, updates: dict) -> dict:
+    """Update route completion/check fields and save them locally with a backup."""
+    path, data, target = _load_target(area)
     allowed = {
-        "visited", "current", "complete", "trainers_defeated",
-        "trainer_check_complete", "pokemon_check_complete", "items_check_complete", "notes"
+        "visited",
+        "current",
+        "complete",
+        "trainers_defeated",
+        "trainer_check_complete",
+        "pokemon_check_complete",
+        "pokemon_center_check_complete",
+        "items_check_complete",
+        "notes",
+    }
+    boolean_fields = {
+        "visited",
+        "current",
+        "complete",
+        "trainer_check_complete",
+        "pokemon_check_complete",
+        "pokemon_center_check_complete",
+        "items_check_complete",
     }
     changed = False
     for key, value in updates.items():
@@ -92,7 +133,7 @@ def update_area(area: dict, updates: dict) -> dict:
             continue
         if key == "trainers_defeated":
             value = max(0, int(value))
-        elif key in {"visited", "current", "complete", "trainer_check_complete", "pokemon_check_complete", "items_check_complete"}:
+        elif key in boolean_fields:
             value = bool(value)
         else:
             value = str(value)
@@ -105,8 +146,45 @@ def update_area(area: dict, updates: dict) -> dict:
     if changed:
         _backup(path)
         _save(path, data)
-    result = dict(target)
-    result["game"] = data.get("game", "Unknown Game")
-    result["profile_id"] = data.get("profile_id")
-    result["source_file"] = path.relative_to(ROOT).as_posix()
-    return result
+    return _result(path, data, target)
+
+
+def add_pokemon_center(area: dict, name: str, *, visited: bool = True, notes: str = "") -> dict:
+    """Add or update a Pokémon Center entry for an area without inventing progress."""
+    path, data, target = _load_target(area)
+    centers = target.setdefault("pokemon_centers", [])
+    existing = next((center for center in centers if str(center.get("name", "")).casefold() == str(name).casefold()), None)
+    if existing is None:
+        centers.append({"name": str(name), "visited": bool(visited), "notes": str(notes)})
+    else:
+        existing["visited"] = bool(visited)
+        if notes:
+            existing["notes"] = str(notes)
+    _backup(path)
+    _save(path, data)
+    return _result(path, data, target)
+
+
+def add_item(
+    area: dict,
+    item_name: str,
+    *,
+    quantity: int = 1,
+    source: str = "field",
+    collected: bool = True,
+    notes: str = "",
+) -> dict:
+    """Add a confirmed item pickup/find to an area's item checklist."""
+    path, data, target = _load_target(area)
+    items = target.setdefault("items_found", [])
+    item = {
+        "name": str(item_name),
+        "quantity": max(1, int(quantity)),
+        "source": str(source),
+        "collected": bool(collected),
+        "notes": str(notes),
+    }
+    items.append(item)
+    _backup(path)
+    _save(path, data)
+    return _result(path, data, target)
