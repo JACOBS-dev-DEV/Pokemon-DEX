@@ -21,21 +21,21 @@
       "current_exp": 444577,
       "exp_to_next_level": 3014,
       "held_item": "Everstone",
-      "ability": "Blaze",
-      "nature": "Rash",
-      "met_date": "2024-12-04",
+      "nature": "Naive",
+      "met_date": "2024-12-06",
       "met_location": "Postwick",
       "met_level": 5,
-      "characteristic": "Likes to thrash about!",
-      "stats": {"hp":219,"attack":202,"defense":137,"sp_attack":114,"sp_defense":138,"speed":222},
+      "characteristic": "It's strong willed!",
       "moves": [
-        {"name":"Bounce","type":"Flying","pp":5,"max_pp":5},
-        {"name":"Pyro Ball","type":"Fire","pp":5,"max_pp":5},
-        {"name":"Double Kick","type":"Fighting","pp":30,"max_pp":30},
-        {"name":"Double-Edge","type":"Normal","pp":15,"max_pp":15}
+        {"name": "Double-Edge", "type": "Normal", "pp": 15, "max_pp": 15},
+        {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
+        {"name": "Pyro Ball", "type": "Fire", "pp": 5, "max_pp": 5},
+        {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
       ],
-      "ribbons": [],
-      "ribbons_confirmed_none": true
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
     },
     {
       "slot": 2,
@@ -52,21 +52,21 @@
       "current_exp": 386944,
       "exp_to_next_level": 6096,
       "held_item": "Bright Powder",
-      "ability": "Intimidate",
-      "nature": "Naughty",
-      "met_date": "2025-08-12",
-      "met_location": "Giant's Mirror",
-      "met_level": 60,
-      "characteristic": "Likes to thrash about!",
-      "stats": {"hp":215,"attack":177,"defense":132,"sp_attack":190,"sp_defense":147,"speed":167},
+      "nature": "Rash",
+      "met_date": "2024-12-07",
+      "met_location": "Route 3",
+      "met_level": 13,
+      "characteristic": "It hates to lose!",
       "moves": [
-        {"name":"Crunch","type":"Dark","pp":15,"max_pp":15},
-        {"name":"Flamethrower","type":"Fire","pp":15,"max_pp":15},
-        {"name":"Agility","type":"Psychic","pp":30,"max_pp":30},
-        {"name":"Fire Fang","type":"Fire","pp":15,"max_pp":15}
+        {"name": "Leer", "type": "Normal", "pp": 30, "max_pp": 30},
+        {"name": "Extreme Speed", "type": "Normal", "pp": 5, "max_pp": 5},
+        {"name": "Bite", "type": "Dark", "pp": 25, "max_pp": 25},
+        {"name": "Flame Wheel", "type": "Fire", "pp": 24, "max_pp": 25}
       ],
-      "ribbons": [],
-      "ribbons_confirmed_none": true
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
     },
     {
       "slot": 3,
@@ -83,21 +83,21 @@
       "current_exp": 487292,
       "exp_to_next_level": 19238,
       "held_item": "Rusted Shield",
-      "ability": "Dauntless Shield",
-      "nature": "Brave",
-      "met_date": "2024-12-07",
-      "met_location": "Energy Plant",
+      "nature": "Mild",
+      "met_date": "2025-01-18",
+      "met_location": "Tower Summit",
       "met_level": 70,
-      "characteristic": "Alert to sounds.",
-      "stats": {"hp":226,"attack":216,"defense":223,"sp_attack":136,"sp_defense":183,"speed":229},
+      "characteristic": "It likes to thrash about!",
       "moves": [
-        {"name":"Crunch","type":"Dark","pp":15,"max_pp":15},
-        {"name":"Iron Head","type":"Steel","pp":15,"max_pp":15},
-        {"name":"Iron Defense","type":"Steel","pp":15,"max_pp":15},
-        {"name":"Close Combat","type":"Fighting","pp":5,"max_pp":5}
+        {"name": "Slash", "type": "Normal", "pp": 20, "max_pp": 20},
+        {"name": "Crunch", "type": "Dark", "pp": 15, "max_pp": 15},
+        {"name": "Iron Head", "type": "Steel", "pp": 5, "max_pp": 15},
+        {"name": "Iron Defense", "type": "Steel", "pp": 15, "max_pp": 15}
       ],
-      "ribbons": [],
-      "ribbons_confirmed_none": true
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
     },
     {
       "slot": 4,
@@ -114,21 +114,21 @@
       "current_exp": 404620,
       "exp_to_next_level": 604,
       "held_item": "Big Root",
-      "ability": "Strong Jaw",
-      "nature": "Hasty",
-      "met_date": "2024-12-05",
-      "met_location": "Bridge Field",
-      "met_level": 27,
-      "characteristic": "Alert to sounds.",
-      "stats": {"hp":234,"attack":176,"defense":171,"sp_attack":88,"sp_defense":109,"speed":125},
+      "nature": "Modest",
+      "met_date": "2024-12-06",
+      "met_location": "Route 2",
+      "met_level": 7,
+      "characteristic": "It's capable of taking hits!",
       "moves": [
-        {"name":"Rock Slide","type":"Rock","pp":10,"max_pp":10},
-        {"name":"Liquidation","type":"Water","pp":10,"max_pp":10},
-        {"name":"Headbutt","type":"Normal","pp":15,"max_pp":15},
-        {"name":"Counter","type":"Fighting","pp":20,"max_pp":20}
+        {"name": "Liquidation", "type": "Water", "pp": 10, "max_pp": 10},
+        {"name": "Razor Shell", "type": "Water", "pp": 10, "max_pp": 10},
+        {"name": "Jaw Lock", "type": "Dark", "pp": 10, "max_pp": 10},
+        {"name": "Head Smash", "type": "Rock", "pp": 5, "max_pp": 5}
       ],
-      "ribbons": [],
-      "ribbons_confirmed_none": true
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
     },
     {
       "slot": 5,
@@ -142,24 +142,31 @@
       "type_2": "Dragon",
       "original_trainer": "JacobS-Dev-1",
       "trainer_id": "205335",
-      "current_exp": 537627,
-      "exp_to_next_level": 20209,
       "held_item": null,
       "ability": "Pressure",
-      "nature": "Timid",
-      "met_date": "2024-12-07",
-      "met_location": "Energy Plant",
+      "nature": "Impish",
+      "met_date": "2025-01-18",
+      "met_location": "Tower Summit",
       "met_level": 60,
-      "characteristic": "Somewhat vain.",
-      "stats": {"hp":303,"attack":157,"defense":169,"sp_attack":244,"sp_defense":150,"speed":233},
+      "characteristic": "It's somewhat vain!",
+      "stats": {
+        "hp": 303,
+        "attack": 137,
+        "defense": 189,
+        "sp_attack": 194,
+        "sp_defense": 166,
+        "speed": 215
+      },
       "moves": [
-        {"name":"Dynamax Cannon","type":"Dragon","pp":5,"max_pp":5},
-        {"name":"Cross Poison","type":"Poison","pp":20,"max_pp":20},
-        {"name":"Dragon Pulse","type":"Dragon","pp":10,"max_pp":10},
-        {"name":"Flamethrower","type":"Fire","pp":15,"max_pp":15}
+        {"name": "Cross Poison", "type": "Poison", "pp": 20, "max_pp": 20},
+        {"name": "Dragon Pulse", "type": "Dragon", "pp": 10, "max_pp": 10},
+        {"name": "Flamethrower", "type": "Fire", "pp": 15, "max_pp": 15},
+        {"name": "Dynamax Cannon", "type": "Dragon", "pp": 5, "max_pp": 5}
       ],
-      "ribbons": [],
-      "ribbons_confirmed_none": true
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
     },
     {
       "slot": 6,
@@ -173,27 +180,40 @@
       "type_2": null,
       "original_trainer": "JacobS-Dev-1",
       "trainer_id": "205335",
-      "current_exp": 453508,
-      "exp_to_next_level": 15469,
       "held_item": "Black Glasses",
       "ability": "Volt Absorb",
-      "nature": "Lax",
-      "met_date": "2025-08-07",
-      "met_location": "Rolling Fields",
-      "met_level": 60,
-      "characteristic": "Mischievous.",
-      "stats": {"hp":198,"attack":129,"defense":107,"sp_attack":206,"sp_defense":164,"speed":233},
+      "nature": "Careful",
+      "met_date": "2024-12-07",
+      "met_location": "Route 4",
+      "met_level": 14,
+      "characteristic": "It's strongly defiant!",
+      "stats": {
+        "hp": 198,
+        "attack": 129,
+        "defense": 126,
+        "sp_attack": 165,
+        "sp_defense": 188,
+        "speed": 215
+      },
       "moves": [
-        {"name":"Thunder","type":"Electric","pp":10,"max_pp":10},
-        {"name":"Discharge","type":"Electric","pp":15,"max_pp":15},
-        {"name":"Double Kick","type":"Fighting","pp":30,"max_pp":30},
-        {"name":"Thunder Wave","type":"Electric","pp":20,"max_pp":20}
+        {"name": "Double Kick", "type": "Fighting", "pp": 30, "max_pp": 30},
+        {"name": "Thunder Fang", "type": "Electric", "pp": 15, "max_pp": 15},
+        {"name": "Thunder", "type": "Electric", "pp": 10, "max_pp": 10},
+        {"name": "Quick Attack", "type": "Normal", "pp": 30, "max_pp": 30}
       ],
-      "ribbons": [],
-      "ribbons_confirmed_none": true
+      "champion": true,
+      "ribbons": [
+        {"name": "Galar Champion Ribbon", "confirmed": true}
+      ]
     }
   ],
-  "summary": {"confirmed_slots":6,"total_slots":6,"healthy_slots":6},
-  "notes": "Full recent Shield party snapshot captured from user screenshots. Values replace the earlier partial spoken snapshot where screenshots provide newer exact data.",
-  "source": "User-provided recent Pokemon Shield party, summary, stats, moves, met-data, and ribbon screenshots"
+  "summary": {
+    "confirmed_slots": 6,
+    "total_slots": 6,
+    "healthy_slots": 6,
+    "champion_slots": 6,
+    "galar_champion_ribbons_confirmed": 6
+  },
+  "notes": "Full recent Shield party snapshot captured from user screenshots. Part 3 corrected nature/met-history values and the user confirmed all six are their Champion team, matching the visible Champion ribbon page on each member.",
+  "source": "User-provided recent Pokemon Shield party, summary, moves, met-data, ribbon screenshots, and champion confirmation"
 }
