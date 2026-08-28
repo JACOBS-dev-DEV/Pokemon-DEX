@@ -1,0 +1,12 @@
+{
+  "schema_version": "1",
+  "assets": [],
+  "fields": {
+    "pokemon_id": "National Dex number or local profile id",
+    "form_id": "base or form identifier",
+    "variant": "normal, shiny, custom, trace, sprite, artwork",
+    "source": "archive, manual, local-import, other",
+    "path": "repository-relative asset path",
+    "sha256": "optional local integrity hash"
+  }
+}
