@@ -1,0 +1,29 @@
+{
+  "profile_id": "JacobS-Dev-1",
+  "game": "Pokemon Brilliant Diamond",
+  "pokemon": [
+    {
+      "regional_id": 1,
+      "regional_dex": true,
+      "national_dex": false,
+      "species_name": "Chimchar",
+      "type_1": "Fire",
+      "type_2": null,
+      "in_team": true,
+      "team_slot": 1,
+      "caught": true,
+      "obtain_id": "001",
+      "found_at_level": 5,
+      "stats": {
+        "hp": 19,
+        "attack": 11,
+        "defense": 9,
+        "special_attack": 11,
+        "special_defense": 10,
+        "speed": 11,
+        "total": 71
+      }
+    }
+  ],
+  "source": "Google Sheet: Pokemon-(Brilliant_Diamond) / Pokemon"
+}
