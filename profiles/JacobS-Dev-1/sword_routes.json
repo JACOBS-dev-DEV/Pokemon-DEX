@@ -11,11 +11,19 @@
       "trainers_defeated": 1,
       "trainers_total": null,
       "trainer_check_complete": false,
-      "pokemon_caught": ["Zigzagoon", "Yamper"],
+      "pokemon_caught": ["Rookidee", "Zigzagoon", "Yamper"],
+      "special_encounters": [
+        {
+          "species_name": "Rookidee",
+          "kind": "brilliant_aura",
+          "caught": true,
+          "notes": "Shimmering/glowing overworld encounter; not recorded as shiny."
+        }
+      ],
       "possible_catches": [],
       "pokemon_check_complete": false,
       "items_check_complete": false,
-      "notes": "Current early-game route. One trainer victory is logged here; trainer identity pending. Yamper was confirmed from the earlier possible-catch placeholder and is now caught."
+      "notes": "Current early-game route. One trainer victory is logged here; trainer identity pending. Yamper, Galarian Zigzagoon, and a Brilliant Aura Rookidee have been caught here."
     }
   ],
   "source": "User-reported live Pokemon Sword progress"
