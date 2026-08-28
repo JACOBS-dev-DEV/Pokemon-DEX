@@ -32,6 +32,12 @@ def _summary_line(row: dict) -> str:
     status = summary.get("sync_status")
     if status == "awaiting_live_sync":
         return "Existing save slot • awaiting live sync"
+    if row.get("game") == "Pokemon Shield" and summary.get("galar_caught") is not None:
+        return (
+            f"Galar {summary.get('galar_caught')}/{summary.get('galar_seen')} • "
+            f"Armor {summary.get('armor_caught')}/{summary.get('armor_seen')} • "
+            f"Tundra {summary.get('tundra_caught')}/{summary.get('tundra_seen')}"
+        )
     parts = []
     if summary.get("recorded_species") is not None:
         parts.append(f"{summary.get('recorded_species')} recorded")
